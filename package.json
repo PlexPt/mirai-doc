@@ -1,0 +1,19 @@
+{
+  "name": "mirai-doc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:PlexPt/mirai-doc.git",
+  "author": "pt <plexpt@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "vuepress dev",
+    "build": "vuepress build"
+  },
+  "devDependencies": {
+    "vuepress": "^1.0.2"
+  },
+  "dependencies": {
+    "element-ui": "^2.12.0"
+  }
+}
