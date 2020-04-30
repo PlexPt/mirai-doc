@@ -2,7 +2,7 @@ module.exports = {
     port: "3000",
     dest: "docs",
     ga: "UA-85414008-1",
-    base: "/",
+    base: "/mirai-doc/",
     markdown: {
         externalLinks: {
             target: '_blank', rel: 'noopener noreferrer'
