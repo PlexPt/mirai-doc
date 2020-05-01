@@ -1,0 +1,5 @@
+[mirai-core](../../index.md) / [net.mamoe.mirai.message.data](../index.md) / [Face](index.md) / [huaixiao](./huaixiao.md)
+
+# huaixiao
+
+`const val huaixiao: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)

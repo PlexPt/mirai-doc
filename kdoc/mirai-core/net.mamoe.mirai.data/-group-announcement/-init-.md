@@ -1,0 +1,5 @@
+[mirai-core](../../index.md) / [net.mamoe.mirai.data](../index.md) / [GroupAnnouncement](index.md) / [&lt;init&gt;](./-init-.md)
+
+# &lt;init&gt;
+
+`GroupAnnouncement(sender: `[`Long`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` = 0, msg: `[`GroupAnnouncementMsg`](../-group-announcement-msg/index.md)`, settings: `[`GroupAnnouncementSettings`](../-group-announcement-settings/index.md)`? = null, time: `[`Long`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` = 0, readNum: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` = 0, isRead: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` = 0, pinned: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` = 0, fid: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`? = null)`

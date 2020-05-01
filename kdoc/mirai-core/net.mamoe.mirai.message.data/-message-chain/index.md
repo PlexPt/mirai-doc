@@ -1,0 +1,87 @@
+[mirai-core](../../index.md) / [net.mamoe.mirai.message.data](../index.md) / [MessageChain](./index.md)
+
+# MessageChain
+
+`interface MessageChain : `[`Message`](../-message/index.md)`, `[`Iterable`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html)`<`[`SingleMessage`](../-single-message/index.md)`>`
+
+消息链. 空的实现为 [EmptyMessageChain](../-empty-message-chain/index.md)
+
+要获取更多信息, 请查看 [Message](../-message/index.md)
+
+**See Also**
+
+[buildMessageChain](../build-message-chain.md)
+
+[asMessageChain](../as-message-chain.md)
+
+[asMessageChain](../as-message-chain.md)
+
+[foreachContent](../foreach-content.md)
+
+[orNull](../or-null.md)
+
+[orElse](../or-else.md)
+
+[getValue](../get-value.md)
+
+[flatten](../kotlin.collections.-iterable/flatten.md)
+
+### Properties
+
+| [size](size.md) | 元素数量. [EmptyMessageChain](../-empty-message-chain/index.md) 不参加计数.`abstract val size: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) |
+
+### Functions
+
+| [__forEach for Java__](__for-each for -java__.md) | 遍历每一个消息, 即 [MessageSource](../-at/index.md), [AtAll](../-at-all/index.md), [PlainText](../-plain-text/index.md), [Image](../-image/index.md), [Face](../-face/index.md), [XmlMessage](../-xml-message/index.md), [QuoteReply](../-quote-reply/index.md). 仅供 `Java` 使用`open fun __forEach for Java__(block: (`[`Message`](../-message/index.md)`) -> `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) |
+| [__forEachContent for Java__](__for-each-content for -java__.md) | 遍历每一个有内容的消息, 即 [At](../-at/index.md), [AtAll](../-at-all/index.md), [PlainText](../-plain-text/index.md), [Image](../-image/index.md), [Face](../-face/index.md), [XmlMessage](../-xml-message/index.md), [QuoteReply](../-quote-reply/index.md). 仅供 `Java` 使用`open fun __forEachContent for Java__(block: (`[`Message`](../-message/index.md)`) -> `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) |
+| [contains](contains.md) | `open operator fun ~~contains~~(sub: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`): `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) |
+| [get](get.md) | 获取第一个类型为 [key](get.md#net.mamoe.mirai.message.data.MessageChain$get(net.mamoe.mirai.message.data.Message.Key((net.mamoe.mirai.message.data.MessageChain.get.M)))/key) 的 [Message](../-message/index.md) 实例`open operator fun <M : `[`Message`](../-message/index.md)`> get(key: Key<M>): M` |
+| [get2](get2.md) | `open fun <M : `[`Message`](../-message/index.md)`> ~~get2~~(key: Key<M>): M` |
+| [getOrNull](get-or-null.md) | 获取第一个类型为 [key](get-or-null.md#net.mamoe.mirai.message.data.MessageChain$getOrNull(net.mamoe.mirai.message.data.Message.Key((net.mamoe.mirai.message.data.MessageChain.getOrNull.M)))/key) 的 [Message](../-message/index.md) 实例, 找不到则返回 `null``open fun <M : `[`Message`](../-message/index.md)`> getOrNull(key: Key<M>): M?` |
+| [getOrNull2](get-or-null2.md) | `open fun <M : `[`Message`](../-message/index.md)`> ~~getOrNull2~~(key: Key<M>): M?` |
+
+### Extension Properties
+
+| [bot](../bot.md) | 消息内部 id. 仅从服务器接收的消息才可以获取`val `[`MessageChain`](./index.md)`.bot: `[`Bot`](../../net.mamoe.mirai/-bot/index.md) |
+| [id](../id.md) | 消息 id. 仅从服务器接收的消息才可以获取`val `[`MessageChain`](./index.md)`.id: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) |
+| [internalId](../internal-id.md) | 消息内部 id. 仅从服务器接收的消息才可以获取`val `[`MessageChain`](./index.md)`.internalId: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) |
+| [source](../source.md) | 获取这条消息源 仅从服务器接收的消息才可以获取消息源`val `[`MessageChain`](./index.md)`.source: `[`MessageSource`](../-message-source/index.md) |
+| [time](../time.md) | 消息时间. 仅从服务器接收的消息才可以获取`val `[`MessageChain`](./index.md)`.time: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) |
+
+### Extension Functions
+
+| [allContent](../all-content.md) | 如果每一个 [消息内容](../-message-content.md) 都满足 [block](../all-content.md#net.mamoe.mirai.message.data$allContent(net.mamoe.mirai.message.data.MessageChain, kotlin.Function1((net.mamoe.mirai.message.data.MessageContent, kotlin.Boolean)))/block), 返回 `true``fun `[`MessageChain`](./index.md)`.allContent(block: (`[`MessageContent`](../-message-content.md)`) -> `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`): `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) |
+| [any](../any.md) | 获取第一个 [M](../any.md#M) 类型的 [Message](../-message/index.md) 实例`fun <M : `[`Message`](../-message/index.md)`> `[`MessageChain`](./index.md)`.any(key: Key<M>): `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) |
+| [anyIsInstance](../any-is-instance.md) | 获取第一个 [M](../any-is-instance.md#M) 类型的 [Message](../-message/index.md) 实例`fun <M : `[`Message`](../-message/index.md)`> `[`MessageChain`](./index.md)`.anyIsInstance(): `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) |
+| [asMessageChain](../as-message-chain.md) | `fun `[`MessageChain`](./index.md)`.asMessageChain(): `[`MessageChain`](./index.md) |
+| [first](../first.md) | 获取第一个 [M](../first.md#M) 类型的 [Message](../-message/index.md) 实例`fun <M : `[`Message`](../-message/index.md)`> `[`MessageChain`](./index.md)`.first(key: Key<M>): M` |
+| [firstIsInstance](../first-is-instance.md) | 获取第一个 [M](../first-is-instance.md#M) 类型的 [Message](../-message/index.md) 实例`fun <M : `[`Message`](../-message/index.md)`> `[`MessageChain`](./index.md)`.firstIsInstance(): M` |
+| [firstIsInstanceOrNull](../first-is-instance-or-null.md) | 获取第一个 [M](../first-is-instance-or-null.md#M) 类型的 [Message](../-message/index.md) 实例`fun <M : `[`Message`](../-message/index.md)`?> `[`MessageChain`](./index.md)`.firstIsInstanceOrNull(): M?` |
+| [firstOrNull](../first-or-null.md) | 获取第一个 [M](../first-or-null.md#M) 类型的 [Message](../-message/index.md) 实例`fun <M : `[`Message`](../-message/index.md)`> `[`MessageChain`](./index.md)`.firstOrNull(key: Key<M>): M?` |
+| [flatten](../flatten.md) | `fun `[`MessageChain`](./index.md)`.flatten(): `[`Sequence`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.sequences/-sequence/index.html)`<`[`SingleMessage`](../-single-message/index.md)`>` |
+| [forEachContent](../for-each-content.md) | 遍历每一个 [消息内容](../-message-content.md)`fun `[`MessageChain`](./index.md)`.forEachContent(block: (`[`MessageContent`](../-message-content.md)`) -> `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) |
+| [foreachContent](../foreach-content.md) | `fun `[`MessageChain`](./index.md)`.~~foreachContent~~(block: (`[`MessageContent`](../-message-content.md)`) -> `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) |
+| [getValue](../get-value.md) | 提供一个类型的值的委托. 若不存在则会抛出异常 [NoSuchElementException](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-no-such-element-exception/index.html)`operator fun <T : `[`Message`](../-message/index.md)`> `[`MessageChain`](./index.md)`.getValue(thisRef: `[`Any`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`?, property: `[`KProperty`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-property/index.html)`<*>): T` |
+| [isContentEmpty](../is-content-empty.md) | 判断消息内容是否为空.`fun `[`Message`](../-message/index.md)`.isContentEmpty(): `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) |
+| [isContentNotEmpty](../is-content-not-empty.md) | `fun `[`Message`](../-message/index.md)`.isContentNotEmpty(): `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) |
+| [isNotPlain](../is-not-plain.md) | `fun `[`Message`](../-message/index.md)`.isNotPlain(): `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) |
+| [isNotPlain2](../is-not-plain2.md) | `fun `[`Message`](../-message/index.md)`.~~isNotPlain2~~(): `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) |
+| [isPlain](../is-plain.md) | `fun `[`Message`](../-message/index.md)`.isPlain(): `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) |
+| [isPlain2](../is-plain2.md) | `fun `[`Message`](../-message/index.md)`.~~isPlain2~~(): `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) |
+| [noneContent](../none-content.md) | 如果每一个 [消息内容](../-message-content.md) 都不满足 [block](../none-content.md#net.mamoe.mirai.message.data$noneContent(net.mamoe.mirai.message.data.MessageChain, kotlin.Function1((net.mamoe.mirai.message.data.MessageContent, kotlin.Boolean)))/block), 返回 `true``fun `[`MessageChain`](./index.md)`.noneContent(block: (`[`MessageContent`](../-message-content.md)`) -> `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`): `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) |
+| [orElse](../or-else.md) | 提供一个类型的 [Message](../-message/index.md) 的委托, 若不存在这个类型的 [Message](../-message/index.md) 则委托会提供 `null``fun <T : `[`Message`](../-message/index.md)`?> `[`MessageChain`](./index.md)`.orElse(lazyDefault: () -> T): `[`OrNullDelegate`](../-or-null-delegate/index.md)`<T>` |
+| [orNull](../or-null.md) | 提供一个类型的 [Message](../-message/index.md) 的委托, 若不存在这个类型的 [Message](../-message/index.md) 则委托会提供 `null``fun <T : `[`Message`](../-message/index.md)`> `[`MessageChain`](./index.md)`.orNull(): `[`OrNullDelegate`](../-or-null-delegate/index.md)`<T?>` |
+| [quote](../quote.md) | 引用这条消息`fun `[`MessageChain`](./index.md)`.quote(): `[`QuoteReply`](../-quote-reply/index.md) |
+| [recall](../recall.md) | 撤回这条消息. 可撤回自己 2 分钟内发出的消息, 和任意时间的群成员的消息.`suspend fun `[`MessageChain`](./index.md)`.recall(): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) |
+| [recallIn](../recall-in.md) | 在一段时间后撤回这条消息. 可撤回自己 2 分钟内发出的消息, 和任意时间的群成员的消息.`fun `[`MessageChain`](./index.md)`.recallIn(millis: `[`Long`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, coroutineContext: `[`CoroutineContext`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html)` = EmptyCoroutineContext): Job` |
+| [repeat](../repeat.md) | `fun `[`Message`](../-message/index.md)`.repeat(count: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`): `[`MessageChain`](./index.md) |
+| [repeat2](../repeat2.md) | `fun `[`Message`](../-message/index.md)`.~~repeat2~~(count: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`): `[`MessageChain`](./index.md) |
+| [sendTo](../send-to.md) | 将 [this](../send-to/-this-.md) 发送给指定联系人`suspend fun <C : `[`Contact`](../../net.mamoe.mirai.contact/-contact/index.md)`> `[`MessageChain`](./index.md)`.sendTo(contact: C): `[`MessageReceipt`](../../net.mamoe.mirai.message/-message-receipt/index.md)`<C>``suspend fun <C : `[`Contact`](../../net.mamoe.mirai.contact/-contact/index.md)`> `[`Message`](../-message/index.md)`.sendTo(contact: C): `[`MessageReceipt`](../../net.mamoe.mirai.message/-message-receipt/index.md)`<C>` |
+| [times](../times.md) | `operator fun `[`Message`](../-message/index.md)`.times(count: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`): `[`MessageChain`](./index.md) |
+| [toForwardMessage](../to-forward-message.md) | 转换为 [ForwardMessage](../-forward-message/index.md)`fun `[`Message`](../-message/index.md)`.toForwardMessage(sender: `[`User`](../../net.mamoe.mirai.contact/-user/index.md)`, time: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` = currentTimeSeconds.toInt(), displayStrategy: DisplayStrategy = DisplayStrategy): `[`ForwardMessage`](../-forward-message/index.md)<br>`fun `[`Message`](../-message/index.md)`.toForwardMessage(senderId: `[`Long`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, senderName: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, time: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` = currentTimeSeconds.toInt(), displayStrategy: DisplayStrategy = DisplayStrategy): `[`ForwardMessage`](../-forward-message/index.md) |
+
+### Inheritors
+
+| [EmptyMessageChain](../-empty-message-chain/index.md) | 不含任何元素的 [MessageChain](./index.md).`object EmptyMessageChain : `[`MessageChain`](./index.md)`, `[`Iterator`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterator/index.html)`<`[`SingleMessage`](../-single-message/index.md)`>` |
+| [NullMessageChain](../-null-message-chain/index.md) | Null 的 [MessageChain](./index.md). 它不包含任何元素, 也没有创建任何 list.`object ~~NullMessageChain~~ : `[`MessageChain`](./index.md) |
+

@@ -1,0 +1,84 @@
+$dokka.format:markdown
+$dokka.linkExtension:md
+$dokka.location:net.mamoe.mirai.event$asyncFromEvent(kotlinx.coroutines.CoroutineScope, kotlin.Long, kotlin.coroutines.CoroutineContext, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.event.asyncFromEvent.E, , net.mamoe.mirai.event.asyncFromEvent.R)))net.mamoe.mirai.event/kotlinx.coroutines.-coroutine-scope/async-from-event.md
+$dokka.location:net.mamoe.mirai.event$asyncFromEventOrNull(kotlinx.coroutines.CoroutineScope, kotlin.Long, kotlin.coroutines.CoroutineContext, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.event.asyncFromEventOrNull.E, , net.mamoe.mirai.event.asyncFromEventOrNull.R)))net.mamoe.mirai.event/kotlinx.coroutines.-coroutine-scope/async-from-event-or-null.md
+$dokka.location:net.mamoe.mirai.event$incoming(kotlinx.coroutines.CoroutineScope, kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.Int)net.mamoe.mirai.event/kotlinx.coroutines.-coroutine-scope/incoming.md
+$dokka.location:net.mamoe.mirai.event$subscribe(kotlinx.coroutines.CoroutineScope, kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.event.subscribe.E, , net.mamoe.mirai.event.ListeningStatus)))net.mamoe.mirai.event/kotlinx.coroutines.-coroutine-scope/subscribe.md
+$dokka.location:net.mamoe.mirai.event$subscribe(kotlinx.coroutines.CoroutineScope, kotlin.reflect.KClass((net.mamoe.mirai.event.subscribe.E)), kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.event.subscribe.E, , net.mamoe.mirai.event.ListeningStatus)))net.mamoe.mirai.event/kotlinx.coroutines.-coroutine-scope/subscribe.md
+$dokka.location:net.mamoe.mirai.event$subscribeAlways(kotlinx.coroutines.CoroutineScope, kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.event.subscribeAlways.E, , kotlin.Unit)))net.mamoe.mirai.event/kotlinx.coroutines.-coroutine-scope/subscribe-always.md
+$dokka.location:net.mamoe.mirai.event$subscribeAlways(kotlinx.coroutines.CoroutineScope, kotlin.reflect.KClass((net.mamoe.mirai.event.subscribeAlways.E)), kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.event.subscribeAlways.E, , kotlin.Unit)))net.mamoe.mirai.event/kotlinx.coroutines.-coroutine-scope/subscribe-always.md
+$dokka.location:net.mamoe.mirai.event$subscribeFriendMessages(kotlinx.coroutines.CoroutineScope, kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.Function1((net.mamoe.mirai.event.MessageSubscribersBuilder((net.mamoe.mirai.message.FriendMessage, net.mamoe.mirai.event.Listener(()), kotlin.Unit, )), net.mamoe.mirai.event.subscribeFriendMessages.R)))net.mamoe.mirai.event/kotlinx.coroutines.-coroutine-scope/subscribe-friend-messages.md
+$dokka.location:net.mamoe.mirai.event$subscribeGroupMessages(kotlinx.coroutines.CoroutineScope, kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.Function1((net.mamoe.mirai.event.MessageSubscribersBuilder((net.mamoe.mirai.message.GroupMessage, net.mamoe.mirai.event.Listener(()), kotlin.Unit, )), net.mamoe.mirai.event.subscribeGroupMessages.R)))net.mamoe.mirai.event/kotlinx.coroutines.-coroutine-scope/subscribe-group-messages.md
+$dokka.location:net.mamoe.mirai.event$subscribeMessages(kotlinx.coroutines.CoroutineScope, kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.Function1((net.mamoe.mirai.event.MessageSubscribersBuilder((net.mamoe.mirai.message.ContactMessage, net.mamoe.mirai.event.Listener(()), kotlin.Unit, )), net.mamoe.mirai.event.subscribeMessages.R)))net.mamoe.mirai.event/kotlinx.coroutines.-coroutine-scope/subscribe-messages.md
+$dokka.location:net.mamoe.mirai.event$subscribeOnce(kotlinx.coroutines.CoroutineScope, kotlin.coroutines.CoroutineContext, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.event.subscribeOnce.E, , kotlin.Unit)))net.mamoe.mirai.event/kotlinx.coroutines.-coroutine-scope/subscribe-once.md
+$dokka.location:net.mamoe.mirai.event$subscribeOnce(kotlinx.coroutines.CoroutineScope, kotlin.reflect.KClass((net.mamoe.mirai.event.subscribeOnce.E)), kotlin.coroutines.CoroutineContext, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.event.subscribeOnce.E, , kotlin.Unit)))net.mamoe.mirai.event/kotlinx.coroutines.-coroutine-scope/subscribe-once.md
+$dokka.location:net.mamoe.mirai.event$subscribeTempMessages(kotlinx.coroutines.CoroutineScope, kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.Function1((net.mamoe.mirai.event.MessageSubscribersBuilder((net.mamoe.mirai.message.TempMessage, net.mamoe.mirai.event.Listener(()), kotlin.Unit, )), net.mamoe.mirai.event.subscribeTempMessages.R)))net.mamoe.mirai.event/kotlinx.coroutines.-coroutine-scope/subscribe-temp-messages.md
+$dokka.location:net.mamoe.mirai.message$sendAsImageTo(java.io.File, net.mamoe.mirai.message.sendAsImageTo.C)net.mamoe.mirai.message/java.io.-file/send-as-image-to.md
+$dokka.location:net.mamoe.mirai.message$sendAsImageTo(java.io.InputStream, net.mamoe.mirai.message.sendAsImageTo.C)net.mamoe.mirai.message/java.io.-input-stream/send-as-image-to.md
+$dokka.location:net.mamoe.mirai.message$sendAsImageTo(java.net.URL, net.mamoe.mirai.message.sendAsImageTo.C)net.mamoe.mirai.message/java.net.-u-r-l/send-as-image-to.md
+$dokka.location:net.mamoe.mirai.message$sendAsImageTo(kotlinx.io.core.Input, net.mamoe.mirai.message.sendAsImageTo.C)net.mamoe.mirai.message/kotlinx.io.core.-input/send-as-image-to.md
+$dokka.location:net.mamoe.mirai.message$sendTo(java.awt.image.BufferedImage, net.mamoe.mirai.message.sendTo.C)net.mamoe.mirai.message/java.awt.image.-buffered-image/send-to.md
+$dokka.location:net.mamoe.mirai.message$upload(java.awt.image.BufferedImage, net.mamoe.mirai.contact.Contact)net.mamoe.mirai.message/java.awt.image.-buffered-image/upload.md
+$dokka.location:net.mamoe.mirai.message$uploadAsImage(java.io.File, net.mamoe.mirai.contact.Contact)net.mamoe.mirai.message/java.io.-file/upload-as-image.md
+$dokka.location:net.mamoe.mirai.message$uploadAsImage(java.io.InputStream, net.mamoe.mirai.contact.Contact)net.mamoe.mirai.message/java.io.-input-stream/upload-as-image.md
+$dokka.location:net.mamoe.mirai.message$uploadAsImage(java.net.URL, net.mamoe.mirai.contact.Contact)net.mamoe.mirai.message/java.net.-u-r-l/upload-as-image.md
+$dokka.location:net.mamoe.mirai.message$uploadAsImage(kotlinx.io.core.Input, net.mamoe.mirai.contact.Contact)net.mamoe.mirai.message/kotlinx.io.core.-input/upload-as-image.md
+$dokka.location:net.mamoe.mirai.message.data$asMessageChain(kotlin.collections.Collection((net.mamoe.mirai.message.data.Message)))net.mamoe.mirai.message.data/kotlin.collections.-collection/as-message-chain.md
+$dokka.location:net.mamoe.mirai.message.data$asMessageChain(kotlin.collections.Collection((net.mamoe.mirai.message.data.SingleMessage)))net.mamoe.mirai.message.data/kotlin.collections.-collection/as-message-chain.md
+$dokka.location:net.mamoe.mirai.message.data$asMessageChain(kotlin.collections.Iterable((net.mamoe.mirai.message.data.Message)))net.mamoe.mirai.message.data/kotlin.collections.-iterable/as-message-chain.md
+$dokka.location:net.mamoe.mirai.message.data$asMessageChain(kotlin.collections.Iterable((net.mamoe.mirai.message.data.SingleMessage)))net.mamoe.mirai.message.data/kotlin.collections.-iterable/as-message-chain.md
+$dokka.location:net.mamoe.mirai.message.data$asMessageChain(kotlin.sequences.Sequence((net.mamoe.mirai.message.data.Message)))net.mamoe.mirai.message.data/kotlin.sequences.-sequence/as-message-chain.md
+$dokka.location:net.mamoe.mirai.message.data$asMessageChain(kotlin.sequences.Sequence((net.mamoe.mirai.message.data.SingleMessage)))net.mamoe.mirai.message.data/kotlin.sequences.-sequence/as-message-chain.md
+$dokka.location:net.mamoe.mirai.message.data$flatten(kotlin.collections.Iterable((net.mamoe.mirai.message.data.Message)))net.mamoe.mirai.message.data/kotlin.collections.-iterable/flatten.md
+$dokka.location:net.mamoe.mirai.message.data$flatten(kotlin.collections.Iterable((net.mamoe.mirai.message.data.SingleMessage)))net.mamoe.mirai.message.data/kotlin.collections.-iterable/flatten.md
+$dokka.location:net.mamoe.mirai.message.data$flatten(kotlin.sequences.Sequence((net.mamoe.mirai.message.data.Message)))net.mamoe.mirai.message.data/kotlin.sequences.-sequence/flatten.md
+$dokka.location:net.mamoe.mirai.message.data$flatten(kotlin.sequences.Sequence((net.mamoe.mirai.message.data.SingleMessage)))net.mamoe.mirai.message.data/kotlin.sequences.-sequence/flatten.md
+$dokka.location:net.mamoe.mirai.message.data$toForwardMessage(kotlin.collections.Iterable((net.mamoe.mirai.message.ContactMessage)), net.mamoe.mirai.message.data.ForwardMessage.DisplayStrategy)net.mamoe.mirai.message.data/kotlin.collections.-iterable/to-forward-message.md
+$dokka.location:net.mamoe.mirai.message.data$toMessage(kotlin.String)net.mamoe.mirai.message.data/kotlin.-string/to-message.md
+$dokka.location:net.mamoe.mirai.utils$copyAndClose(kotlinx.coroutines.io.ByteReadChannel, io.ktor.utils.io.ByteWriteChannel)net.mamoe.mirai.utils/kotlinx.coroutines.io.-byte-read-channel/copy-and-close.md
+$dokka.location:net.mamoe.mirai.utils$copyAndClose(kotlinx.coroutines.io.ByteReadChannel, java.io.OutputStream)net.mamoe.mirai.utils/kotlinx.coroutines.io.-byte-read-channel/copy-and-close.md
+$dokka.location:net.mamoe.mirai.utils$copyAndClose(kotlinx.coroutines.io.ByteReadChannel, kotlinx.coroutines.io.ByteWriteChannel)net.mamoe.mirai.utils/kotlinx.coroutines.io.-byte-read-channel/copy-and-close.md
+$dokka.location:net.mamoe.mirai.utils$copyAndClose(kotlinx.coroutines.io.ByteReadChannel, kotlinx.io.core.Output)net.mamoe.mirai.utils/kotlinx.coroutines.io.-byte-read-channel/copy-and-close.md
+$dokka.location:net.mamoe.mirai.utils$copyTo(kotlinx.coroutines.io.ByteReadChannel, java.io.OutputStream)net.mamoe.mirai.utils/kotlinx.coroutines.io.-byte-read-channel/copy-to.md
+$dokka.location:net.mamoe.mirai.utils$copyTo(kotlinx.coroutines.io.ByteReadChannel, kotlinx.coroutines.io.ByteWriteChannel)net.mamoe.mirai.utils/kotlinx.coroutines.io.-byte-read-channel/copy-to.md
+$dokka.location:net.mamoe.mirai.utils$copyTo(kotlinx.coroutines.io.ByteReadChannel, kotlinx.io.core.Output)net.mamoe.mirai.utils/kotlinx.coroutines.io.-byte-read-channel/copy-to.md
+$dokka.location:net.mamoe.mirai.utils$daysToMillis#kotlin.Intnet.mamoe.mirai.utils/kotlin.-int/days-to-millis.md
+$dokka.location:net.mamoe.mirai.utils$daysToSeconds#kotlin.Intnet.mamoe.mirai.utils/kotlin.-int/days-to-seconds.md
+$dokka.location:net.mamoe.mirai.utils$getValue(java.lang.ref.WeakReference((net.mamoe.mirai.utils.getValue.T)), kotlin.Any, kotlin.reflect.KProperty((kotlin.Any)))net.mamoe.mirai.utils/java.lang.ref.-weak-reference/get-value.md
+$dokka.location:net.mamoe.mirai.utils$hoursToMillis#kotlin.Intnet.mamoe.mirai.utils/kotlin.-int/hours-to-millis.md
+$dokka.location:net.mamoe.mirai.utils$hoursToSeconds#kotlin.Intnet.mamoe.mirai.utils/kotlin.-int/hours-to-seconds.md
+$dokka.location:net.mamoe.mirai.utils$ifAbsent(java.lang.ref.WeakReference((net.mamoe.mirai.utils.ifAbsent.T)), kotlin.Function1((net.mamoe.mirai.utils.ifAbsent.T, net.mamoe.mirai.utils.ifAbsent.R)))net.mamoe.mirai.utils/java.lang.ref.-weak-reference/if-absent.md
+$dokka.location:net.mamoe.mirai.utils$loadAsDeviceInfo(java.io.File, net.mamoe.mirai.utils.Context)net.mamoe.mirai.utils/java.io.-file/load-as-device-info.md
+$dokka.location:net.mamoe.mirai.utils$millisToSeconds#kotlin.Intnet.mamoe.mirai.utils/kotlin.-int/millis-to-seconds.md
+$dokka.location:net.mamoe.mirai.utils$minutesToMillis#kotlin.Intnet.mamoe.mirai.utils/kotlin.-int/minutes-to-millis.md
+$dokka.location:net.mamoe.mirai.utils$minutesToSeconds#kotlin.Intnet.mamoe.mirai.utils/kotlin.-int/minutes-to-seconds.md
+$dokka.location:net.mamoe.mirai.utils$monthsToMillis#kotlin.Intnet.mamoe.mirai.utils/kotlin.-int/months-to-millis.md
+$dokka.location:net.mamoe.mirai.utils$monthsToSeconds#kotlin.Intnet.mamoe.mirai.utils/kotlin.-int/months-to-seconds.md
+$dokka.location:net.mamoe.mirai.utils$secondsToMillis#kotlin.Intnet.mamoe.mirai.utils/kotlin.-int/seconds-to-millis.md
+$dokka.location:net.mamoe.mirai.utils$suspendToExternalImage(java.awt.image.BufferedImage)net.mamoe.mirai.utils/java.awt.image.-buffered-image/suspend-to-external-image.md
+$dokka.location:net.mamoe.mirai.utils$suspendToExternalImage(java.io.File)net.mamoe.mirai.utils/java.io.-file/suspend-to-external-image.md
+$dokka.location:net.mamoe.mirai.utils$suspendToExternalImage(java.io.InputStream)net.mamoe.mirai.utils/java.io.-input-stream/suspend-to-external-image.md
+$dokka.location:net.mamoe.mirai.utils$suspendToExternalImage(java.net.URL)net.mamoe.mirai.utils/java.net.-u-r-l/suspend-to-external-image.md
+$dokka.location:net.mamoe.mirai.utils$suspendToExternalImage(kotlinx.io.core.Input)net.mamoe.mirai.utils/kotlinx.io.core.-input/suspend-to-external-image.md
+$dokka.location:net.mamoe.mirai.utils$toExternalImage(java.awt.image.BufferedImage, kotlin.String)net.mamoe.mirai.utils/java.awt.image.-buffered-image/to-external-image.md
+$dokka.location:net.mamoe.mirai.utils$toExternalImage(java.io.File)net.mamoe.mirai.utils/java.io.-file/to-external-image.md
+$dokka.location:net.mamoe.mirai.utils$toExternalImage(java.io.InputStream)net.mamoe.mirai.utils/java.io.-input-stream/to-external-image.md
+$dokka.location:net.mamoe.mirai.utils$toExternalImage(java.net.URL)net.mamoe.mirai.utils/java.net.-u-r-l/to-external-image.md
+$dokka.location:net.mamoe.mirai.utils$toExternalImage(kotlinx.coroutines.io.ByteReadChannel)net.mamoe.mirai.utils/kotlinx.coroutines.io.-byte-read-channel/to-external-image.md
+$dokka.location:net.mamoe.mirai.utils$toExternalImage(kotlinx.io.core.Input)net.mamoe.mirai.utils/kotlinx.io.core.-input/to-external-image.md
+$dokka.location:net.mamoe.mirai.utils$toLockFreeLinkedList(kotlin.collections.Iterable((net.mamoe.mirai.utils.toLockFreeLinkedList.E)))net.mamoe.mirai.utils/kotlin.collections.-iterable/to-lock-free-linked-list.md
+$dokka.location:net.mamoe.mirai.utils$toLockFreeLinkedList(kotlin.sequences.Sequence((net.mamoe.mirai.utils.toLockFreeLinkedList.E)))net.mamoe.mirai.utils/kotlin.sequences.-sequence/to-lock-free-linked-list.md
+$dokka.location:net.mamoe.mirai.utils$unsafe(java.lang.ref.WeakReference((net.mamoe.mirai.utils.unsafe.T)))net.mamoe.mirai.utils/java.lang.ref.-weak-reference/unsafe.md
+$dokka.location:net.mamoe.mirai.utils$weeksToMillis#kotlin.Intnet.mamoe.mirai.utils/kotlin.-int/weeks-to-millis.md
+$dokka.location:net.mamoe.mirai.utils$weeksToSeconds#kotlin.Intnet.mamoe.mirai.utils/kotlin.-int/weeks-to-seconds.md
+net.mamoe.mirai
+net.mamoe.mirai.contact
+net.mamoe.mirai.data
+net.mamoe.mirai.event
+net.mamoe.mirai.event.events
+net.mamoe.mirai.message
+net.mamoe.mirai.message.data
+net.mamoe.mirai.network
+net.mamoe.mirai.qqandroid.network
+net.mamoe.mirai.utils
+net.mamoe.mirai.utils.internal

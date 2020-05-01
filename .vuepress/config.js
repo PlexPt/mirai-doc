@@ -41,6 +41,20 @@ module.exports = {
                         link: "/config/"
                     },
                     {
+                        text: "KDoc 文档",
+                        items: [
+                            {
+                                text: "mirai-core 文档",
+                                link: "/kdoc/mirai-core/index.md"
+                            },
+                            {
+                                text: "mirai-core 文档(待续)",
+                                link: "/"
+                            }
+                        ]
+                    },
+
+                    {
                         text: "生态",
                         items: [
                             {
