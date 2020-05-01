@@ -45,10 +45,10 @@ module.exports = {
                         items: [
                             {
                                 text: "mirai-core 文档",
-                                link: "/kdoc/mirai-core/index.md"
+                                link: "https://plexpt.github.io/mirai-doc/kdoc/mirai-core/"
                             },
                             {
-                                text: "mirai-core 文档(待续)",
+                                text: "mirai-console 文档(待续)",
                                 link: "/"
                             }
                         ]
@@ -58,7 +58,7 @@ module.exports = {
                         text: "生态",
                         items: [
                             {
-                                text: "mirai-console 直接编写插件",
+                                text: "mirai-console 插件平台",
                                 link: "https://github.com/mamoe/mirai-console"
                             },
                             {
@@ -67,11 +67,10 @@ module.exports = {
                             },
                             {
                                 text: "python-mirai",
-                                link:
-                                    "https://github.com/NatriumLab/python-mirai"
+                                link: "https://github.com/NatriumLab/python-mirai"
                             },
                             {
-                                text: "其他任意语言：mirai-api-http",
+                                text: "mirai-api-http 其他任意语言",
                                 link: "https://github.com/mamoe/mirai-api-http"
                             }
                         ]

@@ -7,11 +7,11 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev": "vuepress dev",
-    "build": "vuepress build"
+    "dev": "node --max_old_space_size=8192 ./node_modules/vuepress/cli.js dev",
+    "build": "node --max_old_space_size=8192 ./node_modules/vuepress/cli.js build"
   },
   "devDependencies": {
-    "vuepress": "^1.0.2"
+    "vuepress": "^1.4.1"
   },
   "dependencies": {
     "element-ui": "^2.12.0"

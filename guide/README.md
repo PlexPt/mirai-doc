@@ -151,7 +151,7 @@ mirai 既可以作为项目中的 QQ 协议支持库, 也可以作为单独的�
 ## 鸣谢
 
 特别感谢 [JetBrains](https://www.jetbrains.com/?from=mirai) 为开源项目提供免费的 [IntelliJ IDEA](https://www.jetbrains.com/idea/?from=mirai) 等 IDE 的授权  
-[<img src="/jetbrains-variant-3.png" width="200"/>](https://www.jetbrains.com/?from=mirai)
+[<img src="/img/jetbrains-variant-3.png" width="200"/>](https://www.jetbrains.com/?from=mirai)
 
 
 ## 许可证
