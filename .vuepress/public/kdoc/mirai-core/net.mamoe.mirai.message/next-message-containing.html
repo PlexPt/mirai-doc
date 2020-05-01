@@ -1,0 +1,24 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>nextMessageContaining - mirai-core</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">mirai-core</a>&nbsp;/&nbsp;<a href="index.html">net.mamoe.mirai.message</a>&nbsp;/&nbsp;<a href="./next-message-containing.html">nextMessageContaining</a><br/>
+<br/>
+<h1>nextMessageContaining</h1>
+<a name="net.mamoe.mirai.message$nextMessageContaining(net.mamoe.mirai.message.ContactMessage, kotlin.Long)"></a>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="keyword">reified</span>&nbsp;<span class="identifier">M</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../net.mamoe.mirai.message.data/-message/index.html"><span class="identifier">Message</span></a><span class="symbol">&gt;</span> <a href="-contact-message/index.html"><span class="identifier">ContactMessage</span></a><span class="symbol">.</span><span class="identifier">nextMessageContaining</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message$nextMessageContaining(net.mamoe.mirai.message.ContactMessage, kotlin.Long)/timeoutMillis">timeoutMillis</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a>&nbsp;<span class="symbol">=</span>&nbsp;-1<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">M</span></code>
+<p>挂起当前协程, 等待下一条 <a href="-message-packet-base/sender.html">MessagePacket.sender</a> 和 <a href="-message-packet-base/subject.html">MessagePacket.subject</a> 与 <a href="next-message-containing/-this-.html">this</a> 相同的 <a href="-message-packet/index.html">MessagePacket</a></p>
+<p>若 <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/filter.html">filter</a> 抛出了一个异常, 本函数会立即抛出这个异常.</p>
+<h3>Parameters</h3>
+<p><a name="timeoutMillis"></a>
+<code>timeoutMillis</code> - 超时. 单位为毫秒. <code>-1</code> 为不限制</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../net.mamoe.mirai.event/sync-from-event.html">syncFromEvent</a></p>
+<p><a href="../net.mamoe.mirai.event/while-select-messages.html">whileSelectMessages</a></p>
+<p><a href="../net.mamoe.mirai.event/select-messages.html">selectMessages</a></p>
+</p>
+</BODY>
+</HTML>

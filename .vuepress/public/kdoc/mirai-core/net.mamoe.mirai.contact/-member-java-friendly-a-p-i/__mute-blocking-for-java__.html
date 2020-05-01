@@ -1,0 +1,32 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>MemberJavaFriendlyAPI.__muteBlockingForJava__ - mirai-core</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">mirai-core</a>&nbsp;/&nbsp;<a href="../index.html">net.mamoe.mirai.contact</a>&nbsp;/&nbsp;<a href="index.html">MemberJavaFriendlyAPI</a>&nbsp;/&nbsp;<a href="./__mute-blocking-for-java__.html">__muteBlockingForJava__</a><br/>
+<br/>
+<h1>__muteBlockingForJava__</h1>
+<a name="net.mamoe.mirai.contact.MemberJavaFriendlyAPI$__muteBlockingForJava__(kotlin.Int)"></a>
+<code><span class="identifier">@JvmName</span><span class="symbol">(</span>"mute"<span class="symbol">)</span> <span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">__muteBlockingForJava__</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.contact.MemberJavaFriendlyAPI$__muteBlockingForJava__(kotlin.Int)/seconds">seconds</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>禁言.</p>
+<p>QQ 中最小操作和显示的时间都是一分钟.
+机器人可以实现精确到秒, 会被客户端显示为 1 分钟但不影响实际禁言时间.</p>
+<p>管理员可禁言成员, 群主可禁言管理员和群员.</p>
+<h3>Parameters</h3>
+<p><a name="seconds"></a>
+<code>seconds</code> - 持续时间. 精确到秒. 范围区间表示为 <code>(0s, 30days]</code>. 超过范围则会抛出异常.</p>
+<h3>Exceptions</h3>
+<p><a name="PermissionDeniedException"></a>
+<code>PermissionDeniedException</code> - 无权限修改时</p>
+<p><strong>Return</strong><br/>
+机器人无权限时返回 <code>false</code></p>
+<p><strong>See Also</strong><br/>
+<p><a href="#">Int.minutesToSeconds</a></p>
+<p><a href="#">Int.hoursToSeconds</a></p>
+<p><a href="#">Int.daysToSeconds</a></p>
+<p><a href="../../net.mamoe.mirai.event.events/-member-mute-event/index.html">MemberMuteEvent</a></p>
+</p>
+</BODY>
+</HTML>

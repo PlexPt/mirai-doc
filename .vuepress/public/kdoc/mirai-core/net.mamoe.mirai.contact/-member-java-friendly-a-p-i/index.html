@@ -1,0 +1,169 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>MemberJavaFriendlyAPI - mirai-core</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">mirai-core</a>&nbsp;/&nbsp;<a href="../index.html">net.mamoe.mirai.contact</a>&nbsp;/&nbsp;<a href="./index.html">MemberJavaFriendlyAPI</a><br/>
+<br/>
+<h1>MemberJavaFriendlyAPI</h1>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">MemberJavaFriendlyAPI</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-q-q/index.html"><span class="identifier">QQ</span></a></code>
+<p><a href="../-member/index.html">Member</a> 中为了让 <code>Java</code> 更容易调用的 API
+不要用它作为一个类型, 只应使用其中的方法</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">MemberJavaFriendlyAPI</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="__kick-async-for-java__.html">__kickAsyncForJava__</a></h4>
+</td>
+<td>
+<p>踢出该成员.</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">__kickAsyncForJava__</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.contact.MemberJavaFriendlyAPI$__kickAsyncForJava__(kotlin.String)/message">message</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;""<span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/util/concurrent/Future.html"><span class="identifier">Future</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">&gt;</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">__kickAsyncForJava__</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/util/concurrent/Future.html"><span class="identifier">Future</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="__kick-blocking-for-java__.html">__kickBlockingForJava__</a></h4>
+</td>
+<td>
+<p>踢出该成员.</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">__kickBlockingForJava__</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.contact.MemberJavaFriendlyAPI$__kickBlockingForJava__(kotlin.String)/message">message</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;""<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">__kickBlockingForJava__</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="__mute-async-for-java__.html">__muteAsyncForJava__</a></h4>
+</td>
+<td>
+<p>禁言.</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">__muteAsyncForJava__</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.contact.MemberJavaFriendlyAPI$__muteAsyncForJava__(kotlin.Int)/seconds">seconds</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/util/concurrent/Future.html"><span class="identifier">Future</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="__mute-blocking-for-java__.html">__muteBlockingForJava__</a></h4>
+</td>
+<td>
+<p>禁言.</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">__muteBlockingForJava__</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.contact.MemberJavaFriendlyAPI$__muteBlockingForJava__(kotlin.Int)/seconds">seconds</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="__unmute-async-for-java__.html">__unmuteAsyncForJava__</a></h4>
+</td>
+<td>
+<p>解除禁言.</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">__unmuteAsyncForJava__</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/util/concurrent/Future.html"><span class="identifier">Future</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="__unmute-blocking-for-java__.html">__unmuteBlockingForJava__</a></h4>
+</td>
+<td>
+<p>解除禁言.</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">__unmuteBlockingForJava__</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Extension Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="../name-card-or-nick.html">nameCardOrNick</a></h4>
+</td>
+<td>
+<p>获取非空群名片或昵称.</p>
+<code><span class="keyword">val </span><a href="../-user/index.html"><span class="identifier">User</span></a><span class="symbol">.</span><span class="identifier">nameCardOrNick</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Extension Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="../recall.html">recall</a></h4>
+</td>
+<td>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><a href="../-contact/index.html"><span class="identifier">Contact</span></a><span class="symbol">.</span><span class="identifier">recall</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.contact$recall(net.mamoe.mirai.contact.Contact, net.mamoe.mirai.message.data.MessageChain)/source">source</span><span class="symbol">:</span>&nbsp;<a href="../../net.mamoe.mirai.message.data/-message-chain/index.html"><span class="identifier">MessageChain</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><a href="../-contact/index.html"><span class="identifier">Contact</span></a><span class="symbol">.</span><span class="identifier">recall</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.contact$recall(net.mamoe.mirai.contact.Contact, net.mamoe.mirai.message.data.MessageSource)/source">source</span><span class="symbol">:</span>&nbsp;<a href="../../net.mamoe.mirai.message.data/-message-source/index.html"><span class="identifier">MessageSource</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../recall-in.html">recallIn</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><a href="../-contact/index.html"><span class="identifier">Contact</span></a><span class="symbol">.</span><span class="identifier">recallIn</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.contact$recallIn(net.mamoe.mirai.contact.Contact, net.mamoe.mirai.message.data.MessageChain, kotlin.Long, kotlin.coroutines.CoroutineContext)/message">message</span><span class="symbol">:</span>&nbsp;<a href="../../net.mamoe.mirai.message.data/-message-chain/index.html"><span class="identifier">MessageChain</span></a><span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.contact$recallIn(net.mamoe.mirai.contact.Contact, net.mamoe.mirai.message.data.MessageChain, kotlin.Long, kotlin.coroutines.CoroutineContext)/millis">millis</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.contact$recallIn(net.mamoe.mirai.contact.Contact, net.mamoe.mirai.message.data.MessageChain, kotlin.Long, kotlin.coroutines.CoroutineContext)/coroutineContext">coroutineContext</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html"><span class="identifier">CoroutineContext</span></a>&nbsp;<span class="symbol">=</span>&nbsp;EmptyCoroutineContext<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Job</span></code><br/>
+<code><span class="keyword">fun </span><a href="../-contact/index.html"><span class="identifier">Contact</span></a><span class="symbol">.</span><span class="identifier">recallIn</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.contact$recallIn(net.mamoe.mirai.contact.Contact, net.mamoe.mirai.message.data.MessageSource, kotlin.Long, kotlin.coroutines.CoroutineContext)/source">source</span><span class="symbol">:</span>&nbsp;<a href="../../net.mamoe.mirai.message.data/-message-source/index.html"><span class="identifier">MessageSource</span></a><span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.contact$recallIn(net.mamoe.mirai.contact.Contact, net.mamoe.mirai.message.data.MessageSource, kotlin.Long, kotlin.coroutines.CoroutineContext)/millis">millis</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.contact$recallIn(net.mamoe.mirai.contact.Contact, net.mamoe.mirai.message.data.MessageSource, kotlin.Long, kotlin.coroutines.CoroutineContext)/coroutineContext">coroutineContext</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html"><span class="identifier">CoroutineContext</span></a>&nbsp;<span class="symbol">=</span>&nbsp;EmptyCoroutineContext<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Job</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../net.mamoe.mirai.message/send-image.html">sendImage</a></h4>
+</td>
+<td>
+<p>在 <a href="#">Dispatchers.IO</a> 中将图片发送到指定联系人. 不会保存临时文件</p>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">C</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-contact/index.html"><span class="identifier">Contact</span></a><span class="symbol">&gt;</span> <span class="identifier">C</span><span class="symbol">.</span><span class="identifier">sendImage</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message$sendImage(net.mamoe.mirai.message.sendImage.C, java.awt.image.BufferedImage)/bufferedImage">bufferedImage</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/awt/image/BufferedImage.html"><span class="identifier">BufferedImage</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../net.mamoe.mirai.message/-message-receipt/index.html"><span class="identifier">MessageReceipt</span></a><span class="symbol">&lt;</span><span class="identifier">C</span><span class="symbol">&gt;</span></code>
+<p>在 <a href="#">Dispatchers.IO</a> 中下载 <a href="https://docs.oracle.com/javase/6/docs/api/java/net/URL.html">URL</a> 到临时文件并将其作为图片发送到指定联系人</p>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">C</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-contact/index.html"><span class="identifier">Contact</span></a><span class="symbol">&gt;</span> <span class="identifier">C</span><span class="symbol">.</span><span class="identifier">sendImage</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message$sendImage(net.mamoe.mirai.message.sendImage.C, java.net.URL)/imageUrl">imageUrl</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/net/URL.html"><span class="identifier">URL</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../net.mamoe.mirai.message/-message-receipt/index.html"><span class="identifier">MessageReceipt</span></a><span class="symbol">&lt;</span><span class="identifier">C</span><span class="symbol">&gt;</span></code>
+<p>在 <a href="#">Dispatchers.IO</a> 中读取 <a href="#">Input</a> 到临时文件并将其作为图片发送到指定联系人</p>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">C</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-contact/index.html"><span class="identifier">Contact</span></a><span class="symbol">&gt;</span> <span class="identifier">C</span><span class="symbol">.</span><span class="identifier">sendImage</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message$sendImage(net.mamoe.mirai.message.sendImage.C, kotlinx.io.core.Input)/imageInput">imageInput</span><span class="symbol">:</span>&nbsp;<span class="identifier">Input</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../net.mamoe.mirai.message/-message-receipt/index.html"><span class="identifier">MessageReceipt</span></a><span class="symbol">&lt;</span><span class="identifier">C</span><span class="symbol">&gt;</span></code>
+<p>在 <a href="#">Dispatchers.IO</a> 中读取 <a href="https://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html">InputStream</a> 到临时文件并将其作为图片发送到指定联系人</p>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">C</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-contact/index.html"><span class="identifier">Contact</span></a><span class="symbol">&gt;</span> <span class="identifier">C</span><span class="symbol">.</span><span class="identifier">sendImage</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message$sendImage(net.mamoe.mirai.message.sendImage.C, java.io.InputStream)/imageStream">imageStream</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html"><span class="identifier">InputStream</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../net.mamoe.mirai.message/-message-receipt/index.html"><span class="identifier">MessageReceipt</span></a><span class="symbol">&lt;</span><span class="identifier">C</span><span class="symbol">&gt;</span></code>
+<p>在 <a href="#">Dispatchers.IO</a> 中将文件作为图片发送到指定联系人</p>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">C</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-contact/index.html"><span class="identifier">Contact</span></a><span class="symbol">&gt;</span> <span class="identifier">C</span><span class="symbol">.</span><span class="identifier">sendImage</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message$sendImage(net.mamoe.mirai.message.sendImage.C, java.io.File)/file">file</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../net.mamoe.mirai.message/-message-receipt/index.html"><span class="identifier">MessageReceipt</span></a><span class="symbol">&lt;</span><span class="identifier">C</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../net.mamoe.mirai.utils/send-image.html">sendImage</a></h4>
+</td>
+<td>
+<p>将图片作为单独的消息发送给 <a href="../../net.mamoe.mirai.utils/send-image/-this-.html">this</a></p>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">C</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-contact/index.html"><span class="identifier">Contact</span></a><span class="symbol">&gt;</span> <span class="identifier">C</span><span class="symbol">.</span><span class="identifier">sendImage</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.utils$sendImage(net.mamoe.mirai.utils.sendImage.C, net.mamoe.mirai.utils.ExternalImage)/image">image</span><span class="symbol">:</span>&nbsp;<a href="../../net.mamoe.mirai.utils/-external-image/index.html"><span class="identifier">ExternalImage</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../net.mamoe.mirai.message/-message-receipt/index.html"><span class="identifier">MessageReceipt</span></a><span class="symbol">&lt;</span><span class="identifier">C</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../net.mamoe.mirai.message/upload-image.html">uploadImage</a></h4>
+</td>
+<td>
+<p>在 <a href="#">Dispatchers.IO</a> 中将图片上传, 但不发送. 不会保存临时文件</p>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><a href="../-contact/index.html"><span class="identifier">Contact</span></a><span class="symbol">.</span><span class="identifier">uploadImage</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message$uploadImage(net.mamoe.mirai.contact.Contact, java.awt.image.BufferedImage)/bufferedImage">bufferedImage</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/awt/image/BufferedImage.html"><span class="identifier">BufferedImage</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../net.mamoe.mirai.message.data/-offline-image/index.html"><span class="identifier">OfflineImage</span></a></code>
+<p>在 <a href="#">Dispatchers.IO</a> 中下载 <a href="https://docs.oracle.com/javase/6/docs/api/java/net/URL.html">URL</a> 到临时文件并将其作为图片上传, 但不发送</p>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><a href="../-contact/index.html"><span class="identifier">Contact</span></a><span class="symbol">.</span><span class="identifier">uploadImage</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message$uploadImage(net.mamoe.mirai.contact.Contact, java.net.URL)/imageUrl">imageUrl</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/net/URL.html"><span class="identifier">URL</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../net.mamoe.mirai.message.data/-offline-image/index.html"><span class="identifier">OfflineImage</span></a></code>
+<p>在 <a href="#">Dispatchers.IO</a> 中读取 <a href="#">Input</a> 到临时文件并将其作为图片上传, 但不发送</p>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><a href="../-contact/index.html"><span class="identifier">Contact</span></a><span class="symbol">.</span><span class="identifier">uploadImage</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message$uploadImage(net.mamoe.mirai.contact.Contact, kotlinx.io.core.Input)/imageInput">imageInput</span><span class="symbol">:</span>&nbsp;<span class="identifier">Input</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../net.mamoe.mirai.message.data/-offline-image/index.html"><span class="identifier">OfflineImage</span></a></code>
+<p>在 <a href="#">Dispatchers.IO</a> 中读取 <a href="https://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html">InputStream</a> 到临时文件并将其作为图片上传, 但不发送</p>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><a href="../-contact/index.html"><span class="identifier">Contact</span></a><span class="symbol">.</span><span class="identifier">uploadImage</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message$uploadImage(net.mamoe.mirai.contact.Contact, java.io.InputStream)/imageStream">imageStream</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html"><span class="identifier">InputStream</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../net.mamoe.mirai.message.data/-offline-image/index.html"><span class="identifier">OfflineImage</span></a></code>
+<p>在 <a href="#">Dispatchers.IO</a> 中将文件作为图片上传, 但不发送</p>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><a href="../-contact/index.html"><span class="identifier">Contact</span></a><span class="symbol">.</span><span class="identifier">uploadImage</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message$uploadImage(net.mamoe.mirai.contact.Contact, java.io.File)/file">file</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../net.mamoe.mirai.message.data/-offline-image/index.html"><span class="identifier">OfflineImage</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="../-member/index.html">Member</a></h4>
+</td>
+<td>
+<p>群成员.</p>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">Member</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">MemberJavaFriendlyAPI</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

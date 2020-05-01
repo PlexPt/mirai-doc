@@ -1,0 +1,54 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ContactJavaFriendlyAPI.__uploadImageBlockingForJava__ - mirai-core</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">mirai-core</a>&nbsp;/&nbsp;<a href="../index.html">net.mamoe.mirai.contact</a>&nbsp;/&nbsp;<a href="index.html">ContactJavaFriendlyAPI</a>&nbsp;/&nbsp;<a href="./__upload-image-blocking-for-java__.html">__uploadImageBlockingForJava__</a><br/>
+<br/>
+<h1>__uploadImageBlockingForJava__</h1>
+<a name="net.mamoe.mirai.contact.ContactJavaFriendlyAPI$__uploadImageBlockingForJava__(net.mamoe.mirai.utils.ExternalImage)"></a>
+<code><span class="identifier">@JvmName</span><span class="symbol">(</span>"uploadImage"<span class="symbol">)</span> <span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">__uploadImageBlockingForJava__</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.contact.ContactJavaFriendlyAPI$__uploadImageBlockingForJava__(net.mamoe.mirai.utils.ExternalImage)/image">image</span><span class="symbol">:</span>&nbsp;<a href="../../net.mamoe.mirai.utils/-external-image/index.html"><span class="identifier">ExternalImage</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../net.mamoe.mirai.message.data/-image/index.html"><span class="identifier">Image</span></a></code>
+<p>上传一个图片以备发送.</p>
+<h3>Exceptions</h3>
+<p><a name="EventCancelledException"></a>
+<code>EventCancelledException</code> - 当发送消息事件被取消</p>
+<p><a name="OverFileSizeMaxException"></a>
+<code>OverFileSizeMaxException</code> - 当图片文件过大而被服务器拒绝上传时. (最大大小约为 20 MB)</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../../net.mamoe.mirai.event.events/-before-image-upload-event/index.html">BeforeImageUploadEvent</a></p>
+<p><a href="../../net.mamoe.mirai.event.events/-image-upload-event/index.html">ImageUploadEvent</a></p>
+</p>
+<a name="net.mamoe.mirai.contact.ContactJavaFriendlyAPI$__uploadImageBlockingForJava__(java.net.URL)"></a>
+<code><span class="identifier">@JvmName</span><span class="symbol">(</span>"uploadImage"<span class="symbol">)</span> <span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">__uploadImageBlockingForJava__</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.contact.ContactJavaFriendlyAPI$__uploadImageBlockingForJava__(java.net.URL)/image">image</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/net/URL.html"><span class="identifier">URL</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../net.mamoe.mirai.message.data/-image/index.html"><span class="identifier">Image</span></a></code>
+<p>在 <a href="#">Dispatchers.IO</a> 中下载 <a href="https://docs.oracle.com/javase/6/docs/api/java/net/URL.html">URL</a> 到临时文件并将其作为图片上传, 但不发送</p>
+<h3>Exceptions</h3>
+<p><a name="OverFileSizeMaxException"></a>
+<code>OverFileSizeMaxException</code> - </p>
+<a name="net.mamoe.mirai.contact.ContactJavaFriendlyAPI$__uploadImageBlockingForJava__(java.io.InputStream)"></a>
+<code><span class="identifier">@JvmName</span><span class="symbol">(</span>"uploadImage"<span class="symbol">)</span> <span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">__uploadImageBlockingForJava__</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.contact.ContactJavaFriendlyAPI$__uploadImageBlockingForJava__(java.io.InputStream)/image">image</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html"><span class="identifier">InputStream</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../net.mamoe.mirai.message.data/-image/index.html"><span class="identifier">Image</span></a></code>
+<p>在 <a href="#">Dispatchers.IO</a> 中读取 <a href="https://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html">InputStream</a> 到临时文件并将其作为图片上传, 但不发送</p>
+<h3>Exceptions</h3>
+<p><a name="OverFileSizeMaxException"></a>
+<code>OverFileSizeMaxException</code> - </p>
+<a name="net.mamoe.mirai.contact.ContactJavaFriendlyAPI$__uploadImageBlockingForJava__(kotlinx.io.core.Input)"></a>
+<code><span class="identifier">@JvmName</span><span class="symbol">(</span>"uploadImage"<span class="symbol">)</span> <span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">__uploadImageBlockingForJava__</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.contact.ContactJavaFriendlyAPI$__uploadImageBlockingForJava__(kotlinx.io.core.Input)/image">image</span><span class="symbol">:</span>&nbsp;<span class="identifier">Input</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../net.mamoe.mirai.message.data/-image/index.html"><span class="identifier">Image</span></a></code>
+<p>在 <a href="#">Dispatchers.IO</a> 中读取 <a href="#">Input</a> 到临时文件并将其作为图片上传, 但不发送</p>
+<h3>Exceptions</h3>
+<p><a name="OverFileSizeMaxException"></a>
+<code>OverFileSizeMaxException</code> - </p>
+<a name="net.mamoe.mirai.contact.ContactJavaFriendlyAPI$__uploadImageBlockingForJava__(java.io.File)"></a>
+<code><span class="identifier">@JvmName</span><span class="symbol">(</span>"uploadImage"<span class="symbol">)</span> <span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">__uploadImageBlockingForJava__</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.contact.ContactJavaFriendlyAPI$__uploadImageBlockingForJava__(java.io.File)/image">image</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../net.mamoe.mirai.message.data/-image/index.html"><span class="identifier">Image</span></a></code>
+<p>在 <a href="#">Dispatchers.IO</a> 中将文件作为图片上传, 但不发送</p>
+<h3>Exceptions</h3>
+<p><a name="OverFileSizeMaxException"></a>
+<code>OverFileSizeMaxException</code> - </p>
+<a name="net.mamoe.mirai.contact.ContactJavaFriendlyAPI$__uploadImageBlockingForJava__(java.awt.image.BufferedImage)"></a>
+<code><span class="identifier">@JvmName</span><span class="symbol">(</span>"uploadImage"<span class="symbol">)</span> <span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">__uploadImageBlockingForJava__</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.contact.ContactJavaFriendlyAPI$__uploadImageBlockingForJava__(java.awt.image.BufferedImage)/image">image</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/awt/image/BufferedImage.html"><span class="identifier">BufferedImage</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../net.mamoe.mirai.message.data/-image/index.html"><span class="identifier">Image</span></a></code>
+<p>在 <a href="#">Dispatchers.IO</a> 中将图片上传, 但不发送. 不会保存临时文件</p>
+<h3>Exceptions</h3>
+<p><a name="OverFileSizeMaxException"></a>
+<code>OverFileSizeMaxException</code> - </p>
+</BODY>
+</HTML>

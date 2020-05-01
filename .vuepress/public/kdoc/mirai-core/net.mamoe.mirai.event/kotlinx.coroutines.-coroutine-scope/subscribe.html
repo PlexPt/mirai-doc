@@ -1,0 +1,64 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>subscribe - mirai-core</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">mirai-core</a>&nbsp;/&nbsp;<a href="../index.html">net.mamoe.mirai.event</a>&nbsp;/&nbsp;<a href="index.html">kotlinx.coroutines.CoroutineScope</a>&nbsp;/&nbsp;<a href="./subscribe.html">subscribe</a><br/>
+<br/>
+<h1>subscribe</h1>
+<a name="net.mamoe.mirai.event$subscribe(kotlinx.coroutines.CoroutineScope, kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.event.subscribe.E, , net.mamoe.mirai.event.ListeningStatus)))"></a>
+<code><span class="keyword">inline</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="keyword">reified</span>&nbsp;<span class="identifier">E</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-event.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span> <span class="identifier">CoroutineScope</span><span class="symbol">.</span><span class="identifier">subscribe</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.event$subscribe(kotlinx.coroutines.CoroutineScope, kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.event.subscribe.E, , net.mamoe.mirai.event.ListeningStatus)))/coroutineContext">coroutineContext</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html"><span class="identifier">CoroutineContext</span></a>&nbsp;<span class="symbol">=</span>&nbsp;EmptyCoroutineContext<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.event$subscribe(kotlinx.coroutines.CoroutineScope, kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.event.subscribe.E, , net.mamoe.mirai.event.ListeningStatus)))/concurrency">concurrency</span><span class="symbol">:</span>&nbsp;<span class="identifier">ConcurrencyKind</span>&nbsp;<span class="symbol">=</span>&nbsp;Listener.ConcurrencyKind.LOCKED<span class="symbol">, </span><span class="keyword">noinline</span> <span class="identifier" id="net.mamoe.mirai.event$subscribe(kotlinx.coroutines.CoroutineScope, kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.event.subscribe.E, , net.mamoe.mirai.event.ListeningStatus)))/handler">handler</span><span class="symbol">:</span>&nbsp;<span class="keyword">suspend </span><span class="identifier">E</span><span class="symbol">.</span><span class="symbol">(</span><span class="identifier">E</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="../-listening-status/index.html"><span class="identifier">ListeningStatus</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-listener/index.html"><span class="identifier">Listener</span></a><span class="symbol">&lt;</span><span class="identifier">E</span><span class="symbol">&gt;</span></code>
+<p>在指定的 <a href="#">CoroutineScope</a> 下订阅所有 <a href="subscribe.html#E">E</a> 及其子类事件.
+每当 <a href="../broadcast.html">事件广播</a> 时, <a href="subscribe.html#net.mamoe.mirai.event$subscribe(kotlinx.coroutines.CoroutineScope, kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.event.subscribe.E, , net.mamoe.mirai.event.ListeningStatus)))/handler">handler</a> 都会被执行.</p>
+<p>当 <a href="subscribe.html#net.mamoe.mirai.event$subscribe(kotlinx.coroutines.CoroutineScope, kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.event.subscribe.E, , net.mamoe.mirai.event.ListeningStatus)))/handler">handler</a> 返回 <a href="../-listening-status/-s-t-o-p-p-e-d.html">ListeningStatus.STOPPED</a> 时停止监听.
+或 <a href="#">Listener.complete</a> 后结束.</p>
+<p>这个函数返回 <a href="../-listener/index.html">Listener</a>, 它是一个 <a href="#">CompletableJob</a>. 请注意它除非被 <a href="#">Listener.complete</a> 或 <a href="#">Listener.cancel</a>, 则不会完成.
+例:</p>
+<pre><code class="lang-kotlin">runBlocking { // this: CoroutineScope
+  subscribe&lt;Event&gt; { /* 一些处理 */} // 返回 Listener, 即 CompletableJob
+}
+foo()
+</code></pre>
+<p><code>runBlocking</code> 不会结束, 也就是下一行 <code>foo()</code> 不会被执行. 直到监听时创建的 <code>Listener</code> 被停止.</p>
+<p>要创建一个仅在某个机器人在线时的监听, 请在 <a href="../../net.mamoe.mirai/-bot/index.html">Bot</a> 下调用本函数 (因为 <a href="../../net.mamoe.mirai/-bot/index.html">Bot</a> 也实现 <a href="#">CoroutineScope</a>).
+这种方式创建的监听会自动筛选 <a href="../../net.mamoe.mirai/-bot/index.html">Bot</a>.</p>
+<pre><code class="lang-kotlin">bot1.subscribe&lt;BotEvent&gt; { /* 只会处理来自 bot1 的事件 */}
+</code></pre>
+<p>要创建一个全局都存在的监听（不推荐）, 即守护协程, 请在 <a href="#">GlobalScope</a> 下调用本函数:</p>
+<pre><code class="lang-kotlin">GlobalScope.subscribe&lt;Event&gt; { /* 会收到来自全部 Bot 的事件和与 Bot 不相关的事件 */}
+</code></pre>
+<p>事件处理时的 <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html">CoroutineContext</a> 为调用本函数时的 <a href="subscribe/-this-.html">receiver</a> 的 <a href="#">CoroutineScope.coroutineContext</a>.
+因此:</p>
+<ul><li>事件处理时抛出的异常将会在 <a href="subscribe/-this-.html">this</a> 的 <a href="#">CoroutineExceptionHandler</a> 中处理
+若 <a href="subscribe/-this-.html">this</a> 没有 <a href="#">CoroutineExceptionHandler</a>, 则在事件广播方的 <a href="#">CoroutineExceptionHandler</a> 处理
+若均找不到, 则会触发 logger warning.</li>
+<li>事件处理时抛出异常不会停止监听器.</li>
+<li>建议在事件处理中 (即 <a href="subscribe.html#net.mamoe.mirai.event$subscribe(kotlinx.coroutines.CoroutineScope, kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.event.subscribe.E, , net.mamoe.mirai.event.ListeningStatus)))/handler">handler</a> 里) 处理异常,
+或在 <a href="subscribe/-this-.html">this</a> 的 <a href="#">CoroutineScope.coroutineContext</a> 中添加 <a href="#">CoroutineExceptionHandler</a>.</li>
+</ul>
+<p><strong>注意:</strong> 事件处理是 <code>suspend</code> 的, 请规范处理 JVM 阻塞方法.</p>
+<h3>Parameters</h3>
+<p><a name="coroutineContext"></a>
+<code>coroutineContext</code> - 给事件监听协程的额外的 <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html">CoroutineContext</a>.</p>
+<p><a name="concurrency"></a>
+<code>concurrency</code> - 并发类型. 查看 <a href="../-listener/-concurrency-kind/index.html">Listener.ConcurrencyKind</a></p>
+<p><strong>See Also</strong><br/>
+<p><a href="../sync-from-event.html">syncFromEvent</a></p>
+<p><a href="async-from-event.html">asyncFromEvent</a></p>
+<p><a href="../select-messages.html">selectMessages</a></p>
+<p><a href="../while-select-messages.html">whileSelectMessages</a></p>
+<p><a href="subscribe-always.html">subscribeAlways</a></p>
+<p><a href="subscribe-once.html">subscribeOnce</a></p>
+<p><a href="subscribe-messages.html">subscribeMessages</a></p>
+<p><a href="subscribe-group-messages.html">subscribeGroupMessages</a></p>
+<p><a href="subscribe-friend-messages.html">subscribeFriendMessages</a></p>
+</p>
+<a name="net.mamoe.mirai.event$subscribe(kotlinx.coroutines.CoroutineScope, kotlin.reflect.KClass((net.mamoe.mirai.event.subscribe.E)), kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.event.subscribe.E, , net.mamoe.mirai.event.ListeningStatus)))"></a>
+<code><span class="identifier">@SinceMirai</span><span class="symbol">(</span>"0.38.0"<span class="symbol">)</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">E</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-event.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span> <span class="identifier">CoroutineScope</span><span class="symbol">.</span><span class="identifier">subscribe</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.event$subscribe(kotlinx.coroutines.CoroutineScope, kotlin.reflect.KClass((net.mamoe.mirai.event.subscribe.E)), kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.event.subscribe.E, , net.mamoe.mirai.event.ListeningStatus)))/eventClass">eventClass</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-class/index.html"><span class="identifier">KClass</span></a><span class="symbol">&lt;</span><span class="identifier">E</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.event$subscribe(kotlinx.coroutines.CoroutineScope, kotlin.reflect.KClass((net.mamoe.mirai.event.subscribe.E)), kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.event.subscribe.E, , net.mamoe.mirai.event.ListeningStatus)))/coroutineContext">coroutineContext</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html"><span class="identifier">CoroutineContext</span></a>&nbsp;<span class="symbol">=</span>&nbsp;EmptyCoroutineContext<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.event$subscribe(kotlinx.coroutines.CoroutineScope, kotlin.reflect.KClass((net.mamoe.mirai.event.subscribe.E)), kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.event.subscribe.E, , net.mamoe.mirai.event.ListeningStatus)))/concurrency">concurrency</span><span class="symbol">:</span>&nbsp;<span class="identifier">ConcurrencyKind</span>&nbsp;<span class="symbol">=</span>&nbsp;Listener.ConcurrencyKind.LOCKED<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.event$subscribe(kotlinx.coroutines.CoroutineScope, kotlin.reflect.KClass((net.mamoe.mirai.event.subscribe.E)), kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.event.subscribe.E, , net.mamoe.mirai.event.ListeningStatus)))/handler">handler</span><span class="symbol">:</span>&nbsp;<span class="keyword">suspend </span><span class="identifier">E</span><span class="symbol">.</span><span class="symbol">(</span><span class="identifier">E</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="../-listening-status/index.html"><span class="identifier">ListeningStatus</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-listener/index.html"><span class="identifier">Listener</span></a><span class="symbol">&lt;</span><span class="identifier">E</span><span class="symbol">&gt;</span></code>
+<p><strong>See Also</strong><br/>
+<p><a href="./subscribe.html">CoroutineScope.subscribe</a></p>
+</p>
+</BODY>
+</HTML>

@@ -1,0 +1,68 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>BroadcastControllable - mirai-core</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">mirai-core</a>&nbsp;/&nbsp;<a href="../index.html">net.mamoe.mirai.event</a>&nbsp;/&nbsp;<a href="./index.html">BroadcastControllable</a><br/>
+<br/>
+<h1>BroadcastControllable</h1>
+<code><span class="keyword">interface </span><span class="identifier">BroadcastControllable</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-event.html"><span class="identifier">Event</span></a></code>
+<p>可控制是否需要广播这个事件包</p>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="should-broadcast.html">shouldBroadcast</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">shouldBroadcast</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Extension Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="../broadcast.html">broadcast</a></h4>
+</td>
+<td>
+<p>广播一个事件的唯一途径.</p>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">E</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-event.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span> <span class="identifier">E</span><span class="symbol">.</span><span class="identifier">broadcast</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">E</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="../../net.mamoe.mirai.message/-friend-message/index.html">FriendMessage</a></h4>
+</td>
+<td>
+<p>好友消息</p>
+<code><span class="keyword">class </span><span class="identifier">FriendMessage</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../net.mamoe.mirai.message/-contact-message/index.html"><span class="identifier">ContactMessage</span></a><span class="symbol">, </span><a href="./index.html"><span class="identifier">BroadcastControllable</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../net.mamoe.mirai.event.events/-group-setting-change-event/index.html">GroupSettingChangeEvent</a></h4>
+</td>
+<td>
+<p>群设置改变. 此事件广播前修改就已经完成.</p>
+<code><span class="keyword">interface </span><span class="identifier">GroupSettingChangeEvent</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../net.mamoe.mirai.event.events/-group-event/index.html"><span class="identifier">GroupEvent</span></a><span class="symbol">, </span><a href="../../net.mamoe.mirai.event.events/-bot-passive-event.html"><span class="identifier">BotPassiveEvent</span></a><span class="symbol">, </span><a href="./index.html"><span class="identifier">BroadcastControllable</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../net.mamoe.mirai.message/-temp-message/index.html">TempMessage</a></h4>
+</td>
+<td>
+<p>临时会话消息</p>
+<code><span class="keyword">class </span><span class="identifier">TempMessage</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../net.mamoe.mirai.message/-contact-message/index.html"><span class="identifier">ContactMessage</span></a><span class="symbol">, </span><a href="./index.html"><span class="identifier">BroadcastControllable</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

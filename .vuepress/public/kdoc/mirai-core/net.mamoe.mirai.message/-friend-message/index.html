@@ -1,0 +1,218 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>FriendMessage - mirai-core</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">mirai-core</a>&nbsp;/&nbsp;<a href="../index.html">net.mamoe.mirai.message</a>&nbsp;/&nbsp;<a href="./index.html">FriendMessage</a><br/>
+<br/>
+<h1>FriendMessage</h1>
+<code><span class="keyword">class </span><span class="identifier">FriendMessage</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-contact-message/index.html"><span class="identifier">ContactMessage</span></a><span class="symbol">, </span><a href="../../net.mamoe.mirai.event/-broadcast-controllable/index.html"><span class="identifier">BroadcastControllable</span></a></code>
+<p>好友消息</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">FriendMessage</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message.FriendMessage$<init>(net.mamoe.mirai.contact.QQ, net.mamoe.mirai.message.data.MessageChain)/sender">sender</span><span class="symbol">:</span>&nbsp;<a href="../../net.mamoe.mirai.contact/-q-q/index.html"><span class="identifier">QQ</span></a><span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.message.FriendMessage$<init>(net.mamoe.mirai.contact.QQ, net.mamoe.mirai.message.data.MessageChain)/message">message</span><span class="symbol">:</span>&nbsp;<a href="../../net.mamoe.mirai.message.data/-message-chain/index.html"><span class="identifier">MessageChain</span></a><span class="symbol">)</span></code><br/>
+<code><span class="identifier">FriendMessage</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message.FriendMessage$<init>(net.mamoe.mirai.contact.Friend, net.mamoe.mirai.message.data.MessageChain)/sender">sender</span><span class="symbol">:</span>&nbsp;<a href="../../net.mamoe.mirai.contact/-friend/index.html"><span class="identifier">Friend</span></a><span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.message.FriendMessage$<init>(net.mamoe.mirai.contact.Friend, net.mamoe.mirai.message.data.MessageChain)/message">message</span><span class="symbol">:</span>&nbsp;<a href="../../net.mamoe.mirai.message.data/-message-chain/index.html"><span class="identifier">MessageChain</span></a><span class="symbol">)</span></code>
+<p>好友消息</p>
+<code><span class="identifier">FriendMessage</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message.FriendMessage$<init>(net.mamoe.mirai.contact.Friend, net.mamoe.mirai.message.data.MessageChain, kotlin.Int)/sender">sender</span><span class="symbol">:</span>&nbsp;<a href="../../net.mamoe.mirai.contact/-friend/index.html"><span class="identifier">Friend</span></a><span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.message.FriendMessage$<init>(net.mamoe.mirai.contact.Friend, net.mamoe.mirai.message.data.MessageChain, kotlin.Int)/message">message</span><span class="symbol">:</span>&nbsp;<a href="../../net.mamoe.mirai.message.data/-message-chain/index.html"><span class="identifier">MessageChain</span></a><span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.message.FriendMessage$<init>(net.mamoe.mirai.contact.Friend, net.mamoe.mirai.message.data.MessageChain, kotlin.Int)/time">time</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="bot.html">bot</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">bot</span><span class="symbol">: </span><a href="../../net.mamoe.mirai/-bot/index.html"><span class="identifier">Bot</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="message.html">message</a></h4>
+</td>
+<td>
+<p>消息内容</p>
+<code><span class="keyword">val </span><span class="identifier">message</span><span class="symbol">: </span><a href="../../net.mamoe.mirai.message.data/-message-chain/index.html"><span class="identifier">MessageChain</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="sender.html">sender</a></h4>
+</td>
+<td>
+<p>发送人.</p>
+<code><span class="keyword">val </span><span class="identifier">sender</span><span class="symbol">: </span><a href="../../net.mamoe.mirai.contact/-friend/index.html"><span class="identifier">Friend</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="sender-name.html">senderName</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">senderName</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="source.html">source</a></h4>
+</td>
+<td>
+<p>消息源</p>
+<code><span class="keyword">val </span><span class="identifier">source</span><span class="symbol">: </span><span class="identifier">FromFriend</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="subject.html">subject</a></h4>
+</td>
+<td>
+<p>消息事件主体.</p>
+<code><span class="keyword">val </span><span class="identifier">subject</span><span class="symbol">: </span><a href="../../net.mamoe.mirai.contact/-friend/index.html"><span class="identifier">Friend</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="time.html">time</a></h4>
+</td>
+<td>
+<p>消息发送时间 (由服务器提供)</p>
+<code><span class="keyword">val </span><span class="identifier">time</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="to-string.html">toString</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">toString</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Extension Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="../../net.mamoe.mirai.event/broadcast.html">broadcast</a></h4>
+</td>
+<td>
+<p>广播一个事件的唯一途径.</p>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">E</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../net.mamoe.mirai.event/-event.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span> <span class="identifier">E</span><span class="symbol">.</span><span class="identifier">broadcast</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">E</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../net.mamoe.mirai.message.data/build-forward-message.html">buildForwardMessage</a></h4>
+</td>
+<td>
+<p>使用 DSL 构建一个 <a href="../../net.mamoe.mirai.message.data/-forward-message/index.html">ForwardMessage</a>.</p>
+<code><span class="keyword">fun </span><a href="../-contact-message/index.html"><span class="identifier">ContactMessage</span></a><span class="symbol">.</span><span class="identifier">buildForwardMessage</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message.data$buildForwardMessage(net.mamoe.mirai.message.ContactMessage, net.mamoe.mirai.contact.Contact, net.mamoe.mirai.message.data.ForwardMessage.DisplayStrategy, kotlin.Function1((net.mamoe.mirai.message.data.ForwardMessageBuilder, kotlin.Unit)))/context">context</span><span class="symbol">:</span>&nbsp;<a href="../../net.mamoe.mirai.contact/-contact/index.html"><span class="identifier">Contact</span></a>&nbsp;<span class="symbol">=</span>&nbsp;this.subject<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.message.data$buildForwardMessage(net.mamoe.mirai.message.ContactMessage, net.mamoe.mirai.contact.Contact, net.mamoe.mirai.message.data.ForwardMessage.DisplayStrategy, kotlin.Function1((net.mamoe.mirai.message.data.ForwardMessageBuilder, kotlin.Unit)))/displayStrategy">displayStrategy</span><span class="symbol">:</span>&nbsp;<span class="identifier">DisplayStrategy</span>&nbsp;<span class="symbol">=</span>&nbsp;DisplayStrategy<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.message.data$buildForwardMessage(net.mamoe.mirai.message.ContactMessage, net.mamoe.mirai.contact.Contact, net.mamoe.mirai.message.data.ForwardMessage.DisplayStrategy, kotlin.Function1((net.mamoe.mirai.message.data.ForwardMessageBuilder, kotlin.Unit)))/block">block</span><span class="symbol">:</span>&nbsp;<a href="../../net.mamoe.mirai.message.data/-forward-message-builder/index.html"><span class="identifier">ForwardMessageBuilder</span></a><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../net.mamoe.mirai.message.data/-forward-message/index.html"><span class="identifier">ForwardMessage</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../is-context-identical-with.html">isContextIdenticalWith</a></h4>
+</td>
+<td>
+<p>判断两个 <a href="../-message-packet/index.html">MessagePacket</a> 的 <a href="../-message-packet-base/sender.html">MessagePacket.sender</a> 和 <a href="../-message-packet-base/subject.html">MessagePacket.subject</a> 是否相同</p>
+<code><span class="keyword">fun </span><a href="../-contact-message/index.html"><span class="identifier">ContactMessage</span></a><span class="symbol">.</span><span class="identifier">isContextIdenticalWith</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message$isContextIdenticalWith(net.mamoe.mirai.message.ContactMessage, net.mamoe.mirai.message.ContactMessage)/another">another</span><span class="symbol">:</span>&nbsp;<a href="../-contact-message/index.html"><span class="identifier">ContactMessage</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code><code><span class="keyword">fun </span><a href="../-message-packet/index.html"><span class="identifier">MessagePacket</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">,</span>&nbsp;<span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">.</span><s><span class="identifier">isContextIdenticalWith</span></s><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message$isContextIdenticalWith(net.mamoe.mirai.message.MessagePacket((net.mamoe.mirai.contact.User, net.mamoe.mirai.contact.Contact)), net.mamoe.mirai.message.MessagePacket((net.mamoe.mirai.contact.User, net.mamoe.mirai.contact.Contact)))/another">another</span><span class="symbol">:</span>&nbsp;<a href="../-message-packet/index.html"><span class="identifier">MessagePacket</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">,</span>&nbsp;<span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../next-message.html">nextMessage</a></h4>
+</td>
+<td>
+<p>挂起当前协程, 等待下一条 <a href="../-message-packet-base/sender.html">MessagePacket.sender</a> 和 <a href="../-message-packet-base/subject.html">MessagePacket.subject</a> 与 <a href="../next-message/-this-.html">this</a> 相同且通过 <a href="../next-message.html#net.mamoe.mirai.message$nextMessage(net.mamoe.mirai.message.nextMessage.P, kotlin.Long, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.message.nextMessage.P, , kotlin.Boolean)))/filter">筛选</a> 的 <a href="../-message-packet/index.html">MessagePacket</a></p>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">P</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-contact-message/index.html"><span class="identifier">ContactMessage</span></a><span class="symbol">&gt;</span> <span class="identifier">P</span><span class="symbol">.</span><span class="identifier">nextMessage</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message$nextMessage(net.mamoe.mirai.message.nextMessage.P, kotlin.Long, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.message.nextMessage.P, , kotlin.Boolean)))/timeoutMillis">timeoutMillis</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a>&nbsp;<span class="symbol">=</span>&nbsp;-1<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.message$nextMessage(net.mamoe.mirai.message.nextMessage.P, kotlin.Long, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.message.nextMessage.P, , kotlin.Boolean)))/filter">filter</span><span class="symbol">:</span>&nbsp;<span class="keyword">suspend </span><span class="identifier">P</span><span class="symbol">.</span><span class="symbol">(</span><span class="identifier">P</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../net.mamoe.mirai.message.data/-message-chain/index.html"><span class="identifier">MessageChain</span></a></code>
+<p>挂起当前协程, 等待下一条 <a href="../-message-packet-base/sender.html">MessagePacket.sender</a> 和 <a href="../-message-packet-base/subject.html">MessagePacket.subject</a> 与 <a href="../next-message/-this-.html">this</a> 相同的 <a href="../-message-packet/index.html">MessagePacket</a></p>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">P</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-contact-message/index.html"><span class="identifier">ContactMessage</span></a><span class="symbol">&gt;</span> <span class="identifier">P</span><span class="symbol">.</span><span class="identifier">nextMessage</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message$nextMessage(net.mamoe.mirai.message.nextMessage.P, kotlin.Long)/timeoutMillis">timeoutMillis</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a>&nbsp;<span class="symbol">=</span>&nbsp;-1<span class="symbol">)</span><span class="symbol">: </span><a href="../../net.mamoe.mirai.message.data/-message-chain/index.html"><span class="identifier">MessageChain</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../next-message-async.html">nextMessageAsync</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">P</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-contact-message/index.html"><span class="identifier">ContactMessage</span></a><span class="symbol">&gt;</span> <span class="identifier">P</span><span class="symbol">.</span><span class="identifier">nextMessageAsync</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message$nextMessageAsync(net.mamoe.mirai.message.nextMessageAsync.P, kotlin.Long, kotlin.coroutines.CoroutineContext)/timeoutMillis">timeoutMillis</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a>&nbsp;<span class="symbol">=</span>&nbsp;-1<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.message$nextMessageAsync(net.mamoe.mirai.message.nextMessageAsync.P, kotlin.Long, kotlin.coroutines.CoroutineContext)/coroutineContext">coroutineContext</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html"><span class="identifier">CoroutineContext</span></a>&nbsp;<span class="symbol">=</span>&nbsp;EmptyCoroutineContext<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Deferred</span><span class="symbol">&lt;</span><a href="../../net.mamoe.mirai.message.data/-message-chain/index.html"><span class="identifier">MessageChain</span></a><span class="symbol">&gt;</span></code><br/>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">P</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-contact-message/index.html"><span class="identifier">ContactMessage</span></a><span class="symbol">&gt;</span> <span class="identifier">P</span><span class="symbol">.</span><span class="identifier">nextMessageAsync</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message$nextMessageAsync(net.mamoe.mirai.message.nextMessageAsync.P, kotlin.Long, kotlin.coroutines.CoroutineContext, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.message.nextMessageAsync.P, , kotlin.Boolean)))/timeoutMillis">timeoutMillis</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a>&nbsp;<span class="symbol">=</span>&nbsp;-1<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.message$nextMessageAsync(net.mamoe.mirai.message.nextMessageAsync.P, kotlin.Long, kotlin.coroutines.CoroutineContext, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.message.nextMessageAsync.P, , kotlin.Boolean)))/coroutineContext">coroutineContext</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html"><span class="identifier">CoroutineContext</span></a>&nbsp;<span class="symbol">=</span>&nbsp;EmptyCoroutineContext<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.message$nextMessageAsync(net.mamoe.mirai.message.nextMessageAsync.P, kotlin.Long, kotlin.coroutines.CoroutineContext, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.message.nextMessageAsync.P, , kotlin.Boolean)))/filter">filter</span><span class="symbol">:</span>&nbsp;<span class="keyword">suspend </span><span class="identifier">P</span><span class="symbol">.</span><span class="symbol">(</span><span class="identifier">P</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Deferred</span><span class="symbol">&lt;</span><a href="../../net.mamoe.mirai.message.data/-message-chain/index.html"><span class="identifier">MessageChain</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../next-message-containing.html">nextMessageContaining</a></h4>
+</td>
+<td>
+<p>挂起当前协程, 等待下一条 <a href="../-message-packet-base/sender.html">MessagePacket.sender</a> 和 <a href="../-message-packet-base/subject.html">MessagePacket.subject</a> 与 <a href="../next-message-containing/-this-.html">this</a> 相同的 <a href="../-message-packet/index.html">MessagePacket</a></p>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">M</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../net.mamoe.mirai.message.data/-message/index.html"><span class="identifier">Message</span></a><span class="symbol">&gt;</span> <a href="../-contact-message/index.html"><span class="identifier">ContactMessage</span></a><span class="symbol">.</span><span class="identifier">nextMessageContaining</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message$nextMessageContaining(net.mamoe.mirai.message.ContactMessage, kotlin.Long)/timeoutMillis">timeoutMillis</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a>&nbsp;<span class="symbol">=</span>&nbsp;-1<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">M</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../next-message-containing-async.html">nextMessageContainingAsync</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">M</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../net.mamoe.mirai.message.data/-message/index.html"><span class="identifier">Message</span></a><span class="symbol">&gt;</span> <a href="../-contact-message/index.html"><span class="identifier">ContactMessage</span></a><span class="symbol">.</span><span class="identifier">nextMessageContainingAsync</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message$nextMessageContainingAsync(net.mamoe.mirai.message.ContactMessage, kotlin.Long, kotlin.coroutines.CoroutineContext)/timeoutMillis">timeoutMillis</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a>&nbsp;<span class="symbol">=</span>&nbsp;-1<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.message$nextMessageContainingAsync(net.mamoe.mirai.message.ContactMessage, kotlin.Long, kotlin.coroutines.CoroutineContext)/coroutineContext">coroutineContext</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html"><span class="identifier">CoroutineContext</span></a>&nbsp;<span class="symbol">=</span>&nbsp;EmptyCoroutineContext<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Deferred</span><span class="symbol">&lt;</span><span class="identifier">M</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../next-message-containing-or-null.html">nextMessageContainingOrNull</a></h4>
+</td>
+<td>
+<p>挂起当前协程, 等待下一条 <a href="../-message-packet-base/sender.html">MessagePacket.sender</a> 和 <a href="../-message-packet-base/subject.html">MessagePacket.subject</a> 与 <a href="../next-message-containing-or-null/-this-.html">this</a> 相同并含有 <a href="../next-message-containing-or-null.html#M">M</a> 类型的消息的 <a href="../-message-packet/index.html">MessagePacket</a></p>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">M</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../net.mamoe.mirai.message.data/-message/index.html"><span class="identifier">Message</span></a><span class="symbol">&gt;</span> <a href="../-contact-message/index.html"><span class="identifier">ContactMessage</span></a><span class="symbol">.</span><span class="identifier">nextMessageContainingOrNull</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message$nextMessageContainingOrNull(net.mamoe.mirai.message.ContactMessage, kotlin.Long)/timeoutMillis">timeoutMillis</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a>&nbsp;<span class="symbol">=</span>&nbsp;-1<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">M</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../next-message-containing-or-null-async.html">nextMessageContainingOrNullAsync</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">M</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../net.mamoe.mirai.message.data/-message/index.html"><span class="identifier">Message</span></a><span class="symbol">&gt;</span> <a href="../-contact-message/index.html"><span class="identifier">ContactMessage</span></a><span class="symbol">.</span><span class="identifier">nextMessageContainingOrNullAsync</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message$nextMessageContainingOrNullAsync(net.mamoe.mirai.message.ContactMessage, kotlin.Long, kotlin.coroutines.CoroutineContext)/timeoutMillis">timeoutMillis</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a>&nbsp;<span class="symbol">=</span>&nbsp;-1<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.message$nextMessageContainingOrNullAsync(net.mamoe.mirai.message.ContactMessage, kotlin.Long, kotlin.coroutines.CoroutineContext)/coroutineContext">coroutineContext</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html"><span class="identifier">CoroutineContext</span></a>&nbsp;<span class="symbol">=</span>&nbsp;EmptyCoroutineContext<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Deferred</span><span class="symbol">&lt;</span><span class="identifier">M</span><span class="symbol">?</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../next-message-or-null.html">nextMessageOrNull</a></h4>
+</td>
+<td>
+<p>挂起当前协程, 等待下一条 <a href="../-message-packet-base/sender.html">MessagePacket.sender</a> 和 <a href="../-message-packet-base/subject.html">MessagePacket.subject</a> 与 <a href="../next-message-or-null/-this-.html">this</a> 相同且通过 <a href="../next-message-or-null.html#net.mamoe.mirai.message$nextMessageOrNull(net.mamoe.mirai.message.nextMessageOrNull.P, kotlin.Long, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.message.nextMessageOrNull.P, , kotlin.Boolean)))/filter">筛选</a> 的 <a href="../-message-packet/index.html">MessagePacket</a></p>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">P</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-contact-message/index.html"><span class="identifier">ContactMessage</span></a><span class="symbol">&gt;</span> <span class="identifier">P</span><span class="symbol">.</span><span class="identifier">nextMessageOrNull</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message$nextMessageOrNull(net.mamoe.mirai.message.nextMessageOrNull.P, kotlin.Long, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.message.nextMessageOrNull.P, , kotlin.Boolean)))/timeoutMillis">timeoutMillis</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a>&nbsp;<span class="symbol">=</span>&nbsp;-1<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.message$nextMessageOrNull(net.mamoe.mirai.message.nextMessageOrNull.P, kotlin.Long, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.message.nextMessageOrNull.P, , kotlin.Boolean)))/filter">filter</span><span class="symbol">:</span>&nbsp;<span class="keyword">suspend </span><span class="identifier">P</span><span class="symbol">.</span><span class="symbol">(</span><span class="identifier">P</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../net.mamoe.mirai.message.data/-message-chain/index.html"><span class="identifier">MessageChain</span></a><span class="symbol">?</span></code>
+<p>挂起当前协程, 等待下一条 <a href="../-message-packet-base/sender.html">MessagePacket.sender</a> 和 <a href="../-message-packet-base/subject.html">MessagePacket.subject</a> 与 <a href="../next-message-or-null/-this-.html">this</a> 相同的 <a href="../-message-packet/index.html">MessagePacket</a></p>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">P</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-contact-message/index.html"><span class="identifier">ContactMessage</span></a><span class="symbol">&gt;</span> <span class="identifier">P</span><span class="symbol">.</span><span class="identifier">nextMessageOrNull</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message$nextMessageOrNull(net.mamoe.mirai.message.nextMessageOrNull.P, kotlin.Long)/timeoutMillis">timeoutMillis</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a>&nbsp;<span class="symbol">=</span>&nbsp;-1<span class="symbol">)</span><span class="symbol">: </span><a href="../../net.mamoe.mirai.message.data/-message-chain/index.html"><span class="identifier">MessageChain</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../next-message-or-null-async.html">nextMessageOrNullAsync</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">P</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-contact-message/index.html"><span class="identifier">ContactMessage</span></a><span class="symbol">&gt;</span> <span class="identifier">P</span><span class="symbol">.</span><span class="identifier">nextMessageOrNullAsync</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message$nextMessageOrNullAsync(net.mamoe.mirai.message.nextMessageOrNullAsync.P, kotlin.Long, kotlin.coroutines.CoroutineContext)/timeoutMillis">timeoutMillis</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a>&nbsp;<span class="symbol">=</span>&nbsp;-1<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.message$nextMessageOrNullAsync(net.mamoe.mirai.message.nextMessageOrNullAsync.P, kotlin.Long, kotlin.coroutines.CoroutineContext)/coroutineContext">coroutineContext</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html"><span class="identifier">CoroutineContext</span></a>&nbsp;<span class="symbol">=</span>&nbsp;EmptyCoroutineContext<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Deferred</span><span class="symbol">&lt;</span><a href="../../net.mamoe.mirai.message.data/-message-chain/index.html"><span class="identifier">MessageChain</span></a><span class="symbol">?</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../net.mamoe.mirai.event/select-messages.html">selectMessages</a></h4>
+</td>
+<td>
+<p>挂起当前协程, 等待任意一个事件监听器触发后返回其返回值.</p>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-contact-message/index.html"><span class="identifier">ContactMessage</span></a><span class="symbol">, </span><span class="identifier">R</span><span class="symbol">&gt;</span> <span class="identifier">T</span><span class="symbol">.</span><span class="identifier">selectMessages</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.event$selectMessages(net.mamoe.mirai.event.selectMessages.T, kotlin.Long, kotlin.Boolean, kotlin.Function1((net.mamoe.mirai.event.MessageSelectBuilder((net.mamoe.mirai.event.selectMessages.T, net.mamoe.mirai.event.selectMessages.R)), kotlin.Unit)))/timeoutMillis">timeoutMillis</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a>&nbsp;<span class="symbol">=</span>&nbsp;-1<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.event$selectMessages(net.mamoe.mirai.event.selectMessages.T, kotlin.Long, kotlin.Boolean, kotlin.Function1((net.mamoe.mirai.event.MessageSelectBuilder((net.mamoe.mirai.event.selectMessages.T, net.mamoe.mirai.event.selectMessages.R)), kotlin.Unit)))/filterContext">filterContext</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;true<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.event$selectMessages(net.mamoe.mirai.event.selectMessages.T, kotlin.Long, kotlin.Boolean, kotlin.Function1((net.mamoe.mirai.event.MessageSelectBuilder((net.mamoe.mirai.event.selectMessages.T, net.mamoe.mirai.event.selectMessages.R)), kotlin.Unit)))/selectBuilder">selectBuilder</span><span class="symbol">:</span>&nbsp;<a href="../../net.mamoe.mirai.event/-message-select-builder/index.html"><span class="identifier">MessageSelectBuilder</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">,</span>&nbsp;<span class="identifier">R</span><span class="symbol">&gt;</span><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">R</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../net.mamoe.mirai.event/select-messages-unit.html">selectMessagesUnit</a></h4>
+</td>
+<td>
+<p><a href="../../net.mamoe.mirai.event/select-messages.html">selectMessages</a> 的 <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> 返回值捷径 (由于 Kotlin 无法推断 <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> 类型)</p>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-contact-message/index.html"><span class="identifier">ContactMessage</span></a><span class="symbol">&gt;</span> <span class="identifier">T</span><span class="symbol">.</span><span class="identifier">selectMessagesUnit</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.event$selectMessagesUnit(net.mamoe.mirai.event.selectMessagesUnit.T, kotlin.Long, kotlin.Boolean, kotlin.Function1((net.mamoe.mirai.event.MessageSelectBuilderUnit((net.mamoe.mirai.event.selectMessagesUnit.T, kotlin.Unit)), )))/timeoutMillis">timeoutMillis</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a>&nbsp;<span class="symbol">=</span>&nbsp;-1<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.event$selectMessagesUnit(net.mamoe.mirai.event.selectMessagesUnit.T, kotlin.Long, kotlin.Boolean, kotlin.Function1((net.mamoe.mirai.event.MessageSelectBuilderUnit((net.mamoe.mirai.event.selectMessagesUnit.T, kotlin.Unit)), )))/filterContext">filterContext</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;true<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.event$selectMessagesUnit(net.mamoe.mirai.event.selectMessagesUnit.T, kotlin.Long, kotlin.Boolean, kotlin.Function1((net.mamoe.mirai.event.MessageSelectBuilderUnit((net.mamoe.mirai.event.selectMessagesUnit.T, kotlin.Unit)), )))/selectBuilder">selectBuilder</span><span class="symbol">:</span>&nbsp;<a href="../../net.mamoe.mirai.event/-message-select-builder-unit/index.html"><span class="identifier">MessageSelectBuilderUnit</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">&gt;</span><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../../net.mamoe.mirai.event/while-select-messages.html">whileSelectMessages</a></h4>
+</td>
+<td>
+<p>挂起当前协程, 等待任意一个事件监听器返回 <code>false</code> 后返回.</p>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-contact-message/index.html"><span class="identifier">ContactMessage</span></a><span class="symbol">&gt;</span> <span class="identifier">T</span><span class="symbol">.</span><span class="identifier">whileSelectMessages</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.event$whileSelectMessages(net.mamoe.mirai.event.whileSelectMessages.T, kotlin.Long, kotlin.Boolean, kotlin.Function1((net.mamoe.mirai.event.MessageSelectBuilder((net.mamoe.mirai.event.whileSelectMessages.T, kotlin.Boolean)), kotlin.Unit)))/timeoutMillis">timeoutMillis</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a>&nbsp;<span class="symbol">=</span>&nbsp;-1<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.event$whileSelectMessages(net.mamoe.mirai.event.whileSelectMessages.T, kotlin.Long, kotlin.Boolean, kotlin.Function1((net.mamoe.mirai.event.MessageSelectBuilder((net.mamoe.mirai.event.whileSelectMessages.T, kotlin.Boolean)), kotlin.Unit)))/filterContext">filterContext</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;true<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.event$whileSelectMessages(net.mamoe.mirai.event.whileSelectMessages.T, kotlin.Long, kotlin.Boolean, kotlin.Function1((net.mamoe.mirai.event.MessageSelectBuilder((net.mamoe.mirai.event.whileSelectMessages.T, kotlin.Boolean)), kotlin.Unit)))/selectBuilder">selectBuilder</span><span class="symbol">:</span>&nbsp;<a href="../../net.mamoe.mirai.event/-message-select-builder/index.html"><span class="identifier">MessageSelectBuilder</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">&gt;</span><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

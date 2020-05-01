@@ -1,0 +1,305 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>net.mamoe.mirai.event - mirai-core</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">mirai-core</a>&nbsp;/&nbsp;<a href="./index.html">net.mamoe.mirai.event</a><br/>
+<br/>
+<h2>Package net.mamoe.mirai.event</h2>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-abstract-cancellable-event/index.html">AbstractCancellableEvent</a></h4>
+</td>
+<td>
+<p>可被取消的事件的实现</p>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">AbstractCancellableEvent</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-event.html"><span class="identifier">Event</span></a><span class="symbol">, </span><a href="-cancellable-event/index.html"><span class="identifier">CancellableEvent</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-broadcast-controllable/index.html">BroadcastControllable</a></h4>
+</td>
+<td>
+<p>可控制是否需要广播这个事件包</p>
+<code><span class="keyword">interface </span><span class="identifier">BroadcastControllable</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-event.html"><span class="identifier">Event</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-cancellable-event/index.html">CancellableEvent</a></h4>
+</td>
+<td>
+<p>可被取消的事件</p>
+<code><span class="keyword">interface </span><span class="identifier">CancellableEvent</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-event.html">Event</a></h4>
+</td>
+<td>
+<p>可被监听的类, 可以是任何 class 或 object.</p>
+<code><span class="keyword">interface </span><span class="identifier">Event</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-friend-message-subscribers-builder.html">FriendMessageSubscribersBuilder</a></h4>
+</td>
+<td>
+<code><span class="keyword">typealias </span><span class="identifier">FriendMessageSubscribersBuilder</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="-message-subscribers-builder/index.html"><span class="identifier">MessageSubscribersBuilder</span></a><span class="symbol">&lt;</span><a href="../net.mamoe.mirai.message/-friend-message/index.html"><span class="identifier">FriendMessage</span></a><span class="symbol">,</span>&nbsp;<a href="-listener/index.html"><span class="identifier">Listener</span></a><span class="symbol">&lt;</span><a href="../net.mamoe.mirai.message/-friend-message/index.html"><span class="identifier">FriendMessage</span></a><span class="symbol">&gt;</span><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-group-message-subscribers-builder.html">GroupMessageSubscribersBuilder</a></h4>
+</td>
+<td>
+<code><span class="keyword">typealias </span><span class="identifier">GroupMessageSubscribersBuilder</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="-message-subscribers-builder/index.html"><span class="identifier">MessageSubscribersBuilder</span></a><span class="symbol">&lt;</span><a href="../net.mamoe.mirai.message/-group-message/index.html"><span class="identifier">GroupMessage</span></a><span class="symbol">,</span>&nbsp;<a href="-listener/index.html"><span class="identifier">Listener</span></a><span class="symbol">&lt;</span><a href="../net.mamoe.mirai.message/-group-message/index.html"><span class="identifier">GroupMessage</span></a><span class="symbol">&gt;</span><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-listener/index.html">Listener</a></h4>
+</td>
+<td>
+<p>事件监听器.
+由 <a href="kotlinx.coroutines.-coroutine-scope/subscribe.html">subscribe</a> 等方法返回.</p>
+<code><span class="keyword">interface </span><span class="identifier">Listener</span><span class="symbol">&lt;</span><span class="keyword">in</span>&nbsp;<span class="identifier">E</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-event.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">CompletableJob</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-listening-status/index.html">ListeningStatus</a></h4>
+</td>
+<td>
+<p>订阅者的状态</p>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">ListeningStatus</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-message-listener.html">MessageListener</a></h4>
+</td>
+<td>
+<p>消息事件的处理器.</p>
+<code><span class="keyword">typealias </span><span class="identifier">MessageListener</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">, </span><span class="identifier">R</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">=</span>&nbsp;<span class="keyword">suspend </span><span class="identifier">T</span><span class="symbol">.</span><span class="symbol">(</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<span class="identifier">R</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-message-packet-subscribers-builder.html">MessagePacketSubscribersBuilder</a></h4>
+</td>
+<td>
+<code><span class="keyword">typealias </span><span class="identifier">MessagePacketSubscribersBuilder</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="-message-subscribers-builder/index.html"><span class="identifier">MessageSubscribersBuilder</span></a><span class="symbol">&lt;</span><a href="../net.mamoe.mirai.message/-contact-message/index.html"><span class="identifier">ContactMessage</span></a><span class="symbol">,</span>&nbsp;<a href="-listener/index.html"><span class="identifier">Listener</span></a><span class="symbol">&lt;</span><a href="../net.mamoe.mirai.message/-contact-message/index.html"><span class="identifier">ContactMessage</span></a><span class="symbol">&gt;</span><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-message-select-builder/index.html">MessageSelectBuilder</a></h4>
+</td>
+<td>
+<p><a href="select-messages.html">selectMessages</a> 时的 DSL 构建器.</p>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">MessageSelectBuilder</span><span class="symbol">&lt;</span><span class="identifier">M</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../net.mamoe.mirai.message/-contact-message/index.html"><span class="identifier">ContactMessage</span></a><span class="symbol">, </span><span class="identifier">R</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-message-select-builder-unit/index.html"><span class="identifier">MessageSelectBuilderUnit</span></a><span class="symbol">&lt;</span><span class="identifier">M</span><span class="symbol">,</span>&nbsp;<span class="identifier">R</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-message-select-builder-unit/index.html">MessageSelectBuilderUnit</a></h4>
+</td>
+<td>
+<p><a href="select-messages-unit.html">selectMessagesUnit</a> 或 <a href="select-messages.html">selectMessages</a> 时的 DSL 构建器.</p>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">MessageSelectBuilderUnit</span><span class="symbol">&lt;</span><span class="identifier">M</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../net.mamoe.mirai.message/-contact-message/index.html"><span class="identifier">ContactMessage</span></a><span class="symbol">, </span><span class="identifier">R</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-message-subscribers-builder/index.html"><span class="identifier">MessageSubscribersBuilder</span></a><span class="symbol">&lt;</span><span class="identifier">M</span><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">,</span>&nbsp;<span class="identifier">R</span><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">?</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-message-selection-timeout-checker/index.html">MessageSelectionTimeoutChecker</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">MessageSelectionTimeoutChecker</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-message-subscribers-builder/index.html">MessageSubscribersBuilder</a></h4>
+</td>
+<td>
+<p>消息订阅构造器</p>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">MessageSubscribersBuilder</span><span class="symbol">&lt;</span><span class="identifier">M</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../net.mamoe.mirai.message/-contact-message/index.html"><span class="identifier">ContactMessage</span></a><span class="symbol">, </span><span class="keyword">out</span>&nbsp;<span class="identifier">Ret</span><span class="symbol">, </span><span class="identifier">R</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">RR</span><span class="symbol">, </span><span class="identifier">RR</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-temp-message-subscribers-builder.html">TempMessageSubscribersBuilder</a></h4>
+</td>
+<td>
+<code><span class="keyword">typealias </span><span class="identifier">TempMessageSubscribersBuilder</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="-message-subscribers-builder/index.html"><span class="identifier">MessageSubscribersBuilder</span></a><span class="symbol">&lt;</span><a href="../net.mamoe.mirai.message/-temp-message/index.html"><span class="identifier">TempMessage</span></a><span class="symbol">,</span>&nbsp;<a href="-listener/index.html"><span class="identifier">Listener</span></a><span class="symbol">&lt;</span><a href="../net.mamoe.mirai.message/-temp-message/index.html"><span class="identifier">TempMessage</span></a><span class="symbol">&gt;</span><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Annotations</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-message-dsl/index.html">MessageDsl</a></h4>
+</td>
+<td>
+<p>DSL 标记. 将能让 IDE 阻止一些错误的方法调用.</p>
+<code><span class="keyword">annotation</span> <span class="keyword">class </span><span class="identifier">MessageDsl</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Exceptions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-message-selection-timeout-exception/index.html">MessageSelectionTimeoutException</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">MessageSelectionTimeoutException</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-runtime-exception/index.html"><span class="identifier">RuntimeException</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Extensions for External Classes</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="kotlinx.coroutines.-coroutine-scope/index.html">kotlinx.coroutines.CoroutineScope</a></h4>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-event-disabled.html">EventDisabled</a></h4>
+</td>
+<td>
+<p>设置为 <code>true</code> 以关闭事件.
+所有的 <code>subscribe</code> 都能正常添加到监听器列表, 但所有的广播都会直接返回.</p>
+<code><span class="keyword">var </span><span class="identifier">EventDisabled</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="broadcast.html">broadcast</a></h4>
+</td>
+<td>
+<p>广播一个事件的唯一途径.</p>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">E</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-event.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span> <span class="identifier">E</span><span class="symbol">.</span><span class="identifier">broadcast</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">E</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="incoming.html">incoming</a></h4>
+</td>
+<td>
+<p>打开一个来自指定 <a href="../net.mamoe.mirai/-bot/index.html">Bot</a> 的指定事件的接收通道</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">E</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../net.mamoe.mirai.event.events/-bot-event/index.html"><span class="identifier">BotEvent</span></a><span class="symbol">&gt;</span> <a href="../net.mamoe.mirai/-bot/index.html"><span class="identifier">Bot</span></a><span class="symbol">.</span><span class="identifier">incoming</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.event$incoming(net.mamoe.mirai.Bot, kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.Int)/coroutineContext">coroutineContext</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html"><span class="identifier">CoroutineContext</span></a>&nbsp;<span class="symbol">=</span>&nbsp;EmptyCoroutineContext<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.event$incoming(net.mamoe.mirai.Bot, kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.Int)/concurrencyKind">concurrencyKind</span><span class="symbol">:</span>&nbsp;<span class="identifier">ConcurrencyKind</span>&nbsp;<span class="symbol">=</span>&nbsp;Listener.ConcurrencyKind.CONCURRENT<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.event$incoming(net.mamoe.mirai.Bot, kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.Int)/capacity">capacity</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;Channel.UNLIMITED<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ReceiveChannel</span><span class="symbol">&lt;</span><span class="identifier">E</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="select-messages.html">selectMessages</a></h4>
+</td>
+<td>
+<p>挂起当前协程, 等待任意一个事件监听器触发后返回其返回值.</p>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../net.mamoe.mirai.message/-contact-message/index.html"><span class="identifier">ContactMessage</span></a><span class="symbol">, </span><span class="identifier">R</span><span class="symbol">&gt;</span> <span class="identifier">T</span><span class="symbol">.</span><span class="identifier">selectMessages</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.event$selectMessages(net.mamoe.mirai.event.selectMessages.T, kotlin.Long, kotlin.Boolean, kotlin.Function1((net.mamoe.mirai.event.MessageSelectBuilder((net.mamoe.mirai.event.selectMessages.T, net.mamoe.mirai.event.selectMessages.R)), kotlin.Unit)))/timeoutMillis">timeoutMillis</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a>&nbsp;<span class="symbol">=</span>&nbsp;-1<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.event$selectMessages(net.mamoe.mirai.event.selectMessages.T, kotlin.Long, kotlin.Boolean, kotlin.Function1((net.mamoe.mirai.event.MessageSelectBuilder((net.mamoe.mirai.event.selectMessages.T, net.mamoe.mirai.event.selectMessages.R)), kotlin.Unit)))/filterContext">filterContext</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;true<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.event$selectMessages(net.mamoe.mirai.event.selectMessages.T, kotlin.Long, kotlin.Boolean, kotlin.Function1((net.mamoe.mirai.event.MessageSelectBuilder((net.mamoe.mirai.event.selectMessages.T, net.mamoe.mirai.event.selectMessages.R)), kotlin.Unit)))/selectBuilder">selectBuilder</span><span class="symbol">:</span>&nbsp;<a href="-message-select-builder/index.html"><span class="identifier">MessageSelectBuilder</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">,</span>&nbsp;<span class="identifier">R</span><span class="symbol">&gt;</span><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">R</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="select-messages-unit.html">selectMessagesUnit</a></h4>
+</td>
+<td>
+<p><a href="select-messages.html">selectMessages</a> 的 <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> 返回值捷径 (由于 Kotlin 无法推断 <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> 类型)</p>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../net.mamoe.mirai.message/-contact-message/index.html"><span class="identifier">ContactMessage</span></a><span class="symbol">&gt;</span> <span class="identifier">T</span><span class="symbol">.</span><span class="identifier">selectMessagesUnit</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.event$selectMessagesUnit(net.mamoe.mirai.event.selectMessagesUnit.T, kotlin.Long, kotlin.Boolean, kotlin.Function1((net.mamoe.mirai.event.MessageSelectBuilderUnit((net.mamoe.mirai.event.selectMessagesUnit.T, kotlin.Unit)), )))/timeoutMillis">timeoutMillis</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a>&nbsp;<span class="symbol">=</span>&nbsp;-1<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.event$selectMessagesUnit(net.mamoe.mirai.event.selectMessagesUnit.T, kotlin.Long, kotlin.Boolean, kotlin.Function1((net.mamoe.mirai.event.MessageSelectBuilderUnit((net.mamoe.mirai.event.selectMessagesUnit.T, kotlin.Unit)), )))/filterContext">filterContext</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;true<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.event$selectMessagesUnit(net.mamoe.mirai.event.selectMessagesUnit.T, kotlin.Long, kotlin.Boolean, kotlin.Function1((net.mamoe.mirai.event.MessageSelectBuilderUnit((net.mamoe.mirai.event.selectMessagesUnit.T, kotlin.Unit)), )))/selectBuilder">selectBuilder</span><span class="symbol">:</span>&nbsp;<a href="-message-select-builder-unit/index.html"><span class="identifier">MessageSelectBuilderUnit</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">&gt;</span><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="subscribe.html">subscribe</a></h4>
+</td>
+<td>
+<p>在 <a href="../net.mamoe.mirai/-bot/index.html">Bot</a> 的 <a href="#">CoroutineScope</a> 下订阅所有 <a href="subscribe.html#E">E</a> 及其子类事件.
+每当 <a href="broadcast.html">事件广播</a> 时, <a href="subscribe.html#net.mamoe.mirai.event$subscribe(net.mamoe.mirai.Bot, kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.event.subscribe.E, , net.mamoe.mirai.event.ListeningStatus)))/handler">handler</a> 都会被执行,
+当 <a href="subscribe.html#net.mamoe.mirai.event$subscribe(net.mamoe.mirai.Bot, kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.event.subscribe.E, , net.mamoe.mirai.event.ListeningStatus)))/handler">handler</a> 返回 <a href="-listening-status/-s-t-o-p-p-e-d.html">ListeningStatus.STOPPED</a> 时停止监听</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">E</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../net.mamoe.mirai.event.events/-bot-event/index.html"><span class="identifier">BotEvent</span></a><span class="symbol">&gt;</span> <a href="../net.mamoe.mirai/-bot/index.html"><span class="identifier">Bot</span></a><span class="symbol">.</span><span class="identifier">subscribe</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.event$subscribe(net.mamoe.mirai.Bot, kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.event.subscribe.E, , net.mamoe.mirai.event.ListeningStatus)))/coroutineContext">coroutineContext</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html"><span class="identifier">CoroutineContext</span></a>&nbsp;<span class="symbol">=</span>&nbsp;EmptyCoroutineContext<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.event$subscribe(net.mamoe.mirai.Bot, kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.event.subscribe.E, , net.mamoe.mirai.event.ListeningStatus)))/concurrency">concurrency</span><span class="symbol">:</span>&nbsp;<span class="identifier">ConcurrencyKind</span>&nbsp;<span class="symbol">=</span>&nbsp;Listener.ConcurrencyKind.LOCKED<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.event$subscribe(net.mamoe.mirai.Bot, kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.event.subscribe.E, , net.mamoe.mirai.event.ListeningStatus)))/handler">handler</span><span class="symbol">:</span>&nbsp;<span class="keyword">suspend </span><span class="identifier">E</span><span class="symbol">.</span><span class="symbol">(</span><span class="identifier">E</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="-listening-status/index.html"><span class="identifier">ListeningStatus</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="-listener/index.html"><span class="identifier">Listener</span></a><span class="symbol">&lt;</span><span class="identifier">E</span><span class="symbol">&gt;</span></code><code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">E</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../net.mamoe.mirai.event.events/-bot-event/index.html"><span class="identifier">BotEvent</span></a><span class="symbol">&gt;</span> <a href="../net.mamoe.mirai/-bot/index.html"><span class="identifier">Bot</span></a><span class="symbol">.</span><span class="identifier">subscribe</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.event$subscribe(net.mamoe.mirai.Bot, kotlin.reflect.KClass((net.mamoe.mirai.event.subscribe.E)), kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.event.subscribe.E, , net.mamoe.mirai.event.ListeningStatus)))/eventClass">eventClass</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-class/index.html"><span class="identifier">KClass</span></a><span class="symbol">&lt;</span><span class="identifier">E</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.event$subscribe(net.mamoe.mirai.Bot, kotlin.reflect.KClass((net.mamoe.mirai.event.subscribe.E)), kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.event.subscribe.E, , net.mamoe.mirai.event.ListeningStatus)))/coroutineContext">coroutineContext</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html"><span class="identifier">CoroutineContext</span></a>&nbsp;<span class="symbol">=</span>&nbsp;EmptyCoroutineContext<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.event$subscribe(net.mamoe.mirai.Bot, kotlin.reflect.KClass((net.mamoe.mirai.event.subscribe.E)), kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.event.subscribe.E, , net.mamoe.mirai.event.ListeningStatus)))/concurrency">concurrency</span><span class="symbol">:</span>&nbsp;<span class="identifier">ConcurrencyKind</span>&nbsp;<span class="symbol">=</span>&nbsp;Listener.ConcurrencyKind.LOCKED<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.event$subscribe(net.mamoe.mirai.Bot, kotlin.reflect.KClass((net.mamoe.mirai.event.subscribe.E)), kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.event.subscribe.E, , net.mamoe.mirai.event.ListeningStatus)))/handler">handler</span><span class="symbol">:</span>&nbsp;<span class="keyword">suspend </span><span class="identifier">E</span><span class="symbol">.</span><span class="symbol">(</span><span class="identifier">E</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="-listening-status/index.html"><span class="identifier">ListeningStatus</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="-listener/index.html"><span class="identifier">Listener</span></a><span class="symbol">&lt;</span><span class="identifier">E</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="subscribe-always.html">subscribeAlways</a></h4>
+</td>
+<td>
+<p>在 <a href="../net.mamoe.mirai/-bot/index.html">Bot</a> 的 <a href="#">CoroutineScope</a> 下订阅所有 <a href="subscribe-always.html#E">E</a> 及其子类事件.
+每当 <a href="broadcast.html">事件广播</a> 时, <a href="subscribe-always.html#net.mamoe.mirai.event$subscribeAlways(net.mamoe.mirai.Bot, kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.event.subscribeAlways.E, , kotlin.Unit)))/listener">listener</a> 都会被执行.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">E</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../net.mamoe.mirai.event.events/-bot-event/index.html"><span class="identifier">BotEvent</span></a><span class="symbol">&gt;</span> <a href="../net.mamoe.mirai/-bot/index.html"><span class="identifier">Bot</span></a><span class="symbol">.</span><span class="identifier">subscribeAlways</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.event$subscribeAlways(net.mamoe.mirai.Bot, kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.event.subscribeAlways.E, , kotlin.Unit)))/coroutineContext">coroutineContext</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html"><span class="identifier">CoroutineContext</span></a>&nbsp;<span class="symbol">=</span>&nbsp;EmptyCoroutineContext<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.event$subscribeAlways(net.mamoe.mirai.Bot, kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.event.subscribeAlways.E, , kotlin.Unit)))/concurrency">concurrency</span><span class="symbol">:</span>&nbsp;<span class="identifier">ConcurrencyKind</span>&nbsp;<span class="symbol">=</span>&nbsp;Listener.ConcurrencyKind.CONCURRENT<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.event$subscribeAlways(net.mamoe.mirai.Bot, kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.event.subscribeAlways.E, , kotlin.Unit)))/listener">listener</span><span class="symbol">:</span>&nbsp;<span class="keyword">suspend </span><span class="identifier">E</span><span class="symbol">.</span><span class="symbol">(</span><span class="identifier">E</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="-listener/index.html"><span class="identifier">Listener</span></a><span class="symbol">&lt;</span><span class="identifier">E</span><span class="symbol">&gt;</span></code><code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">E</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../net.mamoe.mirai.event.events/-bot-event/index.html"><span class="identifier">BotEvent</span></a><span class="symbol">&gt;</span> <a href="../net.mamoe.mirai/-bot/index.html"><span class="identifier">Bot</span></a><span class="symbol">.</span><span class="identifier">subscribeAlways</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.event$subscribeAlways(net.mamoe.mirai.Bot, kotlin.reflect.KClass((net.mamoe.mirai.event.subscribeAlways.E)), kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.event.subscribeAlways.E, , kotlin.Unit)))/eventClass">eventClass</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-class/index.html"><span class="identifier">KClass</span></a><span class="symbol">&lt;</span><span class="identifier">E</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.event$subscribeAlways(net.mamoe.mirai.Bot, kotlin.reflect.KClass((net.mamoe.mirai.event.subscribeAlways.E)), kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.event.subscribeAlways.E, , kotlin.Unit)))/coroutineContext">coroutineContext</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html"><span class="identifier">CoroutineContext</span></a>&nbsp;<span class="symbol">=</span>&nbsp;EmptyCoroutineContext<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.event$subscribeAlways(net.mamoe.mirai.Bot, kotlin.reflect.KClass((net.mamoe.mirai.event.subscribeAlways.E)), kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.event.subscribeAlways.E, , kotlin.Unit)))/concurrency">concurrency</span><span class="symbol">:</span>&nbsp;<span class="identifier">ConcurrencyKind</span>&nbsp;<span class="symbol">=</span>&nbsp;Listener.ConcurrencyKind.CONCURRENT<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.event$subscribeAlways(net.mamoe.mirai.Bot, kotlin.reflect.KClass((net.mamoe.mirai.event.subscribeAlways.E)), kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.event.subscribeAlways.E, , kotlin.Unit)))/listener">listener</span><span class="symbol">:</span>&nbsp;<span class="keyword">suspend </span><span class="identifier">E</span><span class="symbol">.</span><span class="symbol">(</span><span class="identifier">E</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="-listener/index.html"><span class="identifier">Listener</span></a><span class="symbol">&lt;</span><span class="identifier">E</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="subscribe-friend-messages.html">subscribeFriendMessages</a></h4>
+</td>
+<td>
+<p>订阅来自这个 <a href="../net.mamoe.mirai/-bot/index.html">Bot</a> 的所有好友消息事件.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">R</span><span class="symbol">&gt;</span> <a href="../net.mamoe.mirai/-bot/index.html"><span class="identifier">Bot</span></a><span class="symbol">.</span><span class="identifier">subscribeFriendMessages</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.event$subscribeFriendMessages(net.mamoe.mirai.Bot, kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.Function1((net.mamoe.mirai.event.MessageSubscribersBuilder((net.mamoe.mirai.message.FriendMessage, net.mamoe.mirai.event.Listener(()), kotlin.Unit, )), net.mamoe.mirai.event.subscribeFriendMessages.R)))/coroutineContext">coroutineContext</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html"><span class="identifier">CoroutineContext</span></a>&nbsp;<span class="symbol">=</span>&nbsp;EmptyCoroutineContext<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.event$subscribeFriendMessages(net.mamoe.mirai.Bot, kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.Function1((net.mamoe.mirai.event.MessageSubscribersBuilder((net.mamoe.mirai.message.FriendMessage, net.mamoe.mirai.event.Listener(()), kotlin.Unit, )), net.mamoe.mirai.event.subscribeFriendMessages.R)))/concurrencyKind">concurrencyKind</span><span class="symbol">:</span>&nbsp;<span class="identifier">ConcurrencyKind</span>&nbsp;<span class="symbol">=</span>&nbsp;Listener.ConcurrencyKind.CONCURRENT<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.event$subscribeFriendMessages(net.mamoe.mirai.Bot, kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.Function1((net.mamoe.mirai.event.MessageSubscribersBuilder((net.mamoe.mirai.message.FriendMessage, net.mamoe.mirai.event.Listener(()), kotlin.Unit, )), net.mamoe.mirai.event.subscribeFriendMessages.R)))/listeners">listeners</span><span class="symbol">:</span>&nbsp;<a href="-friend-message-subscribers-builder.html"><span class="identifier">FriendMessageSubscribersBuilder</span></a><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<span class="identifier">R</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">R</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="subscribe-group-messages.html">subscribeGroupMessages</a></h4>
+</td>
+<td>
+<p>订阅来自这个 <a href="../net.mamoe.mirai/-bot/index.html">Bot</a> 的所有群消息事件</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">R</span><span class="symbol">&gt;</span> <a href="../net.mamoe.mirai/-bot/index.html"><span class="identifier">Bot</span></a><span class="symbol">.</span><span class="identifier">subscribeGroupMessages</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.event$subscribeGroupMessages(net.mamoe.mirai.Bot, kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.Function1((net.mamoe.mirai.event.MessageSubscribersBuilder((net.mamoe.mirai.message.GroupMessage, net.mamoe.mirai.event.Listener(()), kotlin.Unit, )), net.mamoe.mirai.event.subscribeGroupMessages.R)))/coroutineContext">coroutineContext</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html"><span class="identifier">CoroutineContext</span></a>&nbsp;<span class="symbol">=</span>&nbsp;EmptyCoroutineContext<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.event$subscribeGroupMessages(net.mamoe.mirai.Bot, kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.Function1((net.mamoe.mirai.event.MessageSubscribersBuilder((net.mamoe.mirai.message.GroupMessage, net.mamoe.mirai.event.Listener(()), kotlin.Unit, )), net.mamoe.mirai.event.subscribeGroupMessages.R)))/concurrencyKind">concurrencyKind</span><span class="symbol">:</span>&nbsp;<span class="identifier">ConcurrencyKind</span>&nbsp;<span class="symbol">=</span>&nbsp;Listener.ConcurrencyKind.CONCURRENT<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.event$subscribeGroupMessages(net.mamoe.mirai.Bot, kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.Function1((net.mamoe.mirai.event.MessageSubscribersBuilder((net.mamoe.mirai.message.GroupMessage, net.mamoe.mirai.event.Listener(()), kotlin.Unit, )), net.mamoe.mirai.event.subscribeGroupMessages.R)))/listeners">listeners</span><span class="symbol">:</span>&nbsp;<a href="-group-message-subscribers-builder.html"><span class="identifier">GroupMessageSubscribersBuilder</span></a><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<span class="identifier">R</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">R</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="subscribe-messages.html">subscribeMessages</a></h4>
+</td>
+<td>
+<p>订阅来自这个 <a href="../net.mamoe.mirai/-bot/index.html">Bot</a> 的所有联系人的消息事件. 联系人可以是任意群或任意好友或临时会话.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">R</span><span class="symbol">&gt;</span> <a href="../net.mamoe.mirai/-bot/index.html"><span class="identifier">Bot</span></a><span class="symbol">.</span><span class="identifier">subscribeMessages</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.event$subscribeMessages(net.mamoe.mirai.Bot, kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.Function1((net.mamoe.mirai.event.MessageSubscribersBuilder((net.mamoe.mirai.message.ContactMessage, net.mamoe.mirai.event.Listener(()), kotlin.Unit, )), net.mamoe.mirai.event.subscribeMessages.R)))/coroutineContext">coroutineContext</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html"><span class="identifier">CoroutineContext</span></a>&nbsp;<span class="symbol">=</span>&nbsp;EmptyCoroutineContext<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.event$subscribeMessages(net.mamoe.mirai.Bot, kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.Function1((net.mamoe.mirai.event.MessageSubscribersBuilder((net.mamoe.mirai.message.ContactMessage, net.mamoe.mirai.event.Listener(()), kotlin.Unit, )), net.mamoe.mirai.event.subscribeMessages.R)))/concurrencyKind">concurrencyKind</span><span class="symbol">:</span>&nbsp;<span class="identifier">ConcurrencyKind</span>&nbsp;<span class="symbol">=</span>&nbsp;Listener.ConcurrencyKind.CONCURRENT<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.event$subscribeMessages(net.mamoe.mirai.Bot, kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.Function1((net.mamoe.mirai.event.MessageSubscribersBuilder((net.mamoe.mirai.message.ContactMessage, net.mamoe.mirai.event.Listener(()), kotlin.Unit, )), net.mamoe.mirai.event.subscribeMessages.R)))/listeners">listeners</span><span class="symbol">:</span>&nbsp;<a href="-message-packet-subscribers-builder.html"><span class="identifier">MessagePacketSubscribersBuilder</span></a><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<span class="identifier">R</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">R</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="subscribe-once.html">subscribeOnce</a></h4>
+</td>
+<td>
+<p>在 <a href="../net.mamoe.mirai/-bot/index.html">Bot</a> 的 <a href="#">CoroutineScope</a> 下订阅所有 <a href="subscribe-once.html#E">E</a> 及其子类事件.
+仅在第一次 <a href="broadcast.html">事件广播</a> 时, <a href="subscribe-once.html#net.mamoe.mirai.event$subscribeOnce(net.mamoe.mirai.Bot, kotlin.coroutines.CoroutineContext, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.event.subscribeOnce.E, , kotlin.Unit)))/listener">listener</a> 会被执行.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">E</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../net.mamoe.mirai.event.events/-bot-event/index.html"><span class="identifier">BotEvent</span></a><span class="symbol">&gt;</span> <a href="../net.mamoe.mirai/-bot/index.html"><span class="identifier">Bot</span></a><span class="symbol">.</span><span class="identifier">subscribeOnce</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.event$subscribeOnce(net.mamoe.mirai.Bot, kotlin.coroutines.CoroutineContext, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.event.subscribeOnce.E, , kotlin.Unit)))/coroutineContext">coroutineContext</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html"><span class="identifier">CoroutineContext</span></a>&nbsp;<span class="symbol">=</span>&nbsp;EmptyCoroutineContext<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.event$subscribeOnce(net.mamoe.mirai.Bot, kotlin.coroutines.CoroutineContext, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.event.subscribeOnce.E, , kotlin.Unit)))/listener">listener</span><span class="symbol">:</span>&nbsp;<span class="keyword">suspend </span><span class="identifier">E</span><span class="symbol">.</span><span class="symbol">(</span><span class="identifier">E</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="-listener/index.html"><span class="identifier">Listener</span></a><span class="symbol">&lt;</span><span class="identifier">E</span><span class="symbol">&gt;</span></code><code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">E</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../net.mamoe.mirai.event.events/-bot-event/index.html"><span class="identifier">BotEvent</span></a><span class="symbol">&gt;</span> <a href="../net.mamoe.mirai/-bot/index.html"><span class="identifier">Bot</span></a><span class="symbol">.</span><span class="identifier">subscribeOnce</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.event$subscribeOnce(net.mamoe.mirai.Bot, kotlin.reflect.KClass((net.mamoe.mirai.event.subscribeOnce.E)), kotlin.coroutines.CoroutineContext, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.event.subscribeOnce.E, , kotlin.Unit)))/eventClass">eventClass</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-class/index.html"><span class="identifier">KClass</span></a><span class="symbol">&lt;</span><span class="identifier">E</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.event$subscribeOnce(net.mamoe.mirai.Bot, kotlin.reflect.KClass((net.mamoe.mirai.event.subscribeOnce.E)), kotlin.coroutines.CoroutineContext, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.event.subscribeOnce.E, , kotlin.Unit)))/coroutineContext">coroutineContext</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html"><span class="identifier">CoroutineContext</span></a>&nbsp;<span class="symbol">=</span>&nbsp;EmptyCoroutineContext<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.event$subscribeOnce(net.mamoe.mirai.Bot, kotlin.reflect.KClass((net.mamoe.mirai.event.subscribeOnce.E)), kotlin.coroutines.CoroutineContext, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.event.subscribeOnce.E, , kotlin.Unit)))/listener">listener</span><span class="symbol">:</span>&nbsp;<span class="keyword">suspend </span><span class="identifier">E</span><span class="symbol">.</span><span class="symbol">(</span><span class="identifier">E</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="-listener/index.html"><span class="identifier">Listener</span></a><span class="symbol">&lt;</span><span class="identifier">E</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="subscribe-temp-messages.html">subscribeTempMessages</a></h4>
+</td>
+<td>
+<p>订阅来自这个 <a href="../net.mamoe.mirai/-bot/index.html">Bot</a> 的所有临时会话消息事件.</p>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">R</span><span class="symbol">&gt;</span> <a href="../net.mamoe.mirai/-bot/index.html"><span class="identifier">Bot</span></a><span class="symbol">.</span><span class="identifier">subscribeTempMessages</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.event$subscribeTempMessages(net.mamoe.mirai.Bot, kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.Function1((net.mamoe.mirai.event.MessageSubscribersBuilder((net.mamoe.mirai.message.TempMessage, net.mamoe.mirai.event.Listener(()), kotlin.Unit, )), net.mamoe.mirai.event.subscribeTempMessages.R)))/coroutineContext">coroutineContext</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html"><span class="identifier">CoroutineContext</span></a>&nbsp;<span class="symbol">=</span>&nbsp;EmptyCoroutineContext<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.event$subscribeTempMessages(net.mamoe.mirai.Bot, kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.Function1((net.mamoe.mirai.event.MessageSubscribersBuilder((net.mamoe.mirai.message.TempMessage, net.mamoe.mirai.event.Listener(()), kotlin.Unit, )), net.mamoe.mirai.event.subscribeTempMessages.R)))/concurrencyKind">concurrencyKind</span><span class="symbol">:</span>&nbsp;<span class="identifier">ConcurrencyKind</span>&nbsp;<span class="symbol">=</span>&nbsp;Listener.ConcurrencyKind.CONCURRENT<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.event$subscribeTempMessages(net.mamoe.mirai.Bot, kotlin.coroutines.CoroutineContext, net.mamoe.mirai.event.Listener.ConcurrencyKind, kotlin.Function1((net.mamoe.mirai.event.MessageSubscribersBuilder((net.mamoe.mirai.message.TempMessage, net.mamoe.mirai.event.Listener(()), kotlin.Unit, )), net.mamoe.mirai.event.subscribeTempMessages.R)))/listeners">listeners</span><span class="symbol">:</span>&nbsp;<a href="-temp-message-subscribers-builder.html"><span class="identifier">TempMessageSubscribersBuilder</span></a><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<span class="identifier">R</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">R</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="sync-from-event.html">syncFromEvent</a></h4>
+</td>
+<td>
+<p>挂起当前协程, 监听事件 <a href="sync-from-event.html#E">E</a>, 并尝试从这个事件中<strong>同步</strong>一个值, 在超时时抛出 <a href="#">TimeoutCancellationException</a></p>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">E</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-event.html"><span class="identifier">Event</span></a><span class="symbol">, </span><span class="identifier">R</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span> <span class="identifier">syncFromEvent</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.event$syncFromEvent(kotlin.Long, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.event.syncFromEvent.E, , net.mamoe.mirai.event.syncFromEvent.R)))/timeoutMillis">timeoutMillis</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a>&nbsp;<span class="symbol">=</span>&nbsp;-1<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.event$syncFromEvent(kotlin.Long, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.event.syncFromEvent.E, , net.mamoe.mirai.event.syncFromEvent.R)))/mapper">mapper</span><span class="symbol">:</span>&nbsp;<span class="keyword">suspend </span><span class="identifier">E</span><span class="symbol">.</span><span class="symbol">(</span><span class="identifier">E</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<span class="identifier">R</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">R</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="sync-from-event-or-null.html">syncFromEventOrNull</a></h4>
+</td>
+<td>
+<p>挂起当前协程, 监听这个事件, 并尝试从这个事件中获取一个值, 在超时时返回 <code>null</code></p>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">E</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-event.html"><span class="identifier">Event</span></a><span class="symbol">, </span><span class="identifier">R</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span> <span class="identifier">syncFromEventOrNull</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.event$syncFromEventOrNull(kotlin.Long, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.event.syncFromEventOrNull.E, , net.mamoe.mirai.event.syncFromEventOrNull.R)))/timeoutMillis">timeoutMillis</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.event$syncFromEventOrNull(kotlin.Long, kotlin.coroutines.SuspendFunction2((net.mamoe.mirai.event.syncFromEventOrNull.E, , net.mamoe.mirai.event.syncFromEventOrNull.R)))/mapper">mapper</span><span class="symbol">:</span>&nbsp;<span class="keyword">suspend </span><span class="identifier">E</span><span class="symbol">.</span><span class="symbol">(</span><span class="identifier">E</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<span class="identifier">R</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">R</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="while-select-messages.html">whileSelectMessages</a></h4>
+</td>
+<td>
+<p>挂起当前协程, 等待任意一个事件监听器返回 <code>false</code> 后返回.</p>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../net.mamoe.mirai.message/-contact-message/index.html"><span class="identifier">ContactMessage</span></a><span class="symbol">&gt;</span> <span class="identifier">T</span><span class="symbol">.</span><span class="identifier">whileSelectMessages</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.event$whileSelectMessages(net.mamoe.mirai.event.whileSelectMessages.T, kotlin.Long, kotlin.Boolean, kotlin.Function1((net.mamoe.mirai.event.MessageSelectBuilder((net.mamoe.mirai.event.whileSelectMessages.T, kotlin.Boolean)), kotlin.Unit)))/timeoutMillis">timeoutMillis</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a>&nbsp;<span class="symbol">=</span>&nbsp;-1<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.event$whileSelectMessages(net.mamoe.mirai.event.whileSelectMessages.T, kotlin.Long, kotlin.Boolean, kotlin.Function1((net.mamoe.mirai.event.MessageSelectBuilder((net.mamoe.mirai.event.whileSelectMessages.T, kotlin.Boolean)), kotlin.Unit)))/filterContext">filterContext</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;true<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.event$whileSelectMessages(net.mamoe.mirai.event.whileSelectMessages.T, kotlin.Long, kotlin.Boolean, kotlin.Function1((net.mamoe.mirai.event.MessageSelectBuilder((net.mamoe.mirai.event.whileSelectMessages.T, kotlin.Boolean)), kotlin.Unit)))/selectBuilder">selectBuilder</span><span class="symbol">:</span>&nbsp;<a href="-message-select-builder/index.html"><span class="identifier">MessageSelectBuilder</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">&gt;</span><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>
