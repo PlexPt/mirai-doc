@@ -1,0 +1,126 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>BotJavaFriendlyAPI - mirai-core</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">mirai-core</a>&nbsp;/&nbsp;<a href="../index.html">net.mamoe.mirai</a>&nbsp;/&nbsp;<a href="./index.html">BotJavaFriendlyAPI</a><br/>
+<br/>
+<h1>BotJavaFriendlyAPI</h1>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">BotJavaFriendlyAPI</span></code>
+<p><a href="../-bot/index.html">Bot</a> 中为了让 Java 使用者调用更方便的 API 列表.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p><a href="../-bot/index.html">Bot</a> 中为了让 Java 使用者调用更方便的 API 列表.</p>
+<code><span class="identifier">BotJavaFriendlyAPI</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="__add-friend-blocking-for-java__.html">__addFriendBlockingForJava__</a></h4>
+</td>
+<td>
+<p>添加一个好友</p>
+<code><span class="keyword">fun </span><span class="identifier">__addFriendBlockingForJava__</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.BotJavaFriendlyAPI$__addFriendBlockingForJava__(kotlin.Long, kotlin.String, kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.BotJavaFriendlyAPI$__addFriendBlockingForJava__(kotlin.Long, kotlin.String, kotlin.String)/message">message</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.BotJavaFriendlyAPI$__addFriendBlockingForJava__(kotlin.Long, kotlin.String, kotlin.String)/remark">remark</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><a href="../../net.mamoe.mirai.data/-add-friend-result/index.html"><span class="identifier">AddFriendResult</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="__join-blocking-for-java__.html">__joinBlockingForJava__</a></h4>
+</td>
+<td>
+<p>阻塞当前线程直到 <a href="../-bot/index.html">Bot</a> 下线.</p>
+<code><span class="keyword">fun </span><span class="identifier">__joinBlockingForJava__</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="__login-async-for-java__.html">__loginAsyncForJava__</a></h4>
+</td>
+<td>
+<p>异步调用 <a href="#"></a></p>
+<code><span class="keyword">fun </span><span class="identifier">__loginAsyncForJava__</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/util/concurrent/Future.html"><span class="identifier">Future</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="__login-blocking-for-java__.html">__loginBlockingForJava__</a></h4>
+</td>
+<td>
+<p>登录, 或重新登录.
+这个函数总是关闭一切现有网路任务, 然后重新登录并重新缓存好友列表和群列表.</p>
+<code><span class="keyword">fun </span><span class="identifier">__loginBlockingForJava__</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="__query-image-url-async-for-java__.html">__queryImageUrlAsyncForJava__</a></h4>
+</td>
+<td>
+<p>异步调用 <a href="#"></a></p>
+<code><span class="keyword">fun </span><span class="identifier">__queryImageUrlAsyncForJava__</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.BotJavaFriendlyAPI$__queryImageUrlAsyncForJava__(net.mamoe.mirai.message.data.Image)/image">image</span><span class="symbol">:</span>&nbsp;<a href="../../net.mamoe.mirai.message.data/-image/index.html"><span class="identifier">Image</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/util/concurrent/Future.html"><span class="identifier">Future</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="__query-image-url-blocking-for-java__.html">__queryImageUrlBlockingForJava__</a></h4>
+</td>
+<td>
+<p>获取图片下载链接</p>
+<code><span class="keyword">fun </span><span class="identifier">__queryImageUrlBlockingForJava__</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.BotJavaFriendlyAPI$__queryImageUrlBlockingForJava__(net.mamoe.mirai.message.data.Image)/image">image</span><span class="symbol">:</span>&nbsp;<a href="../../net.mamoe.mirai.message.data/-image/index.html"><span class="identifier">Image</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="__recall-async-for-java__.html">__recallAsyncForJava__</a></h4>
+</td>
+<td>
+<p>异步调用 <a href="#"></a></p>
+<code><span class="keyword">fun </span><span class="identifier">__recallAsyncForJava__</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.BotJavaFriendlyAPI$__recallAsyncForJava__(net.mamoe.mirai.message.data.MessageSource)/source">source</span><span class="symbol">:</span>&nbsp;<a href="../../net.mamoe.mirai.message.data/-message-source/index.html"><span class="identifier">MessageSource</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/util/concurrent/Future.html"><span class="identifier">Future</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">&gt;</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">__recallAsyncForJava__</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.BotJavaFriendlyAPI$__recallAsyncForJava__(net.mamoe.mirai.message.data.MessageChain)/source">source</span><span class="symbol">:</span>&nbsp;<a href="../../net.mamoe.mirai.message.data/-message-chain/index.html"><span class="identifier">MessageChain</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/util/concurrent/Future.html"><span class="identifier">Future</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="__recall-blocking-for-java__.html">__recallBlockingForJava__</a></h4>
+</td>
+<td>
+<p>撤回这条消息. 可撤回自己 2 分钟内发出的消息, 和任意时间的群成员的消息.</p>
+<code><span class="keyword">fun </span><span class="identifier">__recallBlockingForJava__</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.BotJavaFriendlyAPI$__recallBlockingForJava__(net.mamoe.mirai.message.data.MessageSource)/source">source</span><span class="symbol">:</span>&nbsp;<a href="../../net.mamoe.mirai.message.data/-message-source/index.html"><span class="identifier">MessageSource</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>撤回这条消息.
+根据 <a href="__recall-blocking-for-java__.html#net.mamoe.mirai.BotJavaFriendlyAPI$__recallBlockingForJava__(net.mamoe.mirai.message.data.MessageChain)/message">message</a> 内的 <a href="../../net.mamoe.mirai.message.data/-message-source/index.html">MessageSource</a> 进行相关判断.</p>
+<code><span class="keyword">fun </span><span class="identifier">__recallBlockingForJava__</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.BotJavaFriendlyAPI$__recallBlockingForJava__(net.mamoe.mirai.message.data.MessageChain)/message">message</span><span class="symbol">:</span>&nbsp;<a href="../../net.mamoe.mirai.message.data/-message-chain/index.html"><span class="identifier">MessageChain</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="__recall-in_-member-for-java__.html">__recallIn_MemberForJava__</a></h4>
+</td>
+<td>
+<p>在一段时间后撤回这条消息.
+将根据 <a href="#">MessageSource.groupId</a> 判断消息是群消息还是好友消息.</p>
+<code><span class="keyword">fun </span><span class="identifier">__recallIn_MemberForJava__</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.BotJavaFriendlyAPI$__recallIn_MemberForJava__(net.mamoe.mirai.message.data.MessageSource, kotlin.Long)/source">source</span><span class="symbol">:</span>&nbsp;<a href="../../net.mamoe.mirai.message.data/-message-source/index.html"><span class="identifier">MessageSource</span></a><span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.BotJavaFriendlyAPI$__recallIn_MemberForJava__(net.mamoe.mirai.message.data.MessageSource, kotlin.Long)/millis">millis</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>在一段时间后撤回这条消息.</p>
+<code><span class="keyword">fun </span><span class="identifier">__recallIn_MemberForJava__</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.BotJavaFriendlyAPI$__recallIn_MemberForJava__(net.mamoe.mirai.message.data.MessageChain, kotlin.Long)/source">source</span><span class="symbol">:</span>&nbsp;<a href="../../net.mamoe.mirai.message.data/-message-chain/index.html"><span class="identifier">MessageChain</span></a><span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.BotJavaFriendlyAPI$__recallIn_MemberForJava__(net.mamoe.mirai.message.data.MessageChain, kotlin.Long)/millis">millis</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="../-bot/index.html">Bot</a></h4>
+</td>
+<td>
+<p>机器人对象. 一个机器人实例登录一个 QQ 账号.
+Mirai 为多账号设计, 可同时维护多个机器人.</p>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">Bot</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">CoroutineScope</span><span class="symbol">, </span><a href="../-low-level-bot-a-p-i-accessor/index.html"><span class="identifier">LowLevelBotAPIAccessor</span></a><span class="symbol">, </span><a href="./index.html"><span class="identifier">BotJavaFriendlyAPI</span></a><span class="symbol">, </span><a href="../../net.mamoe.mirai.contact/-contact-or-bot/index.html"><span class="identifier">ContactOrBot</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

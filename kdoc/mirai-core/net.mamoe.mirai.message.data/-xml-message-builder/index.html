@@ -1,0 +1,133 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>XmlMessageBuilder - mirai-core</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">mirai-core</a>&nbsp;/&nbsp;<a href="../index.html">net.mamoe.mirai.message.data</a>&nbsp;/&nbsp;<a href="./index.html">XmlMessageBuilder</a><br/>
+<br/>
+<h1>XmlMessageBuilder</h1>
+<code><span class="keyword">class </span><span class="identifier">XmlMessageBuilder</span></code>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-item-builder/index.html">ItemBuilder</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ItemBuilder</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">XmlMessageBuilder</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message.data.XmlMessageBuilder$<init>(kotlin.Int, kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.String, kotlin.String)/templateId">templateId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;1<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.message.data.XmlMessageBuilder$<init>(kotlin.Int, kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.String, kotlin.String)/serviceId">serviceId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;1<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.message.data.XmlMessageBuilder$<init>(kotlin.Int, kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.String, kotlin.String)/action">action</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;"plugin"<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.message.data.XmlMessageBuilder$<init>(kotlin.Int, kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.String, kotlin.String)/actionData">actionData</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;""<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.message.data.XmlMessageBuilder$<init>(kotlin.Int, kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.String, kotlin.String)/brief">brief</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;""<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.message.data.XmlMessageBuilder$<init>(kotlin.Int, kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.String, kotlin.String)/flag">flag</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;3<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.message.data.XmlMessageBuilder$<init>(kotlin.Int, kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.String, kotlin.String)/url">url</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;""<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.message.data.XmlMessageBuilder$<init>(kotlin.Int, kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.String, kotlin.String)/sourceName">sourceName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;""<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.message.data.XmlMessageBuilder$<init>(kotlin.Int, kotlin.Int, kotlin.String, kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.String, kotlin.String)/sourceIconURL">sourceIconURL</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;""<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="action.html">action</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">action</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="action-data.html">actionData</a></h4>
+</td>
+<td>
+<p>一般为点击这条消息后跳转的链接</p>
+<code><span class="keyword">var </span><span class="identifier">actionData</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="brief.html">brief</a></h4>
+</td>
+<td>
+<p>摘要, 在官方客户端内消息列表中显示</p>
+<code><span class="keyword">var </span><span class="identifier">brief</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="flag.html">flag</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">flag</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="service-id.html">serviceId</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">serviceId</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="source-icon-u-r-l.html">sourceIconURL</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">sourceIconURL</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="source-name.html">sourceName</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">sourceName</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="template-id.html">templateId</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">templateId</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="text.html">text</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">text</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="url.html">url</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">url</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="item.html">item</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">item</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message.data.XmlMessageBuilder$item(kotlin.Int, kotlin.Int, kotlin.Function1((net.mamoe.mirai.message.data.XmlMessageBuilder.ItemBuilder, kotlin.Unit)))/bg">bg</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.message.data.XmlMessageBuilder$item(kotlin.Int, kotlin.Int, kotlin.Function1((net.mamoe.mirai.message.data.XmlMessageBuilder.ItemBuilder, kotlin.Unit)))/layout">layout</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;4<span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.message.data.XmlMessageBuilder$item(kotlin.Int, kotlin.Int, kotlin.Function1((net.mamoe.mirai.message.data.XmlMessageBuilder.ItemBuilder, kotlin.Unit)))/block">block</span><span class="symbol">:</span>&nbsp;<span class="identifier">ItemBuilder</span><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="source.html">source</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">source</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message.data.XmlMessageBuilder$source(kotlin.String, kotlin.String)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.message.data.XmlMessageBuilder$source(kotlin.String, kotlin.String)/iconURL">iconURL</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;""<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

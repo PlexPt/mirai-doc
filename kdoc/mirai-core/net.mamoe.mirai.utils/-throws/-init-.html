@@ -1,0 +1,22 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Throws.<init> - mirai-core</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">mirai-core</a>&nbsp;/&nbsp;<a href="../index.html">net.mamoe.mirai.utils</a>&nbsp;/&nbsp;<a href="index.html">Throws</a>&nbsp;/&nbsp;<a href="./-init-.html">&lt;init&gt;</a><br/>
+<br/>
+<h1>&lt;init&gt;</h1>
+<a name="net.mamoe.mirai.utils.Throws$&lt;init&gt;(kotlin.Array((kotlin.reflect.KClass((kotlin.Throwable)))))"></a>
+<code><span class="identifier">Throws</span><span class="symbol">(</span><span class="keyword">vararg</span> <span class="identifier" id="net.mamoe.mirai.utils.Throws$<init>(kotlin.Array((kotlin.reflect.KClass((kotlin.Throwable)))))/exceptionClasses">exceptionClasses</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-class/index.html"><span class="identifier">KClass</span></a><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html"><span class="identifier">Throwable</span></a><span class="symbol">&gt;</span><span class="symbol">)</span></code>
+<p>This annotation indicates what exceptions should be declared by a function when compiled to a JVM method.</p>
+<p>Example:</p>
+<pre><code>@Throws(IOException::class)
+fun readFile(name: String): String {...}
+</code></pre>
+<p>will be translated to</p>
+<pre><code>String readFile(String name) throws IOException {...}
+</code></pre>
+</BODY>
+</HTML>

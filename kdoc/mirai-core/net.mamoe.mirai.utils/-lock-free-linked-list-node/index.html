@@ -1,0 +1,84 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>LockFreeLinkedListNode - mirai-core</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">mirai-core</a>&nbsp;/&nbsp;<a href="../index.html">net.mamoe.mirai.utils</a>&nbsp;/&nbsp;<a href="./index.html">LockFreeLinkedListNode</a><br/>
+<br/>
+<h1>LockFreeLinkedListNode</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">LockFreeLinkedListNode</span><span class="symbol">&lt;</span><span class="identifier">E</span><span class="symbol">&gt;</span></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">LockFreeLinkedListNode</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.utils.LockFreeLinkedListNode$<init>(net.mamoe.mirai.utils.LockFreeLinkedListNode((net.mamoe.mirai.utils.LockFreeLinkedListNode.E)), net.mamoe.mirai.utils.LockFreeLinkedListNode.E)/nextNode">nextNode</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">LockFreeLinkedListNode</span></a><span class="symbol">&lt;</span><span class="identifier">E</span><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="net.mamoe.mirai.utils.LockFreeLinkedListNode$<init>(net.mamoe.mirai.utils.LockFreeLinkedListNode((net.mamoe.mirai.utils.LockFreeLinkedListNode.E)), net.mamoe.mirai.utils.LockFreeLinkedListNode.E)/initialNodeValue">initialNodeValue</span><span class="symbol">:</span>&nbsp;<span class="identifier">E</span><span class="symbol">?</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="node-value.html">nodeValue</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">nodeValue</span><span class="symbol">: </span><span class="identifier">E</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="all-matching.html">allMatching</a></h4>
+</td>
+<td>
+<p>Check if all the node which is not <a href="#">Tail</a> matches the <a href="all-matching.html#net.mamoe.mirai.utils.LockFreeLinkedListNode$allMatching(kotlin.Function1((net.mamoe.mirai.utils.LockFreeLinkedListNode((net.mamoe.mirai.utils.LockFreeLinkedListNode.E)), kotlin.Boolean)))/condition">condition</a></p>
+<code><span class="keyword">fun </span><span class="identifier">allMatching</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.utils.LockFreeLinkedListNode$allMatching(kotlin.Function1((net.mamoe.mirai.utils.LockFreeLinkedListNode((net.mamoe.mirai.utils.LockFreeLinkedListNode.E)), kotlin.Boolean)))/condition">condition</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="./index.html"><span class="identifier">LockFreeLinkedListNode</span></a><span class="symbol">&lt;</span><span class="identifier">E</span><span class="symbol">&gt;</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="iterate-before-first.html">iterateBeforeFirst</a></h4>
+</td>
+<td>
+<p>Returns the former node of the last node whence <a href="iterate-before-first.html#net.mamoe.mirai.utils.LockFreeLinkedListNode$iterateBeforeFirst(kotlin.Function1((net.mamoe.mirai.utils.LockFreeLinkedListNode((net.mamoe.mirai.utils.LockFreeLinkedListNode.E)), kotlin.Boolean)))/filter">filter</a> returns true</p>
+<code><span class="keyword">fun </span><span class="identifier">iterateBeforeFirst</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.utils.LockFreeLinkedListNode$iterateBeforeFirst(kotlin.Function1((net.mamoe.mirai.utils.LockFreeLinkedListNode((net.mamoe.mirai.utils.LockFreeLinkedListNode.E)), kotlin.Boolean)))/filter">filter</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="./index.html"><span class="identifier">LockFreeLinkedListNode</span></a><span class="symbol">&lt;</span><span class="identifier">E</span><span class="symbol">&gt;</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">LockFreeLinkedListNode</span></a><span class="symbol">&lt;</span><span class="identifier">E</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="let-value-if-valid.html">letValueIfValid</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">R</span><span class="symbol">&gt;</span> <span class="identifier">letValueIfValid</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.utils.LockFreeLinkedListNode$letValueIfValid(kotlin.Function1((net.mamoe.mirai.utils.LockFreeLinkedListNode.E, net.mamoe.mirai.utils.LockFreeLinkedListNode.letValueIfValid.R)))/block">block</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">E</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<span class="identifier">R</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">R</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="to-string.html">toString</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">toString</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Extension Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="../is-removed.html">isRemoved</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">E</span><span class="symbol">&gt;</span> <a href="./index.html"><span class="identifier">LockFreeLinkedListNode</span></a><span class="symbol">&lt;</span><span class="identifier">E</span><span class="symbol">&gt;</span><span class="symbol">.</span><span class="identifier">isRemoved</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

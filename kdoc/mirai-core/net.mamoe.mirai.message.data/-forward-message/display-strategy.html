@@ -1,0 +1,51 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ForwardMessage.displayStrategy - mirai-core</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">mirai-core</a>&nbsp;/&nbsp;<a href="../index.html">net.mamoe.mirai.message.data</a>&nbsp;/&nbsp;<a href="index.html">ForwardMessage</a>&nbsp;/&nbsp;<a href="./display-strategy.html">displayStrategy</a><br/>
+<br/>
+<h1>displayStrategy</h1>
+<a name="net.mamoe.mirai.message.data.ForwardMessage$displayStrategy"></a>
+<code><span class="keyword">val </span><span class="identifier">displayStrategy</span><span class="symbol">: </span><span class="identifier">DisplayStrategy</span></code>
+<p>卡片显示方案</p>
+<h3>显示方案</h3>
+<h4>移动端</h4>
+<p>在移动客户端将会显示为卡片</p>
+<p><code>&lt;title&gt;</code>: <a href="-display-strategy/generate-title.html">DisplayStrategy.generateTitle</a></p>
+<p><code>&lt;preview&gt;</code>: <a href="-display-strategy/generate-preview.html">DisplayStrategy.generatePreview</a></p>
+<p><code>&lt;summary&gt;</code>: <a href="-display-strategy/generate-summary.html">DisplayStrategy.generateSummary</a></p>
+<pre><code>|-------------------------|
+| &lt;title&gt;                 |
+| &lt;preview&gt;               |
+|-------------------------|
+| &lt;summary&gt;               |
+|-------------------------|
+</code></pre>
+<p>默认显示方案:</p>
+<pre><code>|-------------------------|
+| 群聊的聊天记录             |
+| &lt;消息 1&gt;                 |
+| &lt;消息 2&gt;                 |
+| &lt;消息 3&gt;                 |
+|-------------------------|
+| 查看 3 条转发消息          |
+|-------------------------|
+</code></pre>
+<h4>PC 端</h4>
+<p>在部分 PC 端显示为类似移动端的卡片, 在其他 PC 端显示为以下格式</p>
+<pre><code>鸽子 A 2020/04/23 11:27:54
+咕
+鸽子 B 2020/04/23 11:27:55
+咕
+鸽子 C 1970/01/01 08:00:00
+咕咕咕
+</code></pre>
+<h3>构造</h3>
+<ul><li>使用 <a href="../build-forward-message.html">DSL</a></li>
+<li>通过 <a href="../../net.mamoe.mirai.message/-contact-message/index.html">ContactMessage</a> 集合转换: <a href="../kotlin.collections.-iterable/to-forward-message.html">toForwardMessage</a></li>
+</ul>
+</BODY>
+</HTML>

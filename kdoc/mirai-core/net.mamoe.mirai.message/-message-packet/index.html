@@ -1,0 +1,147 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>MessagePacket - mirai-core</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">mirai-core</a>&nbsp;/&nbsp;<a href="../index.html">net.mamoe.mirai.message</a>&nbsp;/&nbsp;<a href="./index.html">MessagePacket</a><br/>
+<br/>
+<h1>MessagePacket</h1>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><s><span class="identifier">MessagePacket</span></s><span class="symbol">&lt;</span><span class="identifier">TSender</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../net.mamoe.mirai.contact/-user/index.html"><span class="identifier">User</span></a><span class="symbol">, </span><span class="identifier">TSubject</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../net.mamoe.mirai.contact/-contact/index.html"><span class="identifier">Contact</span></a><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-message-packet-base/index.html"><span class="identifier">MessagePacketBase</span></a><span class="symbol">&lt;</span><span class="identifier">TSender</span><span class="symbol">,</span>&nbsp;<span class="identifier">TSubject</span><span class="symbol">&gt;</span></code><br/>
+<strong>Deprecated:</strong> use ContactMessage<br/>
+<br/>
+<p>一条从服务器接收到的消息事件.
+请查看各平台的 <code>actual</code> 实现的说明.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>一条从服务器接收到的消息事件.
+请查看各平台的 <code>actual</code> 实现的说明.</p>
+<code><span class="identifier">MessagePacket</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="download-and-close.html">downloadAndClose</a></h4>
+</td>
+<td>
+<p>下载图片到 <a href="download-and-close.html#net.mamoe.mirai.message.MessagePacket$downloadAndClose(net.mamoe.mirai.message.data.Image, java.io.OutputStream)/output">output</a> 并关闭这个 <a href="download-and-close.html#net.mamoe.mirai.message.MessagePacket$downloadAndClose(net.mamoe.mirai.message.data.Image, java.io.OutputStream)/output">output</a></p>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><a href="../../net.mamoe.mirai.message.data/-image/index.html"><span class="identifier">Image</span></a><span class="symbol">.</span><span class="identifier">downloadAndClose</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message.MessagePacket$downloadAndClose(net.mamoe.mirai.message.data.Image, java.io.OutputStream)/output">output</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/OutputStream.html"><span class="identifier">OutputStream</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><a href="../../net.mamoe.mirai.message.data/-image/index.html"><span class="identifier">Image</span></a><span class="symbol">.</span><span class="identifier">downloadAndClose</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message.MessagePacket$downloadAndClose(net.mamoe.mirai.message.data.Image, kotlinx.io.core.Output)/output">output</span><span class="symbol">:</span>&nbsp;<span class="identifier">Output</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><a href="../../net.mamoe.mirai.message.data/-image/index.html"><span class="identifier">Image</span></a><span class="symbol">.</span><span class="identifier">downloadAndClose</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message.MessagePacket$downloadAndClose(net.mamoe.mirai.message.data.Image, kotlinx.coroutines.io.ByteWriteChannel)/output">output</span><span class="symbol">:</span>&nbsp;<span class="identifier">ByteWriteChannel</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="download-to.html">downloadTo</a></h4>
+</td>
+<td>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><a href="../../net.mamoe.mirai.message.data/-image/index.html"><span class="identifier">Image</span></a><span class="symbol">.</span><span class="identifier">downloadTo</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message.MessagePacket$downloadTo(net.mamoe.mirai.message.data.Image, java.io.File)/file">file</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>下载图片到 <a href="download-to.html#net.mamoe.mirai.message.MessagePacket$downloadTo(net.mamoe.mirai.message.data.Image, java.io.OutputStream)/output">output</a> 但不关闭这个 <a href="download-to.html#net.mamoe.mirai.message.MessagePacket$downloadTo(net.mamoe.mirai.message.data.Image, java.io.OutputStream)/output">output</a></p>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><a href="../../net.mamoe.mirai.message.data/-image/index.html"><span class="identifier">Image</span></a><span class="symbol">.</span><span class="identifier">downloadTo</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message.MessagePacket$downloadTo(net.mamoe.mirai.message.data.Image, java.io.OutputStream)/output">output</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/OutputStream.html"><span class="identifier">OutputStream</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><a href="../../net.mamoe.mirai.message.data/-image/index.html"><span class="identifier">Image</span></a><span class="symbol">.</span><span class="identifier">downloadTo</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message.MessagePacket$downloadTo(net.mamoe.mirai.message.data.Image, kotlinx.io.core.Output)/output">output</span><span class="symbol">:</span>&nbsp;<span class="identifier">Output</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><a href="../../net.mamoe.mirai.message.data/-image/index.html"><span class="identifier">Image</span></a><span class="symbol">.</span><span class="identifier">downloadTo</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message.MessagePacket$downloadTo(net.mamoe.mirai.message.data.Image, kotlinx.coroutines.io.ByteWriteChannel)/output">output</span><span class="symbol">:</span>&nbsp;<span class="identifier">ByteWriteChannel</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="send.html">send</a></h4>
+</td>
+<td>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><a href="https://docs.oracle.com/javase/6/docs/api/java/awt/image/BufferedImage.html"><span class="identifier">BufferedImage</span></a><span class="symbol">.</span><span class="identifier">send</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-message-receipt/index.html"><span class="identifier">MessageReceipt</span></a><span class="symbol">&lt;</span><span class="identifier">TSubject</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="send-as-image.html">sendAsImage</a></h4>
+</td>
+<td>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><a href="https://docs.oracle.com/javase/6/docs/api/java/net/URL.html"><span class="identifier">URL</span></a><span class="symbol">.</span><span class="identifier">sendAsImage</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-message-receipt/index.html"><span class="identifier">MessageReceipt</span></a><span class="symbol">&lt;</span><span class="identifier">TSubject</span><span class="symbol">&gt;</span></code><br/>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">Input</span><span class="symbol">.</span><span class="identifier">sendAsImage</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-message-receipt/index.html"><span class="identifier">MessageReceipt</span></a><span class="symbol">&lt;</span><span class="identifier">TSubject</span><span class="symbol">&gt;</span></code><br/>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><a href="https://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html"><span class="identifier">InputStream</span></a><span class="symbol">.</span><span class="identifier">sendAsImage</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-message-receipt/index.html"><span class="identifier">MessageReceipt</span></a><span class="symbol">&lt;</span><span class="identifier">TSubject</span><span class="symbol">&gt;</span></code><br/>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><a href="https://docs.oracle.com/javase/6/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">.</span><span class="identifier">sendAsImage</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-message-receipt/index.html"><span class="identifier">MessageReceipt</span></a><span class="symbol">&lt;</span><span class="identifier">TSubject</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="send-image.html">sendImage</a></h4>
+</td>
+<td>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">sendImage</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message.MessagePacket$sendImage(java.awt.image.BufferedImage)/image">image</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/awt/image/BufferedImage.html"><span class="identifier">BufferedImage</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-message-receipt/index.html"><span class="identifier">MessageReceipt</span></a><span class="symbol">&lt;</span><span class="identifier">TSubject</span><span class="symbol">&gt;</span></code><br/>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">sendImage</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message.MessagePacket$sendImage(java.net.URL)/image">image</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/net/URL.html"><span class="identifier">URL</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-message-receipt/index.html"><span class="identifier">MessageReceipt</span></a><span class="symbol">&lt;</span><span class="identifier">TSubject</span><span class="symbol">&gt;</span></code><br/>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">sendImage</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message.MessagePacket$sendImage(kotlinx.io.core.Input)/image">image</span><span class="symbol">:</span>&nbsp;<span class="identifier">Input</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-message-receipt/index.html"><span class="identifier">MessageReceipt</span></a><span class="symbol">&lt;</span><span class="identifier">TSubject</span><span class="symbol">&gt;</span></code><br/>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">sendImage</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message.MessagePacket$sendImage(java.io.InputStream)/image">image</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html"><span class="identifier">InputStream</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-message-receipt/index.html"><span class="identifier">MessageReceipt</span></a><span class="symbol">&lt;</span><span class="identifier">TSubject</span><span class="symbol">&gt;</span></code><br/>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">sendImage</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message.MessagePacket$sendImage(java.io.File)/image">image</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-message-receipt/index.html"><span class="identifier">MessageReceipt</span></a><span class="symbol">&lt;</span><span class="identifier">TSubject</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="upload.html">upload</a></h4>
+</td>
+<td>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><a href="https://docs.oracle.com/javase/6/docs/api/java/awt/image/BufferedImage.html"><span class="identifier">BufferedImage</span></a><span class="symbol">.</span><span class="identifier">upload</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../net.mamoe.mirai.message.data/-image/index.html"><span class="identifier">Image</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="upload-as-image.html">uploadAsImage</a></h4>
+</td>
+<td>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><a href="https://docs.oracle.com/javase/6/docs/api/java/net/URL.html"><span class="identifier">URL</span></a><span class="symbol">.</span><span class="identifier">uploadAsImage</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../net.mamoe.mirai.message.data/-image/index.html"><span class="identifier">Image</span></a></code><br/>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">Input</span><span class="symbol">.</span><span class="identifier">uploadAsImage</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../net.mamoe.mirai.message.data/-image/index.html"><span class="identifier">Image</span></a></code><br/>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><a href="https://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html"><span class="identifier">InputStream</span></a><span class="symbol">.</span><span class="identifier">uploadAsImage</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../net.mamoe.mirai.message.data/-image/index.html"><span class="identifier">Image</span></a></code><br/>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><a href="https://docs.oracle.com/javase/6/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">.</span><span class="identifier">uploadAsImage</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../net.mamoe.mirai.message.data/-image/index.html"><span class="identifier">Image</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="upload-image.html">uploadImage</a></h4>
+</td>
+<td>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">uploadImage</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message.MessagePacket$uploadImage(java.awt.image.BufferedImage)/image">image</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/awt/image/BufferedImage.html"><span class="identifier">BufferedImage</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../net.mamoe.mirai.message.data/-image/index.html"><span class="identifier">Image</span></a></code><br/>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">uploadImage</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message.MessagePacket$uploadImage(java.net.URL)/image">image</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/net/URL.html"><span class="identifier">URL</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../net.mamoe.mirai.message.data/-image/index.html"><span class="identifier">Image</span></a></code><br/>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">uploadImage</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message.MessagePacket$uploadImage(kotlinx.io.core.Input)/image">image</span><span class="symbol">:</span>&nbsp;<span class="identifier">Input</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../net.mamoe.mirai.message.data/-image/index.html"><span class="identifier">Image</span></a></code><br/>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">uploadImage</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message.MessagePacket$uploadImage(java.io.InputStream)/image">image</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html"><span class="identifier">InputStream</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../net.mamoe.mirai.message.data/-image/index.html"><span class="identifier">Image</span></a></code><br/>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">uploadImage</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message.MessagePacket$uploadImage(java.io.File)/image">image</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../net.mamoe.mirai.message.data/-image/index.html"><span class="identifier">Image</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Extension Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="../../net.mamoe.mirai.event/broadcast.html">broadcast</a></h4>
+</td>
+<td>
+<p>广播一个事件的唯一途径.</p>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">E</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../net.mamoe.mirai.event/-event.html"><span class="identifier">Event</span></a><span class="symbol">&gt;</span> <span class="identifier">E</span><span class="symbol">.</span><span class="identifier">broadcast</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">E</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="../is-context-identical-with.html">isContextIdenticalWith</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><a href="./index.html"><span class="identifier">MessagePacket</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">,</span>&nbsp;<span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">.</span><s><span class="identifier">isContextIdenticalWith</span></s><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.message$isContextIdenticalWith(net.mamoe.mirai.message.MessagePacket((net.mamoe.mirai.contact.User, net.mamoe.mirai.contact.Contact)), net.mamoe.mirai.message.MessagePacket((net.mamoe.mirai.contact.User, net.mamoe.mirai.contact.Contact)))/another">another</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">MessagePacket</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">,</span>&nbsp;<span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="../-contact-message/index.html">ContactMessage</a></h4>
+</td>
+<td>
+<p>一条消息事件.
+它是一个 <a href="../../net.mamoe.mirai.event.events/-bot-event/index.html">BotEvent</a>, 因此可以被 <a href="#">监听</a></p>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">ContactMessage</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">MessagePacket</span></a><span class="symbol">&lt;</span><a href="../../net.mamoe.mirai.contact/-user/index.html"><span class="identifier">User</span></a><span class="symbol">,</span>&nbsp;<a href="../../net.mamoe.mirai.contact/-contact/index.html"><span class="identifier">Contact</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><a href="../../net.mamoe.mirai.event.events/-bot-event/index.html"><span class="identifier">BotEvent</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

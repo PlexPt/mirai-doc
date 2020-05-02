@@ -1,0 +1,98 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ContactJavaFriendlyAPI - mirai-core</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">mirai-core</a>&nbsp;/&nbsp;<a href="../index.html">net.mamoe.mirai.contact</a>&nbsp;/&nbsp;<a href="./index.html">ContactJavaFriendlyAPI</a><br/>
+<br/>
+<h1>ContactJavaFriendlyAPI</h1>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">ContactJavaFriendlyAPI</span></code>
+<p><a href="../-contact/index.html">Contact</a> 中为了让 <code>Java</code> 更容易调用的 API.
+不要用它作为一个类型, 只应使用其中的方法</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">ContactJavaFriendlyAPI</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="__send-message-async-for-java__.html">__sendMessageAsyncForJava__</a></h4>
+</td>
+<td>
+<p>发送消息</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">__sendMessageAsyncForJava__</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.contact.ContactJavaFriendlyAPI$__sendMessageAsyncForJava__(net.mamoe.mirai.message.data.Message)/message">message</span><span class="symbol">:</span>&nbsp;<a href="../../net.mamoe.mirai.message.data/-message/index.html"><span class="identifier">Message</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/util/concurrent/Future.html"><span class="identifier">Future</span></a><span class="symbol">&lt;</span><a href="../../net.mamoe.mirai.message/-message-receipt/index.html"><span class="identifier">MessageReceipt</span></a><span class="symbol">&lt;</span><a href="../-contact/index.html"><span class="identifier">Contact</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">__sendMessageAsyncForJava__</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.contact.ContactJavaFriendlyAPI$__sendMessageAsyncForJava__(kotlin.String)/message">message</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/util/concurrent/Future.html"><span class="identifier">Future</span></a><span class="symbol">&lt;</span><a href="../../net.mamoe.mirai.message/-message-receipt/index.html"><span class="identifier">MessageReceipt</span></a><span class="symbol">&lt;</span><a href="../-contact/index.html"><span class="identifier">Contact</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="__send-message-blocking-for-java__.html">__sendMessageBlockingForJava__</a></h4>
+</td>
+<td>
+<p>向这个对象发送消息.</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">__sendMessageBlockingForJava__</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.contact.ContactJavaFriendlyAPI$__sendMessageBlockingForJava__(net.mamoe.mirai.message.data.Message)/message">message</span><span class="symbol">:</span>&nbsp;<a href="../../net.mamoe.mirai.message.data/-message/index.html"><span class="identifier">Message</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../net.mamoe.mirai.message/-message-receipt/index.html"><span class="identifier">MessageReceipt</span></a><span class="symbol">&lt;</span><a href="../-contact/index.html"><span class="identifier">Contact</span></a><span class="symbol">&gt;</span></code><code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">__sendMessageBlockingForJava__</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.contact.ContactJavaFriendlyAPI$__sendMessageBlockingForJava__(kotlin.String)/message">message</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../net.mamoe.mirai.message/-message-receipt/index.html"><span class="identifier">MessageReceipt</span></a><span class="symbol">&lt;</span><a href="../-contact/index.html"><span class="identifier">Contact</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="__upload-image-async-for-java__.html">__uploadImageAsyncForJava__</a></h4>
+</td>
+<td>
+<p>上传一个图片以备发送.</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">__uploadImageAsyncForJava__</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.contact.ContactJavaFriendlyAPI$__uploadImageAsyncForJava__(net.mamoe.mirai.utils.ExternalImage)/image">image</span><span class="symbol">:</span>&nbsp;<a href="../../net.mamoe.mirai.utils/-external-image/index.html"><span class="identifier">ExternalImage</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/util/concurrent/Future.html"><span class="identifier">Future</span></a><span class="symbol">&lt;</span><a href="../../net.mamoe.mirai.message.data/-image/index.html"><span class="identifier">Image</span></a><span class="symbol">&gt;</span></code>
+<p>在 <a href="#">Dispatchers.IO</a> 中下载 <a href="https://docs.oracle.com/javase/6/docs/api/java/net/URL.html">URL</a> 到临时文件并将其作为图片上传, 但不发送</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">__uploadImageAsyncForJava__</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.contact.ContactJavaFriendlyAPI$__uploadImageAsyncForJava__(java.net.URL)/image">image</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/net/URL.html"><span class="identifier">URL</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/util/concurrent/Future.html"><span class="identifier">Future</span></a><span class="symbol">&lt;</span><a href="../../net.mamoe.mirai.message.data/-image/index.html"><span class="identifier">Image</span></a><span class="symbol">&gt;</span></code>
+<p>在 <a href="#">Dispatchers.IO</a> 中读取 <a href="https://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html">InputStream</a> 到临时文件并将其作为图片上传, 但不发送</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">__uploadImageAsyncForJava__</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.contact.ContactJavaFriendlyAPI$__uploadImageAsyncForJava__(java.io.InputStream)/image">image</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html"><span class="identifier">InputStream</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/util/concurrent/Future.html"><span class="identifier">Future</span></a><span class="symbol">&lt;</span><a href="../../net.mamoe.mirai.message.data/-image/index.html"><span class="identifier">Image</span></a><span class="symbol">&gt;</span></code>
+<p>在 <a href="#">Dispatchers.IO</a> 中读取 <a href="#">Input</a> 到临时文件并将其作为图片上传, 但不发送</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">__uploadImageAsyncForJava__</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.contact.ContactJavaFriendlyAPI$__uploadImageAsyncForJava__(kotlinx.io.core.Input)/image">image</span><span class="symbol">:</span>&nbsp;<span class="identifier">Input</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/util/concurrent/Future.html"><span class="identifier">Future</span></a><span class="symbol">&lt;</span><a href="../../net.mamoe.mirai.message.data/-image/index.html"><span class="identifier">Image</span></a><span class="symbol">&gt;</span></code>
+<p>在 <a href="#">Dispatchers.IO</a> 中将文件作为图片上传, 但不发送</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">__uploadImageAsyncForJava__</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.contact.ContactJavaFriendlyAPI$__uploadImageAsyncForJava__(java.io.File)/image">image</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/util/concurrent/Future.html"><span class="identifier">Future</span></a><span class="symbol">&lt;</span><a href="../../net.mamoe.mirai.message.data/-image/index.html"><span class="identifier">Image</span></a><span class="symbol">&gt;</span></code>
+<p>在 <a href="#">Dispatchers.IO</a> 中将图片上传, 但不发送. 不会保存临时文件</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">__uploadImageAsyncForJava__</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.contact.ContactJavaFriendlyAPI$__uploadImageAsyncForJava__(java.awt.image.BufferedImage)/image">image</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/awt/image/BufferedImage.html"><span class="identifier">BufferedImage</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/util/concurrent/Future.html"><span class="identifier">Future</span></a><span class="symbol">&lt;</span><a href="../../net.mamoe.mirai.message.data/-image/index.html"><span class="identifier">Image</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="__upload-image-blocking-for-java__.html">__uploadImageBlockingForJava__</a></h4>
+</td>
+<td>
+<p>上传一个图片以备发送.</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">__uploadImageBlockingForJava__</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.contact.ContactJavaFriendlyAPI$__uploadImageBlockingForJava__(net.mamoe.mirai.utils.ExternalImage)/image">image</span><span class="symbol">:</span>&nbsp;<a href="../../net.mamoe.mirai.utils/-external-image/index.html"><span class="identifier">ExternalImage</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../net.mamoe.mirai.message.data/-image/index.html"><span class="identifier">Image</span></a></code>
+<p>在 <a href="#">Dispatchers.IO</a> 中下载 <a href="https://docs.oracle.com/javase/6/docs/api/java/net/URL.html">URL</a> 到临时文件并将其作为图片上传, 但不发送</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">__uploadImageBlockingForJava__</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.contact.ContactJavaFriendlyAPI$__uploadImageBlockingForJava__(java.net.URL)/image">image</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/net/URL.html"><span class="identifier">URL</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../net.mamoe.mirai.message.data/-image/index.html"><span class="identifier">Image</span></a></code>
+<p>在 <a href="#">Dispatchers.IO</a> 中读取 <a href="https://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html">InputStream</a> 到临时文件并将其作为图片上传, 但不发送</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">__uploadImageBlockingForJava__</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.contact.ContactJavaFriendlyAPI$__uploadImageBlockingForJava__(java.io.InputStream)/image">image</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html"><span class="identifier">InputStream</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../net.mamoe.mirai.message.data/-image/index.html"><span class="identifier">Image</span></a></code>
+<p>在 <a href="#">Dispatchers.IO</a> 中读取 <a href="#">Input</a> 到临时文件并将其作为图片上传, 但不发送</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">__uploadImageBlockingForJava__</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.contact.ContactJavaFriendlyAPI$__uploadImageBlockingForJava__(kotlinx.io.core.Input)/image">image</span><span class="symbol">:</span>&nbsp;<span class="identifier">Input</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../net.mamoe.mirai.message.data/-image/index.html"><span class="identifier">Image</span></a></code>
+<p>在 <a href="#">Dispatchers.IO</a> 中将文件作为图片上传, 但不发送</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">__uploadImageBlockingForJava__</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.contact.ContactJavaFriendlyAPI$__uploadImageBlockingForJava__(java.io.File)/image">image</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../net.mamoe.mirai.message.data/-image/index.html"><span class="identifier">Image</span></a></code>
+<p>在 <a href="#">Dispatchers.IO</a> 中将图片上传, 但不发送. 不会保存临时文件</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">__uploadImageBlockingForJava__</span><span class="symbol">(</span><span class="identifier" id="net.mamoe.mirai.contact.ContactJavaFriendlyAPI$__uploadImageBlockingForJava__(java.awt.image.BufferedImage)/image">image</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/awt/image/BufferedImage.html"><span class="identifier">BufferedImage</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../net.mamoe.mirai.message.data/-image/index.html"><span class="identifier">Image</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="../-contact/index.html">Contact</a></h4>
+</td>
+<td>
+<p>联系人. 虽然叫做联系人, 但他的子类有 <a href="../-user/index.html">用户</a>, 和 <a href="../-group/index.html">群</a>.</p>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">Contact</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">CoroutineScope</span><span class="symbol">, </span><a href="./index.html"><span class="identifier">ContactJavaFriendlyAPI</span></a><span class="symbol">, </span><a href="../-contact-or-bot/index.html"><span class="identifier">ContactOrBot</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

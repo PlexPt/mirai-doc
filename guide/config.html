@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>配置 | Mirai</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    <link rel="icon" href="/mirai-doc/favicon.ico">
+    <meta name="description" content="Mirai 是一个在全平台下运行，提供 QQ Android 和 TIM PC 协议支持的高效率机器人框架">
+    <link rel="preload" href="/mirai-doc/assets/css/0.styles.7c5eb895.css" as="style"><link rel="preload" href="/mirai-doc/assets/js/app.e4527cb9.js" as="script"><link rel="preload" href="/mirai-doc/assets/js/2.279d2599.js" as="script"><link rel="preload" href="/mirai-doc/assets/js/9.e3b8c230.js" as="script"><link rel="prefetch" href="/mirai-doc/assets/js/10.8134c44d.js"><link rel="prefetch" href="/mirai-doc/assets/js/11.59c9e878.js"><link rel="prefetch" href="/mirai-doc/assets/js/12.025960cf.js"><link rel="prefetch" href="/mirai-doc/assets/js/13.834632f4.js"><link rel="prefetch" href="/mirai-doc/assets/js/14.c630bc43.js"><link rel="prefetch" href="/mirai-doc/assets/js/15.403c4d71.js"><link rel="prefetch" href="/mirai-doc/assets/js/16.03b7d51d.js"><link rel="prefetch" href="/mirai-doc/assets/js/17.2a5a0df8.js"><link rel="prefetch" href="/mirai-doc/assets/js/18.09936506.js"><link rel="prefetch" href="/mirai-doc/assets/js/19.2136240b.js"><link rel="prefetch" href="/mirai-doc/assets/js/20.624d9d42.js"><link rel="prefetch" href="/mirai-doc/assets/js/21.00770c9d.js"><link rel="prefetch" href="/mirai-doc/assets/js/22.f603bef1.js"><link rel="prefetch" href="/mirai-doc/assets/js/23.559086ee.js"><link rel="prefetch" href="/mirai-doc/assets/js/24.0a1cacdc.js"><link rel="prefetch" href="/mirai-doc/assets/js/3.4f9b854d.js"><link rel="prefetch" href="/mirai-doc/assets/js/4.2f72ff89.js"><link rel="prefetch" href="/mirai-doc/assets/js/5.e1ca7b03.js"><link rel="prefetch" href="/mirai-doc/assets/js/6.165bd217.js"><link rel="prefetch" href="/mirai-doc/assets/js/7.fea4cb7d.js"><link rel="prefetch" href="/mirai-doc/assets/js/8.a79c9af0.js">
+    <link rel="stylesheet" href="/mirai-doc/assets/css/0.styles.7c5eb895.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/mirai-doc/" class="home-link router-link-active"><!----> <span class="site-name">Mirai</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/mirai-doc/guide/" class="nav-link router-link-active">
+  指南
+</a></div><div class="nav-item"><a href="/mirai-doc/config/" class="nav-link">
+  配置
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="KDoc 文档" class="dropdown-title"><span class="title">KDoc 文档</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://plexpt.github.io/mirai-doc/kdoc/mirai-core/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  mirai-core 文档
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="/mirai-doc/" class="nav-link">
+  mirai-console 文档(待续)
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="生态" class="dropdown-title"><span class="title">生态</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/mamoe/mirai-console" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  mirai-console 插件平台
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://github.com/iTXTech/mirai-native" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  mirai-native 支持酷Q插件
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://github.com/NatriumLab/python-mirai" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  python-mirai
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://github.com/mamoe/mirai-api-http" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  mirai-api-http 其他任意语言
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div><div class="nav-item"><a href="https://github.com/mamoe/mirai/blob/master/CHANGELOG.md" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  更新日志
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/mirai-doc/guide/config.html" class="nav-link router-link-exact-active router-link-active">
+  简体中文
+</a></li><li class="dropdown-item"><!----> <a href="/mirai-doc/en/" class="nav-link">
+  English
+</a></li></ul></div></div> <a href="https://github.com/mamoe/mirai" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/mirai-doc/guide/" class="nav-link router-link-active">
+  指南
+</a></div><div class="nav-item"><a href="/mirai-doc/config/" class="nav-link">
+  配置
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="KDoc 文档" class="dropdown-title"><span class="title">KDoc 文档</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://plexpt.github.io/mirai-doc/kdoc/mirai-core/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  mirai-core 文档
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="/mirai-doc/" class="nav-link">
+  mirai-console 文档(待续)
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="生态" class="dropdown-title"><span class="title">生态</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/mamoe/mirai-console" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  mirai-console 插件平台
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://github.com/iTXTech/mirai-native" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  mirai-native 支持酷Q插件
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://github.com/NatriumLab/python-mirai" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  python-mirai
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://github.com/mamoe/mirai-api-http" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  mirai-api-http 其他任意语言
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div><div class="nav-item"><a href="https://github.com/mamoe/mirai/blob/master/CHANGELOG.md" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  更新日志
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/mirai-doc/guide/config.html" class="nav-link router-link-exact-active router-link-active">
+  简体中文
+</a></li><li class="dropdown-item"><!----> <a href="/mirai-doc/en/" class="nav-link">
+  English
+</a></li></ul></div></div> <a href="https://github.com/mamoe/mirai" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>快速入门</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/mirai-doc/guide/" class="sidebar-link">简介</a></li><li><a href="/mirai-doc/guide/quick-start.html" class="sidebar-link">快速开始</a></li><li><a href="/mirai-doc/guide/install.html" class="sidebar-link">安装</a></li><li><a href="/mirai-doc/guide/config.html" class="active sidebar-link">配置</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/mirai-doc/guide/config.html#mirai-guide-build-for-mirai" class="sidebar-link">Mirai Guide - Build For Mirai</a></li><li class="sidebar-sub-header"><a href="/mirai-doc/guide/config.html#build-gradle" class="sidebar-link">build.gradle</a></li></ul></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>核心功能</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/mirai-doc/guide/core.html" class="sidebar-link">核心</a></li><li><a href="/mirai-doc/guide/core2.html" class="sidebar-link">核心</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>插件</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/mirai-doc/guide/plugins.html" class="sidebar-link">待续</a></li><li><a href="/mirai-doc/guide/plugins2.html" class="sidebar-link">待续</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>FAQ</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/mirai-doc/guide/faq.html" class="sidebar-link">待续</a></li><li><a href="/mirai-doc/guide/donate.html" class="sidebar-link">捐赠</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="配置"><a href="#配置" class="header-anchor">#</a> 配置</h1> <p>Mirai 的配置异常的简单，我们仅需要一些简单的配置即可使用 Mirai 的强大功能！</p> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>在讲解配置之前，请确保您已经安装了 Mirai，如果您尚未安装，请查看 <a href="/mirai-doc/guide/install.html">安装</a> 一章。</p></div> <h2 id="mirai-guide-build-for-mirai"><a href="#mirai-guide-build-for-mirai" class="header-anchor">#</a> Mirai Guide - Build For Mirai</h2> <p>由于Mirai项目在快速推进中，因此内容时有变动，本文档的最后更新日期为<code>2020-02-29</code>，对应版本<code>0.23.0</code></p> <p>本页面采用Kotlin作为开发语言，<strong>若你希望使用 Java 开发</strong>, 请参阅: <a href="https://github.com/mamoe/mirai-japt" target="_blank" rel="noopener noreferrer">mirai-japt<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>本页面是<a href="/mirai-doc/docs/guide_subscribe_events.html">Mirai Guide - Subscribe Events</a>的后续Guide</p> <h2 id="build-gradle"><a href="#build-gradle" class="header-anchor">#</a> build.gradle</h2> <p>我们首先来看一下完整的<code>build.gradle</code>文件</p> <div class="language-groovy extra-class"><pre class="language-groovy"><code>plugins <span class="token punctuation">{</span>
+    id <span class="token string">'java'</span>
+    id <span class="token string">'org.jetbrains.kotlin.jvm'</span> version <span class="token string">'1.3.61'</span>
+<span class="token punctuation">}</span>
+
+group <span class="token string">'test'</span>
+version <span class="token string">'1.0-SNAPSHOT'</span>
+
+sourceCompatibility <span class="token operator">=</span> <span class="token number">1.8</span>
+
+repositories <span class="token punctuation">{</span>
+    <span class="token function">mavenCentral</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token function">jcenter</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+dependencies <span class="token punctuation">{</span>
+    implementation <span class="token string">'net.mamoe:mirai-core-qqandroid-jvm:0.19.1'</span>
+    implementation <span class="token string gstring">&quot;org.jetbrains.kotlin:kotlin-stdlib-jdk8&quot;</span>
+    testCompile group<span class="token punctuation">:</span> <span class="token string">'junit'</span><span class="token punctuation">,</span> name<span class="token punctuation">:</span> <span class="token string">'junit'</span><span class="token punctuation">,</span> version<span class="token punctuation">:</span> <span class="token string">'4.12'</span>
+<span class="token punctuation">}</span>
+
+compileKotlin <span class="token punctuation">{</span>
+    kotlinOptions<span class="token punctuation">.</span>jvmTarget <span class="token operator">=</span> <span class="token string gstring">&quot;1.8&quot;</span>
+<span class="token punctuation">}</span>
+compileTestKotlin <span class="token punctuation">{</span>
+    kotlinOptions<span class="token punctuation">.</span>jvmTarget <span class="token operator">=</span> <span class="token string gstring">&quot;1.8&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>使用gradle直接打包，不会将依赖也打包进去</p> <p>因此，我们引入一些插件进行打包</p> <h3 id="shadowjar"><a href="#shadowjar" class="header-anchor">#</a> ShadowJar</h3> <p>shadowJar支持将依赖也打包到Jar内，下面介绍用法。</p> <h4 id="_1-buildscript"><a href="#_1-buildscript" class="header-anchor">#</a> 1.buildscript</h4> <p>首先声明buildScript</p> <div class="language-groovy extra-class"><pre class="language-groovy"><code>buildscript <span class="token punctuation">{</span>
+    repositories <span class="token punctuation">{</span>
+        <span class="token function">jcenter</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    dependencies <span class="token punctuation">{</span>
+        classpath <span class="token string">'com.github.jengelman.gradle.plugins:shadow:5.2.0'</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>在plugin前加入以上语句</p> <h4 id="_2-在plugins中进行插件的使用"><a href="#_2-在plugins中进行插件的使用" class="header-anchor">#</a> 2.在plugins中进行插件的使用</h4> <p>将原本的plugins</p> <div class="language-groovy extra-class"><pre class="language-groovy"><code>plugins <span class="token punctuation">{</span>
+    id <span class="token string">'java'</span>
+    id <span class="token string">'org.jetbrains.kotlin.jvm'</span> version <span class="token string">'1.3.61'</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>覆盖为</p> <div class="language-groovy extra-class"><pre class="language-groovy"><code>plugins <span class="token punctuation">{</span>
+    id <span class="token string">'java'</span>
+    id <span class="token string">'org.jetbrains.kotlin.jvm'</span> version <span class="token string">'1.3.61'</span>
+    id <span class="token string">'com.github.johnrengelman.shadow'</span> version <span class="token string">'5.2.0'</span><span class="token comment">//使用shadow对依赖进行打包</span>
+<span class="token punctuation">}</span>
+
+apply plugin<span class="token punctuation">:</span> <span class="token string">'com.github.johnrengelman.shadow'</span>
+apply plugin<span class="token punctuation">:</span> <span class="token string">'java'</span>
+</code></pre></div><h4 id="_3-添加shadowjar"><a href="#_3-添加shadowjar" class="header-anchor">#</a> 3.添加shadowJar</h4> <p>在文件底部添加</p> <div class="language-groovy extra-class"><pre class="language-groovy"><code>shadowJar <span class="token punctuation">{</span>
+    <span class="token comment">// 生成包的命名规则： baseName-version-classifier.jar</span>
+    manifest <span class="token punctuation">{</span>
+        <span class="token function">attributes</span><span class="token punctuation">(</span>
+                <span class="token string">'Main-Class'</span><span class="token punctuation">:</span> <span class="token string">'net.mamoe.mirai.simpleloader.MyLoaderKt'</span><span class="token comment">//入口点</span>
+        <span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 将 build.gradle 打入到 jar 中, 方便查看依赖包版本</span>
+    <span class="token function">from</span><span class="token punctuation">(</span><span class="token string gstring">&quot;./&quot;</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        include <span class="token string">'build.gradle'</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="_4-运行build"><a href="#_4-运行build" class="header-anchor">#</a> 4.运行build</h4> <p>在IDEA中点击<code>ShadowJar</code>左侧的run按钮(绿色小三角)，build完成后在<code>build\libs</code>中找到jar</p> <p>至此，build.gradle内的内容是</p> <div class="language-groovy extra-class"><pre class="language-groovy"><code>buildscript <span class="token punctuation">{</span>
+    repositories <span class="token punctuation">{</span>
+        <span class="token function">jcenter</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    dependencies <span class="token punctuation">{</span>
+        classpath <span class="token string">'com.github.jengelman.gradle.plugins:shadow:5.2.0'</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+
+plugins <span class="token punctuation">{</span>
+    id <span class="token string">'java'</span>
+    id <span class="token string">'org.jetbrains.kotlin.jvm'</span> version <span class="token string">'1.3.61'</span>
+    id <span class="token string">'com.github.johnrengelman.shadow'</span> version <span class="token string">'5.2.0'</span><span class="token comment">//使用shadow对依赖进行打包</span>
+<span class="token punctuation">}</span>
+
+apply plugin<span class="token punctuation">:</span> <span class="token string">'com.github.johnrengelman.shadow'</span>
+apply plugin<span class="token punctuation">:</span> <span class="token string">'java'</span>
+
+group <span class="token string">'test'</span>
+version <span class="token string">'1.0-SNAPSHOT'</span>
+
+sourceCompatibility <span class="token operator">=</span> <span class="token number">1.8</span>
+
+
+repositories <span class="token punctuation">{</span>
+    <span class="token function">mavenCentral</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token function">jcenter</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+dependencies <span class="token punctuation">{</span>
+    implementation <span class="token string">'net.mamoe:mirai-core-qqandroid-jvm:0.23.0'</span>
+    implementation <span class="token string gstring">&quot;org.jetbrains.kotlin:kotlin-stdlib-jdk8&quot;</span>
+    testCompile group<span class="token punctuation">:</span> <span class="token string">'junit'</span><span class="token punctuation">,</span> name<span class="token punctuation">:</span> <span class="token string">'junit'</span><span class="token punctuation">,</span> version<span class="token punctuation">:</span> <span class="token string">'4.12'</span>
+<span class="token punctuation">}</span>
+
+
+compileKotlin <span class="token punctuation">{</span>
+    kotlinOptions<span class="token punctuation">.</span>jvmTarget <span class="token operator">=</span> <span class="token string gstring">&quot;1.8&quot;</span>
+<span class="token punctuation">}</span>
+compileTestKotlin <span class="token punctuation">{</span>
+    kotlinOptions<span class="token punctuation">.</span>jvmTarget <span class="token operator">=</span> <span class="token string gstring">&quot;1.8&quot;</span>
+<span class="token punctuation">}</span>
+
+shadowJar <span class="token punctuation">{</span>
+    <span class="token comment">// 生成包的命名规则： baseName-version-classifier.jar</span>
+    manifest <span class="token punctuation">{</span>
+        <span class="token function">attributes</span><span class="token punctuation">(</span>
+                <span class="token string">'Main-Class'</span><span class="token punctuation">:</span> <span class="token string">'net.mamoe.mirai.simpleloader.MyLoaderKt'</span>
+        <span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 将 build.gradle 打入到 jar 中, 方便查看依赖包版本</span>
+    <span class="token function">from</span><span class="token punctuation">(</span><span class="token string gstring">&quot;./&quot;</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        include <span class="token string">'build.gradle'</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/mamoe/mirai-doc/edit/master/guide/config.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">5/2/2020, 11:00:37 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/mirai-doc/guide/install.html" class="prev">
+        安装
+      </a></span> <span class="next"><a href="/mirai-doc/guide/core.html">
+        核心
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/mirai-doc/assets/js/app.e4527cb9.js" defer></script><script src="/mirai-doc/assets/js/2.279d2599.js" defer></script><script src="/mirai-doc/assets/js/9.e3b8c230.js" defer></script>
+  </body>
+</html>

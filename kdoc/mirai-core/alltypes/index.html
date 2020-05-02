@@ -1,0 +1,829 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>alltypes - mirai-core</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<h3>All Types</h3>
+<table>
+<tbody>
+<tr>
+<h5><a href="../net.mamoe.mirai.event/-abstract-cancellable-event/index.html">net.mamoe.mirai.event.AbstractCancellableEvent</a></h5>
+<p>可被取消的事件的实现</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-abstract-image/index.html">net.mamoe.mirai.message.data.AbstractImage</a></h5>
+<p>所有 <a href="../net.mamoe.mirai.message.data/-image/index.html">Image</a> 实现的基类.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.data/-add-friend-result/index.html">net.mamoe.mirai.data.AddFriendResult</a></h5>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-at/index.html">net.mamoe.mirai.message.data.At</a></h5>
+<p>At 一个群成员. 只能发送给一个群.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-at-all/index.html">net.mamoe.mirai.message.data.AtAll</a></h5>
+<p>"@全体成员".</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event.events/-before-image-upload-event/index.html">net.mamoe.mirai.event.events.BeforeImageUploadEvent</a></h5>
+<p>图片上传前. 可以阻止上传</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai/-bot/index.html">net.mamoe.mirai.Bot</a></h5>
+<p>机器人对象. 一个机器人实例登录一个 QQ 账号.
+Mirai 为多账号设计, 可同时维护多个机器人.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event.events/-bot-active-event.html">net.mamoe.mirai.event.events.BotActiveEvent</a></h5>
+<p>由 <a href="../net.mamoe.mirai/-bot/index.html">Bot</a> 主动发起的动作的事件</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.utils/-bot-configuration/index.html">net.mamoe.mirai.utils.BotConfiguration</a></h5>
+<p><a href="../net.mamoe.mirai/-bot/index.html">Bot</a> 配置</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event.events/-bot-event/index.html">net.mamoe.mirai.event.events.BotEvent</a></h5>
+<p>有关一个 <a href="../net.mamoe.mirai/-bot/index.html">Bot</a> 的事件</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai/-bot-factory/index.html">net.mamoe.mirai.BotFactory</a></h5>
+<p>构造 <a href="../net.mamoe.mirai/-bot-factory/-bot.html">Bot</a> 的工厂.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event.events/-bot-group-permission-change-event/index.html">net.mamoe.mirai.event.events.BotGroupPermissionChangeEvent</a></h5>
+<p>Bot 在群里的权限被改变. 操作人一定是群主</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai/-bot-impl/index.html">net.mamoe.mirai.BotImpl</a></h5>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event.events/-bot-invited-join-group-request-event/index.html">net.mamoe.mirai.event.events.BotInvitedJoinGroupRequestEvent</a></h5>
+<p><a href="../net.mamoe.mirai/-bot/index.html">Bot</a> 被邀请加入一个群.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.contact/-bot-is-being-muted-exception/index.html">net.mamoe.mirai.contact.BotIsBeingMutedException</a></h5>
+<p>发送消息时 bot 正处于被禁言状态时抛出的异常.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai/-bot-java-friendly-a-p-i/index.html">net.mamoe.mirai.BotJavaFriendlyAPI</a></h5>
+<p><a href="../net.mamoe.mirai/-bot/index.html">Bot</a> 中为了让 Java 使用者调用更方便的 API 列表.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event.events/-bot-join-group-event/index.html">net.mamoe.mirai.event.events.BotJoinGroupEvent</a></h5>
+<p>Bot 成功加入了一个新群</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event.events/-bot-leave-event/index.html">net.mamoe.mirai.event.events.BotLeaveEvent</a></h5>
+<p>机器人被踢出群或在其他客户端主动退出一个群. 在事件广播前 <a href="../net.mamoe.mirai/-bot/groups.html">Bot.groups</a> 就已删除这个群.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event.events/-bot-mute-event/index.html">net.mamoe.mirai.event.events.BotMuteEvent</a></h5>
+<p>Bot 被禁言</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event.events/-bot-offline-event/index.html">net.mamoe.mirai.event.events.BotOfflineEvent</a></h5>
+<p><a href="../net.mamoe.mirai/-bot/index.html">Bot</a> 离线.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event.events/-bot-online-event/index.html">net.mamoe.mirai.event.events.BotOnlineEvent</a></h5>
+<p><a href="../net.mamoe.mirai/-bot/index.html">Bot</a> 登录完成, 好友列表, 群组列表初始化完成</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event.events/-bot-passive-event.html">net.mamoe.mirai.event.events.BotPassiveEvent</a></h5>
+<p><a href="../net.mamoe.mirai/-bot/index.html">Bot</a> 被动接收的事件. 这些事件可能与机器人有关</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event.events/-bot-relogin-event/index.html">net.mamoe.mirai.event.events.BotReloginEvent</a></h5>
+<p><a href="../net.mamoe.mirai/-bot/index.html">Bot</a> 主动重新登录.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event.events/-bot-unmute-event/index.html">net.mamoe.mirai.event.events.BotUnmuteEvent</a></h5>
+<p>Bot 被取消禁言</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event/-broadcast-controllable/index.html">net.mamoe.mirai.event.BroadcastControllable</a></h5>
+<p>可控制是否需要广播这个事件包</p>
+</tr>
+<tr>
+ (extensions in package net.mamoe.mirai.message)
+<h5><a href="../net.mamoe.mirai.message/java.awt.image.-buffered-image/index.html">java.awt.image.BufferedImage</a></h5>
+</tr>
+<tr>
+ (extensions in package net.mamoe.mirai.utils)
+<h5><a href="../net.mamoe.mirai.utils/java.awt.image.-buffered-image/index.html">java.awt.image.BufferedImage</a></h5>
+</tr>
+<tr>
+ (extensions in package net.mamoe.mirai.utils)
+<h5><a href="../net.mamoe.mirai.utils/kotlinx.coroutines.io.-byte-read-channel/index.html">kotlinx.coroutines.io.ByteReadChannel</a></h5>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event/-cancellable-event/index.html">net.mamoe.mirai.event.CancellableEvent</a></h5>
+<p>可被取消的事件</p>
+</tr>
+<tr>
+ (extensions in package net.mamoe.mirai.message.data)
+<h5><a href="../net.mamoe.mirai.message.data/kotlin.collections.-collection/index.html">kotlin.collections.Collection</a></h5>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-constrain-single/index.html">net.mamoe.mirai.message.data.ConstrainSingle</a></h5>
+<p>约束一个 <a href="../net.mamoe.mirai.message.data/-message-chain/index.html">MessageChain</a> 中只存在这一种类型的元素. 新元素将会替换旧元素, 保持原顺序.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.contact/-contact/index.html">net.mamoe.mirai.contact.Contact</a></h5>
+<p>联系人. 虽然叫做联系人, 但他的子类有 <a href="../net.mamoe.mirai.contact/-user/index.html">用户</a>, 和 <a href="../net.mamoe.mirai.contact/-group/index.html">群</a>.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.contact/-contact-java-friendly-a-p-i/index.html">net.mamoe.mirai.contact.ContactJavaFriendlyAPI</a></h5>
+<p><a href="../net.mamoe.mirai.contact/-contact/index.html">Contact</a> 中为了让 <code>Java</code> 更容易调用的 API.
+不要用它作为一个类型, 只应使用其中的方法</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.contact/-contact-list/index.html">net.mamoe.mirai.contact.ContactList</a></h5>
+<p>只读联系人列表, 无锁链表实现</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message/-contact-message/index.html">net.mamoe.mirai.message.ContactMessage</a></h5>
+<p>一条消息事件.
+它是一个 <a href="../net.mamoe.mirai.event.events/-bot-event/index.html">BotEvent</a>, 因此可以被 <a href="#">监听</a></p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.contact/-contact-or-bot/index.html">net.mamoe.mirai.contact.ContactOrBot</a></h5>
+<p>拥有 <a href="../net.mamoe.mirai.contact/-contact-or-bot/id.html">id</a> 的对象.
+此为 <a href="../net.mamoe.mirai.contact/-contact/index.html">Contact</a> 与 <a href="../net.mamoe.mirai/-bot/index.html">Bot</a> 的唯一公共接口.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.utils/-context/index.html">net.mamoe.mirai.utils.Context</a></h5>
+<p>On Android, typealias to <code>android.content.Context</code>
+On JVM, empty class.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.utils/-context-impl/index.html">net.mamoe.mirai.utils.ContextImpl</a></h5>
+</tr>
+<tr>
+ (extensions in package net.mamoe.mirai.event)
+<h5><a href="../net.mamoe.mirai.event/kotlinx.coroutines.-coroutine-scope/index.html">kotlinx.coroutines.CoroutineScope</a></h5>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.network/-custom-login-failed-exception/index.html">net.mamoe.mirai.network.CustomLoginFailedException</a></h5>
+<p>非 mirai 实现的异常</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-custom-message/index.html">net.mamoe.mirai.message.data.CustomMessage</a></h5>
+<p>自定义消息</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-custom-message-metadata/index.html">net.mamoe.mirai.message.data.CustomMessageMetadata</a></h5>
+<p>自定义消息元数据.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.utils/-default-login-solver/index.html">net.mamoe.mirai.utils.DefaultLoginSolver</a></h5>
+<p>自动选择 <a href="../net.mamoe.mirai.utils/-swing-solver/index.html">SwingSolver</a> 或 <a href="../net.mamoe.mirai.utils/-standard-char-image-login-solver/index.html">StandardCharImageLoginSolver</a></p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.utils/-device-info/index.html">net.mamoe.mirai.utils.DeviceInfo</a></h5>
+<p>设备信息. 可通过继承 <a href="../net.mamoe.mirai.utils/-system-device-info/index.html">SystemDeviceInfo</a> 来在默认的基础上修改</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.utils/-device-info-data/index.html">net.mamoe.mirai.utils.DeviceInfoData</a></h5>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-empty-message-chain/index.html">net.mamoe.mirai.message.data.EmptyMessageChain</a></h5>
+<p>不含任何元素的 <a href="../net.mamoe.mirai.message.data/-message-chain/index.html">MessageChain</a>.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event/-event.html">net.mamoe.mirai.event.Event</a></h5>
+<p>可被监听的类, 可以是任何 class 或 object.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event.events/-event-cancelled-exception/index.html">net.mamoe.mirai.event.events.EventCancelledException</a></h5>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.utils/-external-image/index.html">net.mamoe.mirai.utils.ExternalImage</a></h5>
+<p>外部图片. 图片数据还没有读取到内存.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-face/index.html">net.mamoe.mirai.message.data.Face</a></h5>
+<p>QQ 自带表情</p>
+</tr>
+<tr>
+ (extensions in package net.mamoe.mirai.message)
+<h5><a href="../net.mamoe.mirai.message/java.io.-file/index.html">java.io.File</a></h5>
+</tr>
+<tr>
+ (extensions in package net.mamoe.mirai.utils)
+<h5><a href="../net.mamoe.mirai.utils/java.io.-file/index.html">java.io.File</a></h5>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-flash-image/index.html">net.mamoe.mirai.message.data.FlashImage</a></h5>
+<p>闪照</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.network/-force-offline-exception/index.html">net.mamoe.mirai.network.ForceOfflineException</a></h5>
+<p>当 <a href="../net.mamoe.mirai/-bot/index.html">Bot</a> 被迫下线时抛出, 作为 <a href="#">Job.cancel</a> 的 <code>cause</code></p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-forward-message/index.html">net.mamoe.mirai.message.data.ForwardMessage</a></h5>
+<p>合并转发消息</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-forward-message-builder/index.html">net.mamoe.mirai.message.data.ForwardMessageBuilder</a></h5>
+<p>转发消息 DSL 构建器.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-forward-message-dsl/index.html">net.mamoe.mirai.message.data.ForwardMessageDsl</a></h5>
+<p>标记转发消息 DSL</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.contact/-friend/index.html">net.mamoe.mirai.contact.Friend</a></h5>
+<p>好友 对象.
+注意: 一个 <a href="../net.mamoe.mirai.contact/-friend/index.html">Friend</a> 实例并不是独立的, 它属于一个 <a href="../net.mamoe.mirai/-bot/index.html">Bot</a>.
+它不能被直接构造. 任何时候都应从 <a href="../net.mamoe.mirai/-bot/get-friend.html">Bot.getFriend</a> 或事件中获取.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event.events/-friend-add-event/index.html">net.mamoe.mirai.event.events.FriendAddEvent</a></h5>
+<p>成功添加了一个新好友的事件</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event.events/-friend-delete-event/index.html">net.mamoe.mirai.event.events.FriendDeleteEvent</a></h5>
+<p>好友已被删除的事件.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event.events/-friend-event/index.html">net.mamoe.mirai.event.events.FriendEvent</a></h5>
+<p>有关好友的事件</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-friend-flash-image/index.html">net.mamoe.mirai.message.data.FriendFlashImage</a></h5>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-friend-image/index.html">net.mamoe.mirai.message.data.FriendImage</a></h5>
+<p>好友图片</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.data/-friend-info/index.html">net.mamoe.mirai.data.FriendInfo</a></h5>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message/-friend-message/index.html">net.mamoe.mirai.message.FriendMessage</a></h5>
+<p>好友消息</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event/-friend-message-subscribers-builder.html">net.mamoe.mirai.event.FriendMessageSubscribersBuilder</a></h5>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.data/-friend-name-remark/index.html">net.mamoe.mirai.data.FriendNameRemark</a></h5>
+<p>给好友设置的备注</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event.events/-friend-remark-change-event/index.html">net.mamoe.mirai.event.events.FriendRemarkChangeEvent</a></h5>
+<p>好友昵称改变事件. 目前仅支持解析 (来自 PC 端的修改).</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.data/-gender/index.html">net.mamoe.mirai.data.Gender</a></h5>
+<p>性别</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.contact/-group/index.html">net.mamoe.mirai.contact.Group</a></h5>
+<p>群.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.data/-group-active-data/index.html">net.mamoe.mirai.data.GroupActiveData</a></h5>
+<p>群统计信息</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event.events/-group-allow-anonymous-chat-event/index.html">net.mamoe.mirai.event.events.GroupAllowAnonymousChatEvent</a></h5>
+<p>群 "匿名聊天" 功能状态改变. 此事件广播前修改就已经完成.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event.events/-group-allow-confess-talk-event/index.html">net.mamoe.mirai.event.events.GroupAllowConfessTalkEvent</a></h5>
+<p>群 "坦白说" 功能状态改变. 此事件广播前修改就已经完成.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event.events/-group-allow-member-invite-event/index.html">net.mamoe.mirai.event.events.GroupAllowMemberInviteEvent</a></h5>
+<p>群 "允许群员邀请好友加群" 功能状态改变. 此事件广播前修改就已经完成.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.data/-group-announcement/index.html">net.mamoe.mirai.data.GroupAnnouncement</a></h5>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.data/-group-announcement-list/index.html">net.mamoe.mirai.data.GroupAnnouncementList</a></h5>
+<p>群公告数据类
+getGroupAnnouncementList时，如果page=1，那么你可以在inst里拿到一些置顶公告</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.data/-group-announcement-msg/index.html">net.mamoe.mirai.data.GroupAnnouncementMsg</a></h5>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.data/-group-announcement-settings/index.html">net.mamoe.mirai.data.GroupAnnouncementSettings</a></h5>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event.events/-group-entrance-announcement-change-event/index.html">net.mamoe.mirai.event.events.GroupEntranceAnnouncementChangeEvent</a></h5>
+<p>入群公告改变. 此事件广播前修改就已经完成.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event.events/-group-event/index.html">net.mamoe.mirai.event.events.GroupEvent</a></h5>
+<p>有关群的事件</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-group-flash-image/index.html">net.mamoe.mirai.message.data.GroupFlashImage</a></h5>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-group-image/index.html">net.mamoe.mirai.message.data.GroupImage</a></h5>
+<p>群图片.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.data/-group-info/index.html">net.mamoe.mirai.data.GroupInfo</a></h5>
+<p>群资料.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event.events/-group-member-event/index.html">net.mamoe.mirai.event.events.GroupMemberEvent</a></h5>
+<p>有关群成员的事件</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message/-group-message/index.html">net.mamoe.mirai.message.GroupMessage</a></h5>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event/-group-message-subscribers-builder.html">net.mamoe.mirai.event.GroupMessageSubscribersBuilder</a></h5>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event.events/-group-mute-all-event/index.html">net.mamoe.mirai.event.events.GroupMuteAllEvent</a></h5>
+<p>群 "全员禁言" 功能状态改变. 此事件广播前修改就已经完成.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event.events/-group-name-change-event/index.html">net.mamoe.mirai.event.events.GroupNameChangeEvent</a></h5>
+<p>群名改变. 此事件广播前修改就已经完成.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event.events/-group-operable-event/index.html">net.mamoe.mirai.event.events.GroupOperableEvent</a></h5>
+<p>可由 <a href="../net.mamoe.mirai.contact/-member/index.html">Member</a> 或 <a href="../net.mamoe.mirai/-bot/index.html">Bot</a> 操作的事件</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event.events/-group-setting-change-event/index.html">net.mamoe.mirai.event.events.GroupSettingChangeEvent</a></h5>
+<p>群设置改变. 此事件广播前修改就已经完成.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.contact/-group-settings/index.html">net.mamoe.mirai.contact.GroupSettings</a></h5>
+<p>群设置</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-hummer-message/index.html">net.mamoe.mirai.message.data.HummerMessage</a></h5>
+<p>一些特殊的消息</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-image/index.html">net.mamoe.mirai.message.data.Image</a></h5>
+<p>自定义表情 (收藏的表情) 和普通图片.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event.events/-image-upload-event/index.html">net.mamoe.mirai.event.events.ImageUploadEvent</a></h5>
+<p>图片上传完成</p>
+</tr>
+<tr>
+ (extensions in package net.mamoe.mirai.message)
+<h5><a href="../net.mamoe.mirai.message/kotlinx.io.core.-input/index.html">kotlinx.io.core.Input</a></h5>
+</tr>
+<tr>
+ (extensions in package net.mamoe.mirai.utils)
+<h5><a href="../net.mamoe.mirai.utils/kotlinx.io.core.-input/index.html">kotlinx.io.core.Input</a></h5>
+</tr>
+<tr>
+ (extensions in package net.mamoe.mirai.message)
+<h5><a href="../net.mamoe.mirai.message/java.io.-input-stream/index.html">java.io.InputStream</a></h5>
+</tr>
+<tr>
+ (extensions in package net.mamoe.mirai.utils)
+<h5><a href="../net.mamoe.mirai.utils/java.io.-input-stream/index.html">java.io.InputStream</a></h5>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.utils.internal/-input-stream/index.html">net.mamoe.mirai.utils.internal.InputStream</a></h5>
+</tr>
+<tr>
+ (extensions in package net.mamoe.mirai.utils)
+<h5><a href="../net.mamoe.mirai.utils/kotlin.-int/index.html">kotlin.Int</a></h5>
+</tr>
+<tr>
+ (extensions in package net.mamoe.mirai.message.data)
+<h5><a href="../net.mamoe.mirai.message.data/kotlin.collections.-iterable/index.html">kotlin.collections.Iterable</a></h5>
+</tr>
+<tr>
+ (extensions in package net.mamoe.mirai.utils)
+<h5><a href="../net.mamoe.mirai.utils/kotlin.collections.-iterable/index.html">kotlin.collections.Iterable</a></h5>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai/-java-friendly-a-p-i/index.html">net.mamoe.mirai.JavaFriendlyAPI</a></h5>
+<p>表明这个 API 是为了让 Java 使用者调用更方便.
+一般有一定的性能损失, 且不能在 JVM/Android 以外平台使用. 不要在 Kotlin 调用它.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-json-message/index.html">net.mamoe.mirai.message.data.JsonMessage</a></h5>
+<p>Json 消息.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-light-app/index.html">net.mamoe.mirai.message.data.LightApp</a></h5>
+<p>小程序, 如音乐分享.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event/-listener/index.html">net.mamoe.mirai.event.Listener</a></h5>
+<p>事件监听器.
+由 <a href="../net.mamoe.mirai.event/kotlinx.coroutines.-coroutine-scope/subscribe.html">subscribe</a> 等方法返回.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event/-listening-status/index.html">net.mamoe.mirai.event.ListeningStatus</a></h5>
+<p>订阅者的状态</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.utils/-lock-free-linked-list/index.html">net.mamoe.mirai.utils.LockFreeLinkedList</a></h5>
+<p>Implementation of lock-free LinkedList.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.utils/-lock-free-linked-list-node/index.html">net.mamoe.mirai.utils.LockFreeLinkedListNode</a></h5>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.network/-login-failed-exception/index.html">net.mamoe.mirai.network.LoginFailedException</a></h5>
+<p>在 <a href="../net.mamoe.mirai/-bot/login.html">登录</a> 失败时抛出, 可正常地中断登录过程.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.utils/-login-solver/index.html">net.mamoe.mirai.utils.LoginSolver</a></h5>
+<p>验证码, 设备锁解决器</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai/-low-level-a-p-i/index.html">net.mamoe.mirai.LowLevelAPI</a></h5>
+<p>标示这个 API 是低级的 API.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai/-low-level-bot-a-p-i-accessor/index.html">net.mamoe.mirai.LowLevelBotAPIAccessor</a></h5>
+<p><a href="../net.mamoe.mirai/-bot/index.html">Bot</a> 相关协议层低级 API.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.contact/-member/index.html">net.mamoe.mirai.contact.Member</a></h5>
+<p>群成员.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event.events/-member-card-change-event/index.html">net.mamoe.mirai.event.events.MemberCardChangeEvent</a></h5>
+<p>成员群名片改动. 此事件广播前修改就已经完成.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.data/-member-info/index.html">net.mamoe.mirai.data.MemberInfo</a></h5>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.contact/-member-java-friendly-a-p-i/index.html">net.mamoe.mirai.contact.MemberJavaFriendlyAPI</a></h5>
+<p><a href="../net.mamoe.mirai.contact/-member/index.html">Member</a> 中为了让 <code>Java</code> 更容易调用的 API
+不要用它作为一个类型, 只应使用其中的方法</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event.events/-member-join-event/index.html">net.mamoe.mirai.event.events.MemberJoinEvent</a></h5>
+<p>成员已经加入群的事件</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event.events/-member-join-request-event/index.html">net.mamoe.mirai.event.events.MemberJoinRequestEvent</a></h5>
+<p>一个账号请求加入群事件, <a href="../net.mamoe.mirai/-bot/index.html">Bot</a> 在此群中是管理员或群主.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event.events/-member-leave-event/index.html">net.mamoe.mirai.event.events.MemberLeaveEvent</a></h5>
+<p>成员已经离开群的事件. 在事件广播前成员就已经从 <a href="../net.mamoe.mirai.contact/-group/members.html">Group.members</a> 中删除</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event.events/-member-mute-event/index.html">net.mamoe.mirai.event.events.MemberMuteEvent</a></h5>
+<p>群成员被禁言事件. 被禁言的成员都不可能是机器人本人</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.contact/-member-permission/index.html">net.mamoe.mirai.contact.MemberPermission</a></h5>
+<p>群成员的权限.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event.events/-member-permission-change-event/index.html">net.mamoe.mirai.event.events.MemberPermissionChangeEvent</a></h5>
+<p>成员权限改变的事件. 成员不可能是机器人自己.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event.events/-member-special-title-change-event/index.html">net.mamoe.mirai.event.events.MemberSpecialTitleChangeEvent</a></h5>
+<p>成员群头衔改动. 一定为群主操作</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event.events/-member-unmute-event/index.html">net.mamoe.mirai.event.events.MemberUnmuteEvent</a></h5>
+<p>群成员被取消禁言事件. 被禁言的成员都不可能是机器人本人</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-message/index.html">net.mamoe.mirai.message.data.Message</a></h5>
+<p>可发送的或从服务器接收的消息.
+采用这样的消息模式是因为 QQ 的消息多元化, 一条消息中可包含 <a href="../net.mamoe.mirai.message.data/-plain-text/index.html">纯文本</a>, <a href="../net.mamoe.mirai.message.data/-image/index.html">图片</a> 等.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-message-chain/index.html">net.mamoe.mirai.message.data.MessageChain</a></h5>
+<p>消息链. 空的实现为 <a href="../net.mamoe.mirai.message.data/-empty-message-chain/index.html">EmptyMessageChain</a></p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-message-chain-builder/index.html">net.mamoe.mirai.message.data.MessageChainBuilder</a></h5>
+<p><a href="../net.mamoe.mirai.message.data/-message-chain/index.html">MessageChain</a> 构建器.
+多个连续的 <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a> 会被连接为单个 <a href="../net.mamoe.mirai.message.data/-plain-text/index.html">PlainText</a> 以优化性能.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-message-content.html">net.mamoe.mirai.message.data.MessageContent</a></h5>
+<p>消息内容</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event/-message-dsl/index.html">net.mamoe.mirai.event.MessageDsl</a></h5>
+<p>DSL 标记. 将能让 IDE 阻止一些错误的方法调用.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event/-message-listener.html">net.mamoe.mirai.event.MessageListener</a></h5>
+<p>消息事件的处理器.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-message-metadata.html">net.mamoe.mirai.message.data.MessageMetadata</a></h5>
+<p>消息元数据, 即不含内容的元素.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message/-message-packet/index.html">net.mamoe.mirai.message.MessagePacket</a></h5>
+<p>一条从服务器接收到的消息事件.
+请查看各平台的 <code>actual</code> 实现的说明.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message/-message-packet-base/index.html">net.mamoe.mirai.message.MessagePacketBase</a></h5>
+<p>仅内部使用, 请使用 <a href="../net.mamoe.mirai.message/-contact-message/index.html">ContactMessage</a></p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event/-message-packet-subscribers-builder.html">net.mamoe.mirai.event.MessagePacketSubscribersBuilder</a></h5>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event.events/-message-recall-event/index.html">net.mamoe.mirai.event.events.MessageRecallEvent</a></h5>
+<p>消息撤回事件. 可是任意消息被任意人撤回.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message/-message-receipt/index.html">net.mamoe.mirai.message.MessageReceipt</a></h5>
+<p>发送消息后得到的回执. 可用于撤回.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event/-message-select-builder/index.html">net.mamoe.mirai.event.MessageSelectBuilder</a></h5>
+<p><a href="../net.mamoe.mirai.event/select-messages.html">selectMessages</a> 时的 DSL 构建器.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event/-message-select-builder-unit/index.html">net.mamoe.mirai.event.MessageSelectBuilderUnit</a></h5>
+<p><a href="../net.mamoe.mirai.event/select-messages-unit.html">selectMessagesUnit</a> 或 <a href="../net.mamoe.mirai.event/select-messages.html">selectMessages</a> 时的 DSL 构建器.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event/-message-selection-timeout-checker/index.html">net.mamoe.mirai.event.MessageSelectionTimeoutChecker</a></h5>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event/-message-selection-timeout-exception/index.html">net.mamoe.mirai.event.MessageSelectionTimeoutException</a></h5>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event.events/-message-send-event/index.html">net.mamoe.mirai.event.events.MessageSendEvent</a></h5>
+<p>主动发送消息</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-message-source/index.html">net.mamoe.mirai.message.data.MessageSource</a></h5>
+<p>消息源, 它存在于 <a href="../net.mamoe.mirai.message.data/-message-chain/index.html">MessageChain</a> 中, 用于表示这个消息的来源.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-message-source-amender/index.html">net.mamoe.mirai.message.data.MessageSourceAmender</a></h5>
+<p>仅于 <a href="../net.mamoe.mirai.message.data/copy-amend.html">copyAmend</a> 中修改 <a href="../net.mamoe.mirai.message.data/-message-source/index.html">MessageSource</a></p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-message-source-builder/index.html">net.mamoe.mirai.message.data.MessageSourceBuilder</a></h5>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event/-message-subscribers-builder/index.html">net.mamoe.mirai.event.MessageSubscribersBuilder</a></h5>
+<p>消息订阅构造器</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.contact/-message-too-large-exception/index.html">net.mamoe.mirai.contact.MessageTooLargeException</a></h5>
+<p>发送消息时消息过长抛出的异常.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message/-message-type/index.html">net.mamoe.mirai.message.MessageType</a></h5>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.utils/-mirai-experimental-a-p-i/index.html">net.mamoe.mirai.utils.MiraiExperimentalAPI</a></h5>
+<p>标记这个类, 类型, 函数, 属性, 字段, 或构造器为实验性的 API.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.utils/-mirai-internal-a-p-i/index.html">net.mamoe.mirai.utils.MiraiInternalAPI</a></h5>
+<p>标记为一个仅供 Mirai 内部使用的 API.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.utils/-mirai-logger/index.html">net.mamoe.mirai.utils.MiraiLogger</a></h5>
+<p>日志记录器. 所有的输出均依赖于它.
+不同的对象可拥有只属于自己的 logger. 通过 <a href="../net.mamoe.mirai.utils/-mirai-logger/identity.html">identity</a> 来区分.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.utils/-mirai-logger-platform-base/index.html">net.mamoe.mirai.utils.MiraiLoggerPlatformBase</a></h5>
+<p>日志基类. 实现了 <a href="../net.mamoe.mirai.utils/-mirai-logger-platform-base/follower.html">follower</a> 的调用传递.
+若 Mirai 自带的日志系统无法满足需求, 请继承这个类并实现其抽象函数.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.utils/-mirai-logger-with-switch/index.html">net.mamoe.mirai.utils.MiraiLoggerWithSwitch</a></h5>
+<p>带有开关的 Logger. 仅能通过 <a href="../net.mamoe.mirai.utils/with-switch.html">MiraiLogger.withSwitch</a> 构造</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event.events/-new-friend-request-event/index.html">net.mamoe.mirai.event.events.NewFriendRequestEvent</a></h5>
+<p>一个账号请求添加机器人为好友的事件</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.network/-no-server-available-exception/index.html">net.mamoe.mirai.network.NoServerAvailableException</a></h5>
+<p>无可用服务器</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.network/-no-standard-input-for-captcha-exception/index.html">net.mamoe.mirai.network.NoStandardInputForCaptchaException</a></h5>
+<p>无标准输入或 Kotlin 不支持此输入.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-null-message-chain/index.html">net.mamoe.mirai.message.data.NullMessageChain</a></h5>
+<p>Null 的 <a href="../net.mamoe.mirai.message.data/-message-chain/index.html">MessageChain</a>.
+它不包含任何元素, 也没有创建任何 list.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-offline-friend-image/index.html">net.mamoe.mirai.message.data.OfflineFriendImage</a></h5>
+<p>通过 <a href="../net.mamoe.mirai.contact/-group/upload-image.html">Group.uploadImage</a> 上传得到的 <a href="../net.mamoe.mirai.message.data/-group-image/index.html">GroupImage</a>. 它的链接需要查询 <a href="../net.mamoe.mirai/-bot/query-image-url.html">Bot.queryImageUrl</a></p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-offline-group-image/index.html">net.mamoe.mirai.message.data.OfflineGroupImage</a></h5>
+<p>通过 <a href="../net.mamoe.mirai.contact/-group/upload-image.html">Group.uploadImage</a> 上传得到的 <a href="../net.mamoe.mirai.message.data/-group-image/index.html">GroupImage</a>. 它的链接需要查询 <a href="../net.mamoe.mirai/-bot/query-image-url.html">Bot.queryImageUrl</a></p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-offline-image/index.html">net.mamoe.mirai.message.data.OfflineImage</a></h5>
+<p>离线的图片, 即为客户端主动上传到服务器而获得的 <a href="../net.mamoe.mirai.message.data/-image/index.html">Image</a> 实例.
+不能直接获取它在服务器上的链接. 需要通过 <a href="../net.mamoe.mirai/-bot/query-image-url.html">Bot.queryImageUrl</a> 查询</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-offline-message-source/index.html">net.mamoe.mirai.message.data.OfflineMessageSource</a></h5>
+<p>由一条消息中的 <a href="../net.mamoe.mirai.message.data/-quote-reply/index.html">QuoteReply</a> 得到的 <a href="../net.mamoe.mirai.message.data/-message-source/index.html">MessageSource</a>.
+此消息源可能来自一条与机器人无关的消息. 因此无法提供对象化的 <code>sender</code> 或 <code>target</code> 获取.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-online-friend-image/index.html">net.mamoe.mirai.message.data.OnlineFriendImage</a></h5>
+<p>接收消息时获取到的 <a href="../net.mamoe.mirai.message.data/-friend-image/index.html">FriendImage</a>. 它可以直接获取下载链接 <a href="../net.mamoe.mirai.message.data/-online-image/origin-url.html">originUrl</a></p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-online-group-image/index.html">net.mamoe.mirai.message.data.OnlineGroupImage</a></h5>
+<p>接收消息时获取到的 <a href="../net.mamoe.mirai.message.data/-group-image/index.html">GroupImage</a>. 它可以直接获取下载链接 <a href="../net.mamoe.mirai.message.data/-online-image/origin-url.html">originUrl</a></p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-online-image/index.html">net.mamoe.mirai.message.data.OnlineImage</a></h5>
+<p>在服务器上的图片. 它可以直接获取下载链接.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-online-message-source/index.html">net.mamoe.mirai.message.data.OnlineMessageSource</a></h5>
+<p>在线消息的 <a href="../net.mamoe.mirai.message.data/-message-source/index.html">MessageSource</a>.
+拥有对象化的 <a href="../net.mamoe.mirai.message.data/-online-message-source/sender.html">sender</a>, <a href="../net.mamoe.mirai.message.data/-online-message-source/target.html">target</a>, 也可以直接 <a href="../net.mamoe.mirai.message.data/recall.html">recall</a> 和 <a href="../net.mamoe.mirai.message.data/quote.html">quote</a></p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.data/-online-status/index.html">net.mamoe.mirai.data.OnlineStatus</a></h5>
+<p>在线状态</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-or-null-delegate/index.html">net.mamoe.mirai.message.data.OrNullDelegate</a></h5>
+<p>可空的委托</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.utils/-over-file-size-max-exception/index.html">net.mamoe.mirai.utils.OverFileSizeMaxException</a></h5>
+<p>图片文件过大</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.qqandroid.network/-packet/index.html">net.mamoe.mirai.qqandroid.network.Packet</a></h5>
+<p>从服务器收到的包解析之后的结构化数据.
+它是一个数据包工厂的处理的返回值.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.contact/-permission-denied-exception/index.html">net.mamoe.mirai.contact.PermissionDeniedException</a></h5>
+<p>权限不足</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-plain-text/index.html">net.mamoe.mirai.message.data.PlainText</a></h5>
+<p>纯文本. 可含 emoji 表情如 😊.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.utils/-platform-logger/index.html">net.mamoe.mirai.utils.PlatformLogger</a></h5>
+<p>当前平台的默认的日志记录器.
+在 <em>JVM 控制台</em> 端的实现为 <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.io/println.html">println</a>
+在 <em>Android</em> 端的实现为 <code>android.util.Log</code></p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-poke-message/index.html">net.mamoe.mirai.message.data.PokeMessage</a></h5>
+<p>戳一戳. 可以发送给好友或群.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.data/-previous-name-list/index.html">net.mamoe.mirai.data.PreviousNameList</a></h5>
+<p>曾用名列表</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.data/-profile/index.html">net.mamoe.mirai.data.Profile</a></h5>
+<p>个人资料</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.contact/-q-q/index.html">net.mamoe.mirai.contact.QQ</a></h5>
+<p>QQ 对象.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-quote-reply/index.html">net.mamoe.mirai.message.data.QuoteReply</a></h5>
+<p>引用回复.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-rich-message/index.html">net.mamoe.mirai.message.data.RichMessage</a></h5>
+<p>XML 消息等富文本消息</p>
+</tr>
+<tr>
+ (extensions in package net.mamoe.mirai.message.data)
+<h5><a href="../net.mamoe.mirai.message.data/kotlin.sequences.-sequence/index.html">kotlin.sequences.Sequence</a></h5>
+</tr>
+<tr>
+ (extensions in package net.mamoe.mirai.utils)
+<h5><a href="../net.mamoe.mirai.utils/kotlin.sequences.-sequence/index.html">kotlin.sequences.Sequence</a></h5>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-service-message/index.html">net.mamoe.mirai.message.data.ServiceMessage</a></h5>
+<p>服务消息, 如 <a href="../net.mamoe.mirai.message.data/-xml-message/index.html">XmlMessage</a>.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.utils/-silent-logger/index.html">net.mamoe.mirai.utils.SilentLogger</a></h5>
+<p>不做任何事情的 logger, keep silent.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.utils/-simple-logger/index.html">net.mamoe.mirai.utils.SimpleLogger</a></h5>
+<p>简易日志记录, 所有类型日志都会被重定向 <a href="#">logger</a></p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.utils/-since-mirai/index.html">net.mamoe.mirai.utils.SinceMirai</a></h5>
+<p>标记一个自 Mirai 某个版本起才支持或在这个版本修改过的 API.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-single-message/index.html">net.mamoe.mirai.message.data.SingleMessage</a></h5>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.utils/-standard-char-image-login-solver/index.html">net.mamoe.mirai.utils.StandardCharImageLoginSolver</a></h5>
+<p>使用字符图片展示验证码, 使用 <a href="#">input</a> 获取输入, 使用 <a href="#">overrideLogger</a> 输出</p>
+</tr>
+<tr>
+ (extensions in package net.mamoe.mirai.message.data)
+<h5><a href="../net.mamoe.mirai.message.data/kotlin.-string/index.html">kotlin.String</a></h5>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.utils/-swing-solver/index.html">net.mamoe.mirai.utils.SwingSolver</a></h5>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.utils/-system-device-info/index.html">net.mamoe.mirai.utils.SystemDeviceInfo</a></h5>
+<p>通过本机信息来获取设备信息.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message/-temp-message/index.html">net.mamoe.mirai.message.TempMessage</a></h5>
+<p>临时会话消息</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.event/-temp-message-subscribers-builder.html">net.mamoe.mirai.event.TempMessageSubscribersBuilder</a></h5>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.utils/-throws/index.html">net.mamoe.mirai.utils.Throws</a></h5>
+<p>This annotation indicates what exceptions should be declared by a function when compiled to a JVM method.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.utils/-unsafe-weak-ref/index.html">net.mamoe.mirai.utils.UnsafeWeakRef</a></h5>
+<p>WeakRef that <code>getValue</code> for delegation throws an <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-illegal-state-exception/index.html">IllegalStateException</a> if the referent is released by GC. Therefore it returns notnull value only</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.network/-unsupported-s-m-s-login-exception/index.html">net.mamoe.mirai.network.UnsupportedSMSLoginException</a></h5>
+<p>需要短信验证时抛出. mirai 目前还不支持短信验证.</p>
+</tr>
+<tr>
+ (extensions in package net.mamoe.mirai.message)
+<h5><a href="../net.mamoe.mirai.message/java.net.-u-r-l/index.html">java.net.URL</a></h5>
+</tr>
+<tr>
+ (extensions in package net.mamoe.mirai.utils)
+<h5><a href="../net.mamoe.mirai.utils/java.net.-u-r-l/index.html">java.net.URL</a></h5>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.contact/-user/index.html">net.mamoe.mirai.contact.User</a></h5>
+<p>代表一个 <strong>用户</strong>.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-vip-face/index.html">net.mamoe.mirai.message.data.VipFace</a></h5>
+<p>VIP 表情.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.utils/-weak-ref/index.html">net.mamoe.mirai.utils.WeakRef</a></h5>
+</tr>
+<tr>
+ (extensions in package net.mamoe.mirai.utils)
+<h5><a href="../net.mamoe.mirai.utils/java.lang.ref.-weak-reference/index.html">java.lang.ref.WeakReference</a></h5>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.utils/-weak-ref-property/index.html">net.mamoe.mirai.utils.WeakRefProperty</a></h5>
+<p>Indicates that the property is delegated by a <a href="../net.mamoe.mirai.utils/-weak-ref/index.html">WeakRef</a></p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.network/-wrong-password-exception/index.html">net.mamoe.mirai.network.WrongPasswordException</a></h5>
+<p>密码输入错误</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-xml-message/index.html">net.mamoe.mirai.message.data.XmlMessage</a></h5>
+<p>XML 消息, 如分享, 卡片等.</p>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-xml-message-builder/index.html">net.mamoe.mirai.message.data.XmlMessageBuilder</a></h5>
+</tr>
+<tr>
+<h5><a href="../net.mamoe.mirai.message.data/-xml-message-dsl/index.html">net.mamoe.mirai.message.data.XmlMessageDsl</a></h5>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>
